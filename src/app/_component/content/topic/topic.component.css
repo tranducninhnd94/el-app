@@ -1,0 +1,17 @@
+.gallery-item{
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.gallery-item img {
+    width: 100%;
+}
+
+.gallery-item .content-gallery{
+    text-align: left;
+}
+
+.gallery-item .content-gallery h3{
+    color: black;
+    font-size: 13px;
+    padding-bottom: 0px;
+}
