@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/accounting.jpg",
+        "audio": {
+            "audio_url": "audio/accounting.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "accounting",
+        "pronunciation": "/ə'kauntiɳ/",
+        "explanation": "the process or work of keeping financial accounts",
+        "vocabulary": "(n): công việc kế toán; sự thanh toán, tính toán",
+        "example": {
+            "vi": "Việc kế toán tốt là cần thiết cho mọi công việc làm ăn",
+            "en": "Good accounting is needed in all businesses"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/accumulate.jpg",
+        "audio": {
+            "audio_url": "audio/accumulate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "accumulate",
+        "pronunciation": "/ə'kju:mjuleit/",
+        "explanation": "to gradually get more and more of something over a period of time",
+        "vocabulary": "(v): tích lũy, tích góp, gom góp",
+        "example": {
+            "vi": "Họ đã tích lũy nhiều hơn mức thông tin đủ dùng",
+            "en": "They have accumulated more than enough information"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/asset.jpg",
+        "audio": {
+            "audio_url": "audio/asset.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "asset",
+        "pronunciation": "/'æset/",
+        "explanation": "a person or thing that is valuable or useful to someone or something",
+        "vocabulary": "(n): tài sản, của cải",
+        "example": {
+            "vi": "Tài sản của công ty trị giá hàng triệu đô-la",
+            "en": "The company's asset are worth millions of dollars"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/audit.jpg",
+        "audio": {
+            "audio_url": "audio/audit.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "audit",
+        "pronunciation": "/'ɔ:dit/",
+        "explanation": "an official examination of business and financial records to see that they are true and correct",
+        "vocabulary": "(n, v): (n) sự kiểm tra sổ sách, sự kiểm toán; (v) kiểm toán",
+        "example": {
+            "vi": "Những kế toán viên độc lập đã kiểm toán sổ sách kế toán của công ty",
+            "en": "The independent accountants audited the company's books"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/budget.jpg",
+        "audio": {
+            "audio_url": "audio/budget.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "budget",
+        "pronunciation": "/ˈbʌdʒɪt/",
+        "explanation": "the money that is available to a person or an organization and a plan of how it will be spent over a period of time",
+        "vocabulary": "(n, v): (n)ngân sách, ngân quỹ; (v) lên ngân sách",
+        "example": {
+            "vi": "Công ty sẽ phải dự thảo ngân sách nhiều tiền hơn cho bộ phận này vào năm sau",
+            "en": "The company will have to budget more money for this department next year"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/build_up.jpg",
+        "audio": {
+            "audio_url": "audio/build up.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "build up",
+        "pronunciation": "/'bildʌp/",
+        "explanation": "to increase  over time",
+        "vocabulary": "(v): tăng cường, gom lại, tích lại, xây dựng dần dần lên, ‹trở thành› lớn hơn, nhiều hơn",
+        "example": {
+            "vi": "Công ty phải xây dựng dần lên danh tiếng vững chắc cho chính mình",
+            "en": "The firm has built up a solid reputation for itself"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/client.jpg",
+        "audio": {
+            "audio_url": "audio/client.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "client",
+        "pronunciation": "/'klaiənt/",
+        "explanation": "a customer",
+        "vocabulary": "(n): khách, khách hàng",
+        "example": {
+            "vi": "Chúng ta phải cung cấp các dịch vụ xuất sắc cho khách hàng của mình, bằng không chúng ta sẽ để mất họ vào tay đối thủ",
+            "en": "We must provide excellent services for our clients, otherwise we will lose them to our competition"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/debt.jpg",
+        "audio": {
+            "audio_url": "audio/debt.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "debt",
+        "pronunciation": "/det/",
+        "explanation": "a sum of money that someone owes",
+        "vocabulary": "(n): nợ, món nợ",
+        "example": {
+            "vi": "Các ngân hàng lo lắng về khoản nợ đang gia tăng của anh",
+            "en": "The banks are worried about your increasing debt"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/outstanding.jpg",
+        "audio": {
+            "audio_url": "audio/outstanding.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "outstanding",
+        "pronunciation": "/aut'stændiɳ/",
+        "explanation": "extremely good; excellent",
+        "vocabulary": "(adj): còn tồn tại, chưa giải quyết xong, chưa trả nợ",
+        "example": {
+            "vi": "Cô ấy còn khoản nợ hơn 500 triệu bảng Anh.",
+            "en": "She has outstanding debts of over £500."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/profitably.jpg",
+        "audio": {
+            "audio_url": "audio/profitably.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "profitably",
+        "pronunciation": "/ˌprɒfɪtəˈbɪləti/",
+        "explanation": "that makes or is likely to make money",
+        "vocabulary": "(adv): có lợi, có ích, sinh lãi, sinh lợi",
+        "example": {
+            "vi": "Công ty đã đầu tư sinh lợi vào thị trường chứng khoán",
+            "en": "We invested in the stock market profitable"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/reconcile.jpg",
+        "audio": {
+            "audio_url": "audio/reconcile.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "reconcile",
+        "pronunciation": "/'rekənsail/",
+        "explanation": "to find an acceptable way of dealing with two or more ideas, needs, etc. that seem to be opposed to each other",
+        "vocabulary": "(v): hòa giải, giảng hòa; chỉnh lý, điều hòa, làm cho phù hợp/nhất trí",
+        "example": {
+            "vi": "Nhân viên kế toán tìm ra lỗi khi cô ấy chỉnh lý tài khoản (sửa lại tài khoản cho đúng)",
+            "en": "The accountant found the error when she reconcile the account"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/turnover.png",
+        "audio": {
+            "audio_url": "audio/turnover.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "turnover",
+        "pronunciation": "/ˈtɜːnəʊvə(r)/",
+        "explanation": "the total amount of goods or services sold by a company during a particular period of time",
+        "vocabulary": "(n): doanh số, doanh thu",
+        "example": {
+            "vi": "Doanh thu hàng năm của $ 75.000.000",
+            "en": "An annual turnover of $75 million"
+        }
+    }
+]

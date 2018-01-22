@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/calculation.jpg",
+        "audio": {
+            "audio_url": "audio/calculation.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "calculation",
+        "pronunciation": "/,kælkju'leiʃn/",
+        "explanation": "the act or process of using numbers to find out an amount",
+        "vocabulary": "(n): ‹sự/kết quả› tính, tính toán; ‹sự› dự tính, trù liệu",
+        "example": {
+            "vi": "Theo tính toán của tôi, tôi sẽ chịu tiền thuế thu nhập ít hơn trong năm nay",
+            "en": "According to my calculations, I'll owe less money on my income taxes this year"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/deadline.jpg",
+        "audio": {
+            "audio_url": "audio/deadline.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "deadline",
+        "pronunciation": "/ˈdedlaɪn/",
+        "explanation": "a point in time by which something must be done",
+        "vocabulary": "(n): thời hạn chót",
+        "example": {
+            "vi": "Hạn chót cho việc nộp thuế cho năm nay chỉ còn cách 2 tuần",
+            "en": "The deadline for paying this years's taxes is just two weeks away"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/file.jpg",
+        "audio": {
+            "audio_url": "audio/file.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "file",
+        "pronunciation": "/fail/",
+        "explanation": "to present something so that it can be officially recorded and dealt with",
+        "vocabulary": "(v): sắp xếp, sắp đặt",
+        "example": {
+            "vi": "",
+            "en": "To file a claim / complaint / petition / lawsuit (How to File a Lawsuit)"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/fill out.jpg",
+        "audio": {
+            "audio_url": "audio/fill_out.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "fill out",
+        "pronunciation": "N/A",
+        "explanation": "to complete",
+        "vocabulary": "(v): hoàn tất, hoàn thành; điền vào (cho đầy đủ)",
+        "example": {
+            "vi": "Tôi thường đề nghị ai đó giúp tôi điền vào các biểu mẫu thuế cho tôi",
+            "en": "I usually ask someone to help me fill out my tax form"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/give_up.jpg",
+        "audio": {
+            "audio_url": "audio/give_up.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "give up",
+        "pronunciation": "N/A",
+        "explanation": "to quit, to stop",
+        "vocabulary": "(v): bỏ, từ bỏ, thôi; tạm dừng; đầu hàng",
+        "example": {
+            "vi": "Cô Gomez lạc quan đến nỗi chưa bao giờ bỏ cuộc",
+            "en": "Ms. Gomez is so optimistic that she never gives up"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/joint.jpg",
+        "audio": {
+            "audio_url": "audio/joint.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "joint",
+        "pronunciation": "/dʒɔint/",
+        "explanation": "involving two or more people together",
+        "vocabulary": "(adj): chung, cùng",
+        "example": {
+            "vi": "Chúng tôi đã mở một tài khoản ngân hàng chung từ 5 năm trước",
+            "en": "We opened a joint bank account five years ago"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/owe.jpeg",
+        "audio": {
+            "audio_url": "audio/owe.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "owe",
+        "pronunciation": "/ou/",
+        "explanation": "return money that you have borrowed",
+        "vocabulary": "(v): nợ, mắc nợ; mang ơn, hàm ơn, chịu ơn",
+        "example": {
+            "vi": "Vì kinh doanh tăng trưởng, người chủ đã hoàn trả các khoản vay và chỉ còn nợ ít hơn",
+            "en": "As the business grew, the owner paid back loans and owed less money"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/penalty.jpg",
+        "audio": {
+            "audio_url": "audio/penalty.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "penalty",
+        "pronunciation": "/'penlti/",
+        "explanation": "a punishment for breaking a law, rule, or contract",
+        "vocabulary": "(n): khoản tiền phạt",
+        "example": {
+            "vi": "",
+            "en": "To impose a penalty"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/preparation.jpg",
+        "audio": {
+            "audio_url": "audio/preparation.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "preparation",
+        "pronunciation": "/,prepə'reiʃn/",
+        "explanation": "the act or process of getting ready for something or making something ready",
+        "vocabulary": "(n): ‹sự› chuẩn bị, sửa soạn",
+        "example": {
+            "vi": "Việc chuẩn bị cho thuế thu nhập có thể tốn một thời gian dà",
+            "en": "Income tax preparation can take a long time"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/refund.jpg",
+        "audio": {
+            "audio_url": "audio/refund.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "refund",
+        "pronunciation": "/ri:'fʌnd/",
+        "explanation": "a sum of money that is paid back to you, especially because you paid too much or because you returned goods to a store",
+        "vocabulary": "(n, v): (n) sự trả lại tiền; (v) trả lại, hoàn lại tiền",
+        "example": {
+            "vi": "",
+            "en": "With the tax refund, we bought two plane tickets"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/spouse.jpg",
+        "audio": {
+            "audio_url": "audio/spouse.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "spouse",
+        "pronunciation": "/spauz/",
+        "explanation": "a husband or wife",
+        "vocabulary": "(n): Chồng, vợ",
+        "example": {
+            "vi": "Vợ/chồng tôi chuẩn bị bản khai báo thuế cho cả hai chúng tôi",
+            "en": "My spouse prepares the tax return for both of us"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/withhold.jpg",
+        "audio": {
+            "audio_url": "audio/withhold.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "withhold",
+        "pronunciation": "/wi 'hould/",
+        "explanation": "to refuse to give something to someone",
+        "vocabulary": "(v): cố nín, cố nhịn, kìm lại, giữ lại; ngăn cản, cản trở",
+        "example": {
+            "vi": "Đừng giấu diếm bất kỳ thông tin nào với người kế toán của bạn kẻo không anh ta không thể chuẩn bị biểu mẫu thuế cho bạn chính xác được",
+            "en": "Do not withhold any information from your accountant or he will not be able to prepare your tax form correctly"
+        }
+    }
+]

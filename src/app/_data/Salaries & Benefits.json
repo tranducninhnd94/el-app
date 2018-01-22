@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/basis.jpg",
+        "audio": {
+            "audio_url": "audio/basis.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "basis",
+        "pronunciation": "/'beisis/",
+        "explanation": "the reason why people take a particular action",
+        "vocabulary": "(n): nền tảng, cơ sở, căn cứ",
+        "example": {
+            "vi": "Người trưởng phòng không có bất kỳ cơ sở nào cho việc sa thải người nhân viên",
+            "en": "The manager didn't have any basis for firing the employee"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/benefit.jpg",
+        "audio": {
+            "audio_url": "audio/benefit.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "benefit",
+        "pronunciation": "/'benifit/",
+        "explanation": "an advantage that something gives you",
+        "vocabulary": "(n, v): (n) chế độ đãi ngộ, lợi ích, phúc lợi; (v) được lợi",
+        "example": {
+            "vi": "Mặc dù chuyên viên phân tích kiếm được mức lương tốt hơn với công việc mới, nhưng phúc lợi của anh ta lại tốt hơn với công việc trước đây",
+            "en": "Although the analyst earned a better salary at his new job, his benefits were better at his previous job"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/compensate.jpg",
+        "audio": {
+            "audio_url": "audio/compensate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "compensate",
+        "pronunciation": "/'kɔmpenseit/",
+        "explanation": "to provide something good to balance or reduce the bad effects of damage, loss",
+        "vocabulary": "(v): bù, đền bù, bồi thường",
+        "example": {
+            "vi": "Công ty sẽ bù cho nhân viên về bất kỳ chi phí đi lại nào",
+            "en": "The company will compensate employees for any travel expenses"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/delicately.jpg",
+        "audio": {
+            "audio_url": "audio/delicately.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "delicately",
+        "pronunciation": "/ˈdelɪkət/",
+        "explanation": "easily damaged or broken",
+        "vocabulary": "(adv): ‹một cách› tinh vi, tế nhị, lịch thiệp, khôn khéo, thận trọng",
+        "example": {
+            "vi": "Người trưởng phòng tế nhị hỏi thăm sức khỏe khách hàng của anh ta",
+            "en": "The manager delicately asked about the health of his client"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/eligible.jpg",
+        "audio": {
+            "audio_url": "audio/eligible.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "eligible",
+        "pronunciation": "/i'liminəbl/",
+        "explanation": "able to practicipate in something, qualified",
+        "vocabulary": "(adj): thích hợp, đủ tư cách, đủ tiêu chuẩn; có thể chọn được",
+        "example": {
+            "vi": "Một số nhân viên có thể đủ tiêu chuẩn cho kế hoạch hoàn trả học phí",
+            "en": "Some employees may be eligible for the tuition reimbursement plan"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/flexibly.jpg",
+        "audio": {
+            "audio_url": "audio/flexibly.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "flexibly",
+        "pronunciation": "/ˈfleksəbl/",
+        "explanation": "able to change to suit new conditions or situations",
+        "vocabulary": "(adv): ‹một cách› mềm dẻo, linh hoạt, linh động",
+        "example": {
+            "vi": "Trưởng phòng của tôi suy nghĩ linh hoạt, cho phép bà tự giải quyết nhiều vấn đề khó chịu",
+            "en": "My manager thinks flexibly, enabling herself to solve many sticky problems"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/negotiate.jpg",
+        "audio": {
+            "audio_url": "audio/negotiate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "negotiate",
+        "pronunciation": "/ni'gouʃieit/",
+        "explanation": "to try to reach an agreement by formal discussion",
+        "vocabulary": "(v): thương lượng, đàm phán, điều đình",
+        "example": {
+            "vi": "Anh phải biết mình muốn gì và mình có thể chấp nhận gì khi thương lượng về lương bổng",
+            "en": "You must know what you want and what you can accept when you negotiate a salary"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/raise.jpg",
+        "audio": {
+            "audio_url": "audio/raise.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "raise",
+        "pronunciation": "/reiz/",
+        "explanation": "n: an increase in salary; v: to move up",
+        "vocabulary": "(n, v): (n) ‹sự› nâng lên, tăng lên, tăng lương; (v) nâng lên, đưa lên",
+        "example": {
+            "vi": "Chúng ta cần nâng tiêu chuẩn về tính hợp thời",
+            "en": "We need to raise the standard for timeliness"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/retire.png",
+        "audio": {
+            "audio_url": "audio/retire.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "retire",
+        "pronunciation": "/ri'taiə/",
+        "explanation": "to stop doing your job, especially because you have reached a particular age",
+        "vocabulary": "(v): nghỉ hưu",
+        "example": {
+            "vi": "Cô bị buộc phải nghỉ hưu sớm trong việc giảng dạy vì lý do sức khỏe",
+            "en": "She was forced to retire early from teaching because of ill health"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/vested.jpg",
+        "audio": {
+            "audio_url": "audio/vested.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "vested",
+        "pronunciation": "/'vestid/",
+        "explanation": "to give somebody the legal right or power to do something",
+        "vocabulary": "(adj): được trao, được ban, được phong; quyền được bảo đảm",
+        "example": {
+            "vi": "Ngày mà bà Weng được trao đầy đủ kế hoạch nghỉ hưu, bà đã nhận thông báo trước 2 tuần",
+            "en": "The day that Ms. Weng became fully vested in the retirement plan, she gave her two weeks' notice"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/wage.jpg",
+        "audio": {
+            "audio_url": "audio/wage.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "wage",
+        "pronunciation": "/weidʤ/",
+        "explanation": "a regular amount of money that you earn, usually every week, for work",
+        "vocabulary": "(n): tiền công, tiền lương (thường trả theo giờ)",
+        "example": {
+            "vi": "Tiền công theo giờ đã tăng 20% qua 2 năm vừa rồi",
+            "en": "Hourly wages have increase by 20 percent over the last two years"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/be_aware_of.jpg",
+        "audio": {
+            "audio_url": "audio/be_aware_of.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "be aware of",
+        "pronunciation": "N/A",
+        "explanation": "to be conscious of",
+        "vocabulary": "(v): am hiểu, nhận biết, có ý thức, biết, biết được",
+        "example": {
+            "vi": "Anh có biết về lịch sử làm việc trước đây của người nhân viên mới không?",
+            "en": "Are you aware of the new employee's past work history?"
+        }
+    }
+]

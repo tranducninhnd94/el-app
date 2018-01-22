@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/available.jpg",
+        "audio": {
+            "audio_url": "audio/available.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "available",
+        "pronunciation": "/ə'veiləbl/",
+        "explanation": "that you can get, buy, or find",
+        "vocabulary": "(adj): sẵn có, sẵn sàng (để dùng, để phục vụ)",
+        "example": {
+            "vi": "Tôi đã kiểm tra danh sách các đĩa CD có sẵn trước khi đặt mua",
+            "en": "I checked the list of available compact discs before ordering"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/broaden.jpg",
+        "audio": {
+            "audio_url": "audio/broaden.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "broaden",
+        "pronunciation": "/'brɔ:dn/",
+        "explanation": "",
+        "vocabulary": "(to become wider): mở rộng, nới rộng",
+        "example": {
+            "vi": "Bạn sẽ biết thưởng thức âm nhạc hơn nếu bạn mở rộng thị hiếu của mình và lắng nghe vài loại âm nhạc",
+            "en": "You will appreciate music more if you broaden your tastes and listen to several types of music"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/category.jpg",
+        "audio": {
+            "audio_url": "audio/category.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "category",
+        "pronunciation": "/'kætigəri/",
+        "explanation": "group of people or things with particular features in common",
+        "vocabulary": "(n): loại, hạng",
+        "example": {
+            "vi": "Jazz là một trong nhiều thể loại âm nhạc",
+            "en": "Jazz is one of many categories of music"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/disparate.jpg",
+        "audio": {
+            "audio_url": "audio/disparate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "disparate",
+        "pronunciation": "/'dispərit/",
+        "explanation": "made up of parts or people that are very different from each other",
+        "vocabulary": "(adj): khác biệt, khác loại, khác hẳn nhau",
+        "example": {
+            "vi": "Bài hát tôn giáo (thánh ca) tách hẳn ra làm thể loại âm nhạc khác biệt",
+            "en": "Religious song cut across disparate categories of music"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/divide.png",
+        "audio": {
+            "audio_url": "audio/divide.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "divide",
+        "pronunciation": "/di'vaid/",
+        "explanation": "to separate or make something separate into parts",
+        "vocabulary": "(v): chia ra, phân chia; chia rẽ, ly gián",
+        "example": {
+            "vi": "Các thể loại âm nhạc đã chia đều ra những người thích nhạc đồng quê và miền tây với những người không thích",
+            "en": "The music class was evenly divided between those who liked country and western music and those who do not"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/favor.jpg",
+        "audio": {
+            "audio_url": "audio/favor.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "favor",
+        "pronunciation": "/'feivə/",
+        "explanation": "to prefer one plan, way of doing something, ect to another",
+        "vocabulary": "(v): chiếu cố, thiên vị; thích, thiện cảm",
+        "example": {
+            "vi": "Sam thưởng thức các tác phẩm của vài nhà soạn nhạc nhưng anh có khuynh hướng thiên về Mozart hơn",
+            "en": "Sam enjoys the works of several composers but he tends to favor Mozart"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/instinct.jpg",
+        "audio": {
+            "audio_url": "audio/instinct.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "instinct",
+        "pronunciation": "/in'stiɳkt/",
+        "explanation": "a natural tendency for people and animals to behave in a particular way, using the knowledge and abilities that they were born",
+        "vocabulary": "(n): bản năng; năng khiếu, thiên hướng",
+        "example": {
+            "vi": "Khả năng chơi đàn cello của người sinh viên quả là trời cho, nó dường như là 1 bản năng",
+            "en": "The student's ability to play the cello was so natural, it seemed an instinct"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/prefer.jpg",
+        "audio": {
+            "audio_url": "audio/prefer.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "prefer",
+        "pronunciation": "/pri'fə:/",
+        "explanation": "to like one thing or person better than another",
+        "vocabulary": "(v): thích hơn, ưa hơn; đề bạt, thăng cấp; đưa ra, trình ra",
+        "example": {
+            "vi": "Cô Lanet thích chọn một ghế gần lối đi mỗi khi cô tham dự một buổi hòa nhạc",
+            "en": "Ms. Lanet prefers to get a seat near the aisle when she attends a concert"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/reason.jpg",
+        "audio": {
+            "audio_url": "audio/reason.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "reason",
+        "pronunciation": "/'ri:zn/",
+        "explanation": "a cause or an explanation for something that has happened",
+        "vocabulary": "(n): lý do, lý lẽ; lý trí, lẽ phải",
+        "example": {
+            "vi": "Có nhiều lý do để tin rằng (nhạc) Beethoven vẫn còn nổi tiếng trong thế kỷ tiếp theo",
+            "en": "There is every reason to believe that Beethoven will still be popular in the next century"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/relaxation.jpg",
+        "audio": {
+            "audio_url": "audio/relaxation.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "relaxation",
+        "pronunciation": "/,ri:læk'seiʃn/",
+        "explanation": "ways of resting and enjoying yourself",
+        "vocabulary": "(n): ‹sự› thư giãn, giải trí; nghỉ ngơi, nới lỏng, làm dịu, làm giảm",
+        "example": {
+            "vi": "Anh ta đã chơi đàn piano để thư giãn và vui thú",
+            "en": "He played the piano for relaxation and pleasure"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/taste.jpg",
+        "audio": {
+            "audio_url": "audio/taste.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "taste",
+        "pronunciation": "/teist/",
+        "explanation": "a person's ability to choose things that people recognize as being of good quality or appropriate",
+        "vocabulary": "(n): vị giác; ‹sự› nếm, thưởng thức; sở thích, thị hiếu",
+        "example": {
+            "vi": "Anh ấy rất biết thưởng thức âm nhạc.",
+            "en": "He has very good taste in music."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/urge.jpg",
+        "audio": {
+            "audio_url": "audio/urge.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "urge",
+        "pronunciation": "/ɜːdʒ/",
+        "explanation": "to advise or try hard to persuade someone to do something",
+        "vocabulary": "(v): thúc giục, thúc đẩy, thôi thúc; cố nài, cố thuyết phục",
+        "example": {
+            "vi": "Mẹ anh ta đã thúc giục anh ta học đàn piano.",
+            "en": "His mother urged him to study the piano"
+        }
+    }
+]

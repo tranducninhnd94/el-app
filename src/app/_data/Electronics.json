@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/disk.png",
+        "audio": {
+            "audio_url": "audio/disk.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "disk",
+        "pronunciation": "/disk/",
+        "explanation": "a device for storing information on a computer",
+        "vocabulary": "(n): đĩa (vi tính, thể thao, đĩa hát...)",
+        "example": {
+            "vi": "Đĩa quang có khả năng ghi thì đắt hơn nhiều đĩa CD chỉ đọc",
+            "en": "Rewritable compact disks are more expensive than read-only CDs"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/facilitate.jpg",
+        "audio": {
+            "audio_url": "audio/facilitate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "facilitate",
+        "pronunciation": "/fə'siliteit/",
+        "explanation": "to make an action possible or easier",
+        "vocabulary": "(v): làm cho dễ dàng, làm cho thuận tiện",
+        "example": {
+            "vi": "Chương trình máy tính làm cho việc lập lịch các buổi hẹn được thuận tiện",
+            "en": "The computer program facilitated the scheduling of appointments"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/network.jpg",
+        "audio": {
+            "audio_url": "audio/network.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "network",
+        "pronunciation": "/'netwə:k/",
+        "explanation": "a number of computers and other devices that are connected together",
+        "vocabulary": "(v, n): (v) kết nối, liên kết; (n) mạng lưới, hệ thống",
+        "example": {
+            "vi": "Chúng tôi thiết lập một mạng (máy tính) mới trong văn phòng để chia sẻ tập tin",
+            "en": "We set up a new network in my office to share files"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/popularity.png",
+        "audio": {
+            "audio_url": "audio/popularity.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "popularity",
+        "pronunciation": "/,pɔpju'læriti/",
+        "explanation": "the state of being liked by a large number of people",
+        "vocabulary": "(n): ‹tính/sự› đại chúng, phổ biến, nổi tiếng, được yêu mến",
+        "example": {
+            "vi": "Thương hiệu máy tính này hết sức nổi tiếng trong các sinh viên đại học cao đẳng",
+            "en": "This brand of computers is extremely popular among college students"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/process.jpg",
+        "audio": {
+            "audio_url": "audio/process.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "process",
+        "pronunciation": "/ˈprəʊses/",
+        "explanation": "a series of something that are done in order to achieve a particular result",
+        "vocabulary": "(v, n): (v) xử lý; (n) quá trình, sự tiến triển, sự tiến hành; phương pháp, cách thức, quy trình",
+        "example": {
+            "vi": "Có một cách thức để xác định xem tại sao máy tính của anh bị trục trặc",
+            "en": "There is a process for determining why your computer is malfunctioning"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/replace.jpg",
+        "audio": {
+            "audio_url": "audio/replace.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "replace",
+        "pronunciation": "/ri'pleis/",
+        "explanation": "to be used instead of something / somebody else",
+        "vocabulary": "(v): thay thế; đặt vào lại chỗ cũ",
+        "example": {
+            "vi": "Tôi đã thay thế cái đĩa cứng bị trục trặc",
+            "en": "I've replaced the hard drive that was malfunctioning"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/revolution.jpg",
+        "audio": {
+            "audio_url": "audio/revolution.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "revolution",
+        "pronunciation": "/,revə'lu:ʃn/",
+        "explanation": "a great change in conditions, ways of working, beliefs, etc. ..that affects large numbers of people",
+        "vocabulary": "(n): vòng, tua, sự xoay vòng; cuộc cách mạng",
+        "example": {
+            "vi": "Chúng ta thấy một cuộc cách mạng trong lãnh vực máy tính hầu như mỗi ngày",
+            "en": "We see a revolution in the computer field almost every day"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/sharp.jpg",
+        "audio": {
+            "audio_url": "audio/sharp.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "sharp",
+        "pronunciation": "/ʃɑ:p/",
+        "explanation": "sudden and rapid, especially of a change in something",
+        "vocabulary": "(adj): sắc, bén, rõ rệt, sắc nét; thông minh, láu lỉnh; thình lình, đột ngột",
+        "example": {
+            "vi": "Nhân viên mới đã chứng tỏ được cô ấy thông minh đến thế nào khi mà cô đã làm chủ được chương trình mới trong vài ngày",
+            "en": "The new employee proved how sharp she was when she mastered the new program in a few days"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/skill.jpg",
+        "audio": {
+            "audio_url": "audio/skill.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "skill",
+        "pronunciation": "/skil/",
+        "explanation": "the ability to do something well",
+        "vocabulary": "(n): kỹ năng, kỹ xảo; sự khéo léo, sự tinh xảo",
+        "example": {
+            "vi": "Người phát triển phần mềm có những kỹ năng chuyên môn xuất săc và là một vốn quý đối với đội ngũ lập trình phần mềm của chúng tôi",
+            "en": "The software developer has excellent technical skills and would be an asset to our software programming team"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/software.jpg",
+        "audio": {
+            "audio_url": "audio/software.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "software",
+        "pronunciation": "/ˈsɒftweə(r)/",
+        "explanation": "the programs, etc....used to operate a computer",
+        "vocabulary": "(n): phần mềm, chương trình máy tính",
+        "example": {
+            "vi": "Nhiều máy tính đã có sẵn phần mềm",
+            "en": "Many computers come pre-loaded with software"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/store.jpg",
+        "audio": {
+            "audio_url": "audio/store.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "store",
+        "pronunciation": "/stɔ:/",
+        "explanation": "to keep",
+        "vocabulary": "(v): cửa hàng, cửa hiệu, kho hàng",
+        "example": {
+            "vi": "Anh có thể lưu trữ dữ liệu nhiều hơn trên ổ đĩa nén",
+            "en": "You can store more data on a zip drive"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/technically.jpg",
+        "audio": {
+            "audio_url": "audio/technically.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "technically",
+        "pronunciation": "/ˈteknɪkli/",
+        "explanation": "in a way that is connected with the skills needed for a particular job",
+        "vocabulary": "(adv): nói đến/nói về mặt kỹ thuật; một cách chuyên môn/nghiêm túc",
+        "example": {
+            "vi": "Nói về mặt kỹ thuật thì virus chỉ tác động lên các tập tin script (tập tin kịch bản thi hành)",
+            "en": "Technically speaking, the virus infected only script files"
+        }
+    }
+]

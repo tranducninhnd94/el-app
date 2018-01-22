@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/basic.jpg",
+        "audio": {
+            "audio_url": "audio/basis.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "basis",
+        "pronunciation": "/'beisis/",
+        "explanation": "the reason why people make a particular choice",
+        "vocabulary": "(adj): cơ bản, cơ sở",
+        "example": {
+            "vi": "Nhà hàng mới đưa ra một thực đơn rất là cơ bản",
+            "en": "The new restaurant offers a very basic menu"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/complete.jpg",
+        "audio": {
+            "audio_url": "audio/complete.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "complete",
+        "pronunciation": "/kəm'pli:t/",
+        "explanation": "to finish making or doing something",
+        "vocabulary": "(v): ‹làm/làm cho› hoàn toàn, đầy đủ, trọn vẹn; hoàn thành, xong",
+        "example": {
+            "vi": "Chúng tôi gọi một ít món tráng miệng để trọn vẹn bữa ăn của mình",
+            "en": "We ordered some dessert to complete our meal"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/excite.jpg",
+        "audio": {
+            "audio_url": "audio/excite.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "excite",
+        "pronunciation": "/ik'sait/",
+        "explanation": "to make someone feel very pleased, interested or enthusiastic",
+        "vocabulary": "(v): kích thích, kích động, khuấy động",
+        "example": {
+            "vi": "Những hương vị lạ/ngoại nhập luôn luôn kích thích tôi",
+            "en": "Exotic flavor always excite me"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/flavor.jpg",
+        "audio": {
+            "audio_url": "audio/flavor.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "flavor",
+        "pronunciation": "/'fleivə/",
+        "explanation": "a substance added to food or drink to give it a particular flavour",
+        "vocabulary": "(n): mùi vị, hương vị, mùi thơm phảng phất",
+        "example": {
+            "vi": "Người nấu bếp thay đổi mùi vị món súp bằng một sự pha trộn các loại cây cỏ độc đáo",
+            "en": "The cook changed the flavor of the soup with a unique blend of herbs"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/forget.jpg",
+        "audio": {
+            "audio_url": "audio/forget.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "forget",
+        "pronunciation": "/fə'get/",
+        "explanation": "to be unable to remember something",
+        "vocabulary": "(v): quên",
+        "example": {
+            "vi": "Anh nhân viên phục vụ quên mang các ổ bánh mì, gây bực mình cho người khách",
+            "en": "The waiter forgot to bring the rolls, annoying the customer"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/ingredient.jpg",
+        "audio": {
+            "audio_url": "audio/ingredient.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "ingredient",
+        "pronunciation": "/in'gri:djənt/",
+        "explanation": "one of the things from which something is made, especially one of the foods",
+        "vocabulary": "(n): thành phần, thành tố, phần hợp thành",
+        "example": {
+            "vi": "Tôi không quen với một vài thành phần trong món ăn",
+            "en": "I was unfamiliar with some of the ingredients in the dish"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/judge.jpg",
+        "audio": {
+            "audio_url": "audio/judge.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "judge",
+        "pronunciation": "/'dʤʌdʤ/",
+        "explanation": "to form an opinion about somebody / something",
+        "vocabulary": "(v): xét xử, phân xử, xét đoán, phán đoán; đánh giá, cho rằng",
+        "example": {
+            "vi": "Bài nhận xét nhà hàng đã nhận xét gay gắt về chất lượng dịch vụ",
+            "en": "The restaurant review harshly judged the quality of the service"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/Mix-up.jpg",
+        "audio": {
+            "audio_url": "audio/mix up.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "Mix-up",
+        "pronunciation": "/'miks'ʌp/",
+        "explanation": "a situation that is full of confusion, especially because somebody has made a mistake",
+        "vocabulary": "(n): ‹sự› lộn xộn, hỗn độn, hỗn loạn; cuộc đánh lộn",
+        "example": {
+            "vi": "Đã có một sự lộn xộn về các thành phần và món ăn đã bị hỏng",
+            "en": "There was a mix-up about the ingredients and the dish was ruined"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/patron.jpg",
+        "audio": {
+            "audio_url": "audio/patron.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "patron",
+        "pronunciation": "/'peitrən/",
+        "explanation": "a person who gives money and support to artists and writers",
+        "vocabulary": "(n): người bảo trợ, người đỡ đầu, ông bầu, ông chủ; khách hàng quen",
+        "example": {
+            "vi": "Nhà hàng này có nhiều người khách hàng quen rất trung thành",
+            "en": "This restaurant has many loyal patrons"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/predict.jpg",
+        "audio": {
+            "audio_url": "audio/predict.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "predict",
+        "pronunciation": "/pri'dikt/",
+        "explanation": "to say that something will happen in the future",
+        "vocabulary": "(v): nói trước, dự đoán, dự báo, tiên tri",
+        "example": {
+            "vi": "Tôi đã dự đoán (rằng) nhà hàng này sẽ trở nên nổi tiếng và tôi đã đúng",
+            "en": "I predicted this restaurant would become popuplar and I was right"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/randomly.jpg",
+        "audio": {
+            "audio_url": "audio/randomly.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "randomly",
+        "pronunciation": "/ˈrændəmli/",
+        "explanation": "done, without somebody deciding in advance what is going to happen, or without any regular pattern",
+        "vocabulary": "(adv): ‹một cách› ngẫu nhiên, tình cờ, hú họa",
+        "example": {
+            "vi": "Chúng tôi chọn đại (các món ăn) từ thực đơn",
+            "en": "We randomly made our selections from the menu"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/remind.jpg",
+        "audio": {
+            "audio_url": "audio/remind.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "remind",
+        "pronunciation": "/ri'maind/",
+        "explanation": "to help someone remember something",
+        "vocabulary": "(v): nhắc nhở, làm nhớ lại",
+        "example": {
+            "vi": "Tôi nhắc người khách rằng chúng tôi sẽ gặp nhau để đi ăn vào ngày mai",
+            "en": "I remind the client that we are meeting for dinner tomorrow"
+        }
+    }
+]

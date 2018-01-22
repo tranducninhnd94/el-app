@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/assignment.jpg",
+        "audio": {
+            "audio_url": "audio/assignment.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "assignment",
+        "pronunciation": "/ə'sainmənt/",
+        "explanation": "a task or piece of work that someone is given to do",
+        "vocabulary": "(n): ‹sự› giao việc, phân công; quy là, cho là",
+        "example": {
+            "vi": "Công việc (được giao) này phải được thực hiện trước nửa đêm",
+            "en": "This assignment has to be turned in before midnight"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/choose.jpg",
+        "audio": {
+            "audio_url": "audio/choose.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "choose",
+        "pronunciation": "/tʃuz/",
+        "explanation": "to decide which thing or person you want",
+        "vocabulary": "(v): chọn, chọn lựa",
+        "example": {
+            "vi": "Alan chọn đọc tờ Thời báo New York hơn là tờ Tạp chí Phố Wall",
+            "en": "Alan chooses to read The New York Times over the Wall Street Journal"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/constantly.jpg",
+        "audio": {
+            "audio_url": "audio/constantly.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "constantly",
+        "pronunciation": "/'kɔnstəntli/",
+        "explanation": "all the time; repeatedly",
+        "vocabulary": "(adv): trung thành, chung thủy, liên tục",
+        "example": {
+            "vi": "Thời gian luôn tục thay đổi",
+            "en": "Fashion is constantly changing."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/constitute.jpg",
+        "audio": {
+            "audio_url": "audio/constitute.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "constitute",
+        "pronunciation": "/'kɔnstitju:t/",
+        "explanation": "to be considered to be something",
+        "vocabulary": "(v): tạo thành, thành lập, thiết lập",
+        "example": {
+            "vi": "Hành động của anh ấy được thiết lập như một mối nguy hiểm cho cộng đồng",
+            "en": "His action was interpreted as constituting a threat to the community."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/decision.jpg",
+        "audio": {
+            "audio_url": "audio/decision.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "decision",
+        "pronunciation": "/di'siʤn/",
+        "explanation": "a choice or judgment that you make after thinking",
+        "vocabulary": "(n): sự quyết định; ‹sự› giải quyết, phân xử, phán quyết",
+        "example": {
+            "vi": "Các biên tập viên báo chí thường phải ra những quyết định nhanh về chuyện nào được công bố",
+            "en": "Newspaper editors often have to make quick decisions about which stories to publish"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/disseminate.gif",
+        "audio": {
+            "audio_url": "audio/disseminate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "disseminate",
+        "pronunciation": "/di'semineit/",
+        "explanation": "to spread information, knowledge, etc. so that it reaches many people",
+        "vocabulary": "(v): truyền bá; phổ biến, gieo rắc (khắp nơi)",
+        "example": {
+            "vi": "Truyền thông đại chúng phổ biến tin tức đi khắp thế giới",
+            "en": "The media disseminates news across the world"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/impact.jpg",
+        "audio": {
+            "audio_url": "audio/impact.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "impact",
+        "pronunciation": "/'impækt/",
+        "explanation": "the powerful effect that something has on someone or something",
+        "vocabulary": "(n): ‹sự/sức› va mạnh, va chạm mạnh, tác động mạnh, ảnh hưởng mạnh",
+        "example": {
+            "vi": "Bài báo về vụ bê bối của tổng thống đã có tác động to lớn đến công chúng",
+            "en": "The story of the presidential scandal had a huge impact on the public"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/in-depth.jpg",
+        "audio": {
+            "audio_url": "audio/in-depth.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "in-depth",
+        "pronunciation": "N/A",
+        "explanation": "very thorough and detailed",
+        "vocabulary": "(adj): cẩn thận, tỉ mỉ, chu đáo, chi tiết",
+        "example": {
+            "vi": "Tờ báo đưa tin chi tiết về vụ ném bom bi thảm",
+            "en": "The newspaper gave in-depth coverage of the tragic bombing"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/investigate.jpg",
+        "audio": {
+            "audio_url": "audio/investigate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "investigate",
+        "pronunciation": "/in'vestigeit/",
+        "explanation": "to carefully examine the facts of a situation, an event, a crime, etc",
+        "vocabulary": "(v): điều tra, nghiên cứu",
+        "example": {
+            "vi": "Các phóng viên cần phải điều tra kỹ lưỡng về sự kiện trước khi công bố bài báo về chúng",
+            "en": "Reporters need to thoroughly investigate the facts before publishing their stories"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/link.jpg",
+        "audio": {
+            "audio_url": "audio/link.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "link",
+        "pronunciation": "/liɳk/",
+        "explanation": "a connection between two or more people or things",
+        "vocabulary": "(n): nối, liên kết, liên lạc, kết hợp",
+        "example": {
+            "vi": "Cảnh sát nghi ngờ có thể có một mối liên kết giữa hai vụ giết người.",
+            "en": "Police suspect there may be a link between the two murders."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/subscribe.jpg",
+        "audio": {
+            "audio_url": "audio/subscribe.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "subscribe",
+        "pronunciation": "/səbˈskraɪb/",
+        "explanation": "to pay an amount of money regularly in order to receive or use something",
+        "vocabulary": "(v): đặt mua một cái gì đó định kỳ, đăng ký",
+        "example": {
+            "vi": "Chúng tôi đăng ký vào một số kênh thể thao (trên TV).",
+            "en": "We subscribe to several sports channels (= on TV)."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/thorough.jpg",
+        "audio": {
+            "audio_url": "audio/thorough.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "thorough",
+        "pronunciation": "/'θʌrə/",
+        "explanation": "done completely; with great attention to detail",
+        "vocabulary": "(adj): thấu đáo, triệt để, hoàn toàn, trọn vẹn; tỉ mỉ, kỹ lưỡng",
+        "example": {
+            "vi": "Bài báo là kết quả của sự nghiên cứu kỹ lưỡng",
+            "en": "The story was the result of thorough research"
+        }
+    }
+]

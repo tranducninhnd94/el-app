@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/diversify.jpg",
+        "audio": {
+            "audio_url": "audio/diversify.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "diversify",
+        "pronunciation": "/dai'və:sifai/",
+        "explanation": "to develop a wider range of products, interests, skills",
+        "vocabulary": "(v): đa dạng hóa, làm cho thành nhiều dạng, thay đổi",
+        "example": {
+            "vi": "Nhà tư vấn mà chúng tôi thuê khuyên rằng chúng tôi không được thay đổi vào lúc này",
+            "en": "The consultant that we hired recommends that we don't diversify at this time"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/business.jpg",
+        "audio": {
+            "audio_url": "audio/enterprise.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "enterprise",
+        "pronunciation": "/'entəpraiz/",
+        "explanation": "a company or business",
+        "vocabulary": "(n): công trình, dự án lớn; tổ chức kinh doanh, hãng, công ty, xí nghiệp",
+        "example": {
+            "vi": "Công ty mới thiết lập một cách nhanh chóng bản thanh toán với cửa hàng đồ dùng văn phòng (bàn ghế, văn phòng phẩm, máy fax...)",
+            "en": "The new enterprise quickly established an account with the office supply store"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/essentially.jpg",
+        "audio": {
+            "audio_url": "audio/essentially.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "essentially",
+        "pronunciation": "/ɪˈsenʃəli/",
+        "explanation": "when you think about the true, important, or basic nature of someone or something",
+        "vocabulary": "(adv): cần thiết",
+        "example": {
+            "vi": "Về cơ bản thì anh ấy như là 1 giáo viên chứ không phải người quản lý.",
+            "en": "He was, essentially, a teacher, not a manager."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/everyday.jpg",
+        "audio": {
+            "audio_url": "audio/everyday.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "everyday",
+        "pronunciation": "/'evridei/",
+        "explanation": "routine, common",
+        "vocabulary": "(adj): hàng ngày, thường ngày, thông thường",
+        "example": {
+            "vi": "Công việc thường ngày phải kiểm tra hàng tồn kho thì thật chán",
+            "en": "This everyday routine of having to check inventory is boring"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/function.jpg",
+        "audio": {
+            "audio_url": "audio/function.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "function",
+        "pronunciation": "/fʌŋkʃn/",
+        "explanation": "a special activity or purpose of a person or thing",
+        "vocabulary": "(v, n): (v) thực hiện chức năng; (n) chức năng, nhiệm vụ",
+        "example": {
+            "vi": "Chức năng của thiết bị này là gì?",
+            "en": "What is the function of this device?"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/maintain.jpg",
+        "audio": {
+            "audio_url": "audio/maintain.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "maintain",
+        "pronunciation": "/men'tein/",
+        "explanation": "to make something continue at the same level, standard, etc.",
+        "vocabulary": "(v): bảo quản, giữ gìn, duy trì",
+        "example": {
+            "vi": "Tôi đang giữ một danh sách các nơi cung cấp đồ dùng văn phòng được ưa chuộng nhất",
+            "en": "I've been maintaining a list of office supplies that are in greatest demand"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/otain.jpg",
+        "audio": {
+            "audio_url": "audio/obtain.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "obtain",
+        "pronunciation": "/əb'tein/",
+        "explanation": "to get something, especially by making an effort",
+        "vocabulary": "(v): đạt được, thu được, giành được, kiếm được (to acquire)",
+        "example": {
+            "vi": "Người nhân viên thu thập báo cáo từ người giám sát của của cô ta",
+            "en": "The employee obtained the report from her supervisor"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/prerequisite.png",
+        "audio": {
+            "audio_url": "audio/prerequisite.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "prerequisite",
+        "pronunciation": "/'pri:'rekwizit/",
+        "explanation": "something that must exist or happen before something else can happen or be done",
+        "vocabulary": "(n): (điều/điều kiện) tiên quyết, cần trước hết, đòi hỏi trước hết",
+        "example": {
+            "vi": "Đây là những thứ đòi hỏi trước hết mà bạn cần phải sắm trước khi vào lớp học",
+            "en": "Here are the prerequisites that you need to purchase before coming to class"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/quality.jpg",
+        "audio": {
+            "audio_url": "audio/quality.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "quality",
+        "pronunciation": "/'kwɔliti/",
+        "explanation": "the standard of something when it is compared to other things like it; how good or bad something is",
+        "vocabulary": "(n): chất lượng; phẩm chất; đặc tính, năng lực, tài năng, đức tính",
+        "example": {
+            "vi": "Chất lượng quần áo của họ đã bị sa sút kể từ khi họ bắt đầu dùng các loại vải rẻ tiền hơn để làm ra chúng",
+            "en": "The quality of their clothes has fallen ever since they started using cheaper fabrics to make them"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/smooth.jpg",
+        "audio": {
+            "audio_url": "audio/smooth.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "smooth",
+        "pronunciation": "/smu:ð/",
+        "explanation": "completely flat and even, without any lumps, holes, or rough areas",
+        "vocabulary": "(adj): nhẵn, trơn, mượt, phẳng lặng; trôi chảy, êm thấm; hòa nhã, lễ độ",
+        "example": {
+            "vi": "Thái độ hòa nhã của cô ta đã thu được sự đánh giá cao của giám đốc, nhưng không (thu phục) được đồng nghiệp",
+            "en": "Her smooth manner won her the appreciation of the manager but not her colleagues"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/source.jpg",
+        "audio": {
+            "audio_url": "audio/source.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "source",
+        "pronunciation": "/sɔ:s/",
+        "explanation": "a place, person, or thing that you get something from",
+        "vocabulary": "(n): nguồn, nguồn gốc",
+        "example": {
+            "vi": "Tôi không thể nói cho anh về nguồn của thông tin này",
+            "en": "I can't tell you the source of this information"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/stationery.jpg",
+        "audio": {
+            "audio_url": "audio/stationery.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "stationery",
+        "pronunciation": "/'steiʃnəri/",
+        "explanation": "materials for writing and for using in an office, for example paper, pens, and envelopes",
+        "vocabulary": "(n): đồ dùng văn phòng (giấy để viết và bao thư)",
+        "example": {
+            "vi": "Chúng ta không có đủ giấy và bao thư, vậy hãy đặt hàng thêm một ít nữa",
+            "en": "We do not have enough stationery, so please order some more"
+        }
+    }
+]

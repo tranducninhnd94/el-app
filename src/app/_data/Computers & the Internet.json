@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/access.jpg",
+        "audio": {
+            "audio_url": "audio/access.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "access",
+        "pronunciation": "/ˈækses/",
+        "explanation": "the opportunity or right to use something",
+        "vocabulary": "(n, v): (n) lối vào, đường vào, sự/quyền truy cập; (v) truy cập",
+        "example": {
+            "vi": "Anh không có được quyền truy cập file trừ phi anh biết mật khẩu",
+            "en": "You can't gain access to the files unless you know the password"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/allocate.jpg",
+        "audio": {
+            "audio_url": "audio/allocate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "allocate",
+        "pronunciation": "/ˈæləkeɪt/",
+        "explanation": "to give something officially to somebody / something for a particular purpose",
+        "vocabulary": "(v): cấp cho, phân phối, phân phát, chia phần; chỉ định, định rõ vị trí",
+        "example": {
+            "vi": "\nNgười quản lý văn phòng không cấp đủ tiền để mua sắm phần mềm",
+            "en": "The office manager did not allocate enough money to purchase software"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/compatible.jpg",
+        "audio": {
+            "audio_url": "audio/compatible.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "compatible",
+        "pronunciation": "/kəm'pætəbl/",
+        "explanation": "able to be used together",
+        "vocabulary": "(adj): tương thích, tương hợp, hợp nhau, có thể dùng được với nhau",
+        "example": {
+            "vi": "\nHệ điều hành không tương thích với kiểu máy tính này",
+            "en": "This operating system is not compatible with this model computer"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/delete.png",
+        "audio": {
+            "audio_url": "audio/delete.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "delete",
+        "pronunciation": "/di'li:t/",
+        "explanation": "to remove something that has been written or printed",
+        "vocabulary": "(v): xóa đi, bỏ đi, gạch đi (to remove, to erase)",
+        "example": {
+            "vi": "Kỹ thuật viên đã vô tình xóa mọi dữ liệu trên đĩa",
+            "en": "The technicians deleted all the data on the disk accidentally"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/display.jpg",
+        "audio": {
+            "audio_url": "audio/display.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "display",
+        "pronunciation": "/dis'plei/",
+        "explanation": "to put something in a place where people can see it easily",
+        "vocabulary": "(v, n): (v) hiển thị, biểu lộ, phô bày, trình bày, trưng bày; (n) sự trưng bày",
+        "example": {
+            "vi": " Chương trình kế toán hiển thị một con số cân bằng thu chi khi mở (chương trình đó) ra",
+            "en": "The accounting program displays a current balance when opened."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/duplicate.jpg",
+        "audio": {
+            "audio_url": "audio/duplicate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "duplicate",
+        "pronunciation": "/'dju:plikit/",
+        "explanation": "to make an extract copy of something",
+        "vocabulary": "(v): sao lại, làm thành 2 bản, gấp đôi, nhân đôi",
+        "example": {
+            "vi": "Tôi nghĩ rằng chương trình xử lý văn bản mới sẽ thành công gấp đôi so với chương trình được giới thiệu hồi năm ngoái",
+            "en": "I think the new word processing program will duplicate the success of the one introduced last year"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/failure.jpg",
+        "audio": {
+            "audio_url": "audio/failure.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "failure",
+        "pronunciation": "/'feiljə/",
+        "explanation": "lack of success in doing or achieving something",
+        "vocabulary": "(n): hỏng, thiếu, yếu, trượt, thất bại, bất thành",
+        "example": {
+            "vi": "Anh không thông báo cho chúng tôi về mật khẩu bị đổi đã làm tốn công ty 1 ngày làm việc",
+            "en": "Your failure to inform us about the changed password cost the company a day's work"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/figure_out.jpg",
+        "audio": {
+            "audio_url": "audio/figure_out.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "figure out",
+        "pronunciation": "/ˈfɪɡə/ /aʊt/",
+        "explanation": "to calculate an amount or the cost",
+        "vocabulary": "(v): tìm hiểu, đoán ra, tính toán ra, giải ra",
+        "example": {
+            "vi": "Bằng cách xem xét mọi lỗi, các kỹ thuật viên đã tìm ra các để sửa chữa các sự cố",
+            "en": "By examining all of the errors, the technicians figured out how to fix the problem"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/ignore.jpg",
+        "audio": {
+            "audio_url": "audio/ignore.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "ignore",
+        "pronunciation": "/ig'nɔ:/",
+        "explanation": "to pay no attention to something",
+        "vocabulary": "(v): bỏ qua, phớt lờ, không để ý tới",
+        "example": {
+            "vi": "Anh ấy phớt lờ bảng cấm hút thuốc để hút 1 điểu thuốc",
+            "en": "He ignored all the 'No Smoking' signs and lit up a cigarette"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/search.jpg",
+        "audio": {
+            "audio_url": "audio/search.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "search",
+        "pronunciation": "/sə:tʃ/",
+        "explanation": "an attemp to find somebody / something, especially by looking acrefully for them /it",
+        "vocabulary": "(n, v): (n) tìm kiếm, tìm hiểu; điều tra, thăm dò; (v) tìm",
+        "example": {
+            "vi": "Việc tìm kiếm trong cơ sở dữ liệu của chúng tôi đã đem lại rất ít thông tin",
+            "en": "Our search of the database produced very little information"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/shut_down.jpg",
+        "audio": {
+            "audio_url": "audio/shut_down.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "shut down",
+        "pronunciation": "/ʃʌt/ /daʊn/ ",
+        "explanation": "it stops being often for bussiness",
+        "vocabulary": "(v): đóng lại, ngừng lại; tắt máy, ngừng hoạt động, chấm dứt",
+        "example": {
+            "vi": "Vui lòng tắt máy trước khi bạn ngừng làm việc",
+            "en": "Please shut down the computer before you leave"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/warning.jpg",
+        "audio": {
+            "audio_url": "audio/warning.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "warning",
+        "pronunciation": "/'wɔ:niɳ/",
+        "explanation": "a statement, an event, etc. telling somebody that something bad or unpleasant",
+        "vocabulary": "(n): ‹sự/lời› cảnh báo, báo trước (có nguy hiểm hoặc gặp vấn đề rắc rối)",
+        "example": {
+            "vi": "Ánh sáng nhấp nháy màu đỏ đưa ra sự cảnh báo với người dùng rằng pin bị cạn",
+            "en": "The red flashing light gives a warning to users that the battery is low"
+        }
+    }
+]

@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/burden.gif",
+        "audio": {
+            "audio_url": "audio/burden.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "burden",
+        "pronunciation": "/'bə:dn/",
+        "explanation": "a duty, responsibility, etc. that causes worry, difficulty, or hard work",
+        "vocabulary": "(n): gánh nặng (đen & bóng), gánh trách nhiệm",
+        "example": {
+            "vi": "Người thư ký thường gánh trách nhiệm đặt bữa trưa cho những cuộc họp làm ăn",
+            "en": "The secretary usually takes on the burden of ordering lunch for business meetings"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/commonly.gif",
+        "audio": {
+            "audio_url": "audio/commonly.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "commonly",
+        "pronunciation": "/'kɔmənli/",
+        "explanation": "usually; very often; by most people",
+        "vocabulary": "(adv): thường thường, thông thường, bình thường",
+        "example": {
+            "vi": "Nhà hàng trong khu này thường phục vụ nhân viên văn phòng và thường mở cửa suốt tuần",
+            "en": "The restaurants in this area commonly serve office workers and are only open during the week"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/delivery.jpg",
+        "audio": {
+            "audio_url": "audio/delivery.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "delivery",
+        "pronunciation": "/di'livəri/",
+        "explanation": "the act of taking goods, letters, etc. to the people they have been sent to",
+        "vocabulary": "(n): ‹sự› giao hàng, phân phát, phân phối",
+        "example": {
+            "vi": "Nhà cung cấp thực phẩm đã thuê một người đưa tin để thực hiện việc giao hàng",
+            "en": "The caterer hired a courier to make the delivery"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/elegance.jpg",
+        "audio": {
+            "audio_url": "audio/elegance.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "elegance",
+        "pronunciation": "/'eligəns/",
+        "explanation": "attractive and showing a good sense of syle",
+        "vocabulary": "(n): ‹tính/sự› thanh lịch, tao nhã",
+        "example": {
+            "vi": "Sự thanh lịch của nhà hàng khiến nó là một nơi thú vị để ăn uống",
+            "en": "The elegance of the restaurant made it a pleasant place to eat"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/fall to.jpg",
+        "audio": {
+            "audio_url": "audio/fall to.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "fall to",
+        "pronunciation": "N/A",
+        "explanation": "to become one's responsibilities",
+        "vocabulary": "(v): bắt đầu vào việc, bắt tay vào việc; rơi vào tay của, trở thành trách nhiệm của",
+        "example": {
+            "vi": "Nhiệm vụ nấu ăn rơi vào tay của phụ bếp khi mà người đầu bếp bị bệnh",
+            "en": "The task of preparing the meal fell to the assistant chef when the chief chef was ill"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/impress.jpg",
+        "audio": {
+            "audio_url": "audio/impress.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "impress",
+        "pronunciation": "/im'pres/",
+        "explanation": "if a person or thing impresses you, you feel admiration for them or it",
+        "vocabulary": "(v): gây ấn tượng, khắc sâu, ghi sâu",
+        "example": {
+            "vi": "Tôi bị ấn tượng với việc họ phân phát bữa trưa của chúng tôi nhanh chóng đến vậy",
+            "en": "I was impressed with how quickly they delivered our lunch"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/individual.jpg",
+        "audio": {
+            "audio_url": "audio/individual.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "individual",
+        "pronunciation": "/,indi'vidjuəl/",
+        "explanation": "considered separately rather than as part of a group",
+        "vocabulary": "(adj): cá nhân, riêng, riêng lẻ; riêng biệt, đặc biệt, độc đáo;",
+        "example": {
+            "vi": "Chúng tôi đã được người giao hàng đánh dấu nội dung cho mỗi đơn hàng riêng biệt",
+            "en": "We had the delivery man mark the contents of each individual order"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/list.jpg",
+        "audio": {
+            "audio_url": "audio/list.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "list",
+        "pronunciation": "/list/",
+        "explanation": "a series of names, items, figures, etc., especially when they are written or printed",
+        "vocabulary": "(n): danh sách, bản kê khai",
+        "example": {
+            "vi": "Chúng tôi giữ một danh sách các nhà hàng có giao hàng trong khu vực này",
+            "en": "We keep a list of all the restaurants in this area that deliver"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/multiple.jpg",
+        "audio": {
+            "audio_url": "audio/multiple.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "multiple",
+        "pronunciation": "/'mʌltipl/",
+        "explanation": "many in number; involving many different people or things",
+        "vocabulary": "(adj): nhân; nhiều, nhiều mối, nhiều phần",
+        "example": {
+            "vi": "",
+            "en": "a house in multiple ownership/occupancy (= owned/occupied by several different people or families)"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/narrow.jpg",
+        "audio": {
+            "audio_url": "audio/narrow.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "narrow",
+        "pronunciation": "/'nærou/",
+        "explanation": "to become or make something narrower",
+        "vocabulary": "(v): chật, hẹp; hạn chế; kỹ, tỉ mỉ",
+        "example": {
+            "vi": "Nhà hàng này chỉ giao hàng pizza và sandwich, hẳn nhiên là đã làm thu hẹp các chọn lựa",
+            "en": "This restaurant delivers only pizza and sandwiches, so that certainly narrows down the choices"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/pick up.jpg",
+        "audio": {
+            "audio_url": "audio/pick up.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "pick up",
+        "pronunciation": "/'pikʌp/",
+        "explanation": "to take on passengers or freight",
+        "vocabulary": "(v): đón (ai đó)",
+        "example": {
+            "vi": "Tôi sẽ đón bạn lúc 5 giờ",
+            "en": "I'll pick you up at fiveo'clock."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/settle.jpg",
+        "audio": {
+            "audio_url": "audio/settle.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "settle",
+        "pronunciation": "/'setl/",
+        "explanation": "to put an end to an argument or a disagreement",
+        "vocabulary": "(v): ngồi, đậu, bố trí, định cư, làm ăn sinh sống; giải quyết, hòa giải, dàn xếp",
+        "example": {
+            "vi": "Chúng tôi thanh toán hóa đơn với người thủ quỹ",
+            "en": "We settle the bill with the cashier"
+        }
+    }
+]

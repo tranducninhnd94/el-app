@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/advanced.jpg",
+        "audio": {
+            "audio_url": "audio/advanced.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "advanced",
+        "pronunciation": "/əd'vɑ:nst/",
+        "explanation": "having the most modern and recently developed ideas, methods, etc.",
+        "vocabulary": "(adj): tiên tiến, tiến bộ, cấp trên; cấp cao, ở mức cao",
+        "example": {
+            "vi": "Bởi vì khách sạn đã lắp đặt một hệ thống máy tính tiên tiến, mọi hoạt động đang được vận hành trơn tru.",
+            "en": "Since the hotel installed an advanced computer system, all operations have been functioning more smoothly"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/chain.jpg",
+        "audio": {
+            "audio_url": "audio/chain.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "chain",
+        "pronunciation": "/tʃein/",
+        "explanation": "a group of stores or hotels owned by the same company",
+        "vocabulary": "(n): chuỗi (khách sạn); nhà hàng....)",
+        "example": {
+            "vi": "Chuỗi khách sạn giá rẻ đã tạo ra một tác động to lớn cho nền công nghiệp.",
+            "en": "Budget-priced hotel chains have made a huge impact in the industry"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/check in.jpg",
+        "audio": {
+            "audio_url": "audio/check in.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "check in",
+        "pronunciation": "N/A",
+        "explanation": "to register at a hotel",
+        "vocabulary": "(v): làm thủ tục đăng ký (để vào khách sạn, vào hội nghị, lên máy bay…)",
+        "example": {
+            "vi": "Bạn có biết thời gian check-in không?",
+            "en": "Do you know your check-in time ?"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/confirm.jpg",
+        "audio": {
+            "audio_url": "audio/confirm.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "confirm",
+        "pronunciation": "/kən'fə:m/",
+        "explanation": "to state or show that something is definitely true or correct,",
+        "vocabulary": "(v): xác nhận, chứng thực",
+        "example": {
+            "vi": "Xin vui lòng viết xác nhận cho việc đặt phòng của bạn.",
+            "en": "Please write to confirm your reservation"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/expect.jpg",
+        "audio": {
+            "audio_url": "audio/expect.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "expect",
+        "pronunciation": "/iks'pekt/",
+        "explanation": "to think or believe that something will happen",
+        "vocabulary": "(v): mong chờ, mong đợi, hy vọng; đòi hỏi; cho rằng, nghĩ rằng; đoán trước, liệu trước",
+        "example": {
+            "vi": "Anh có thể đòi hỏi một căn phòng sạch sẽ khi anh làm thủ tục check-in tại khách sạn.",
+            "en": "You can expect a clean room when you check in at a hotel"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/housekeeper.jpg",
+        "audio": {
+            "audio_url": "audio/housekeeper.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "housekeeper",
+        "pronunciation": "/'haus,ki:pə/",
+        "explanation": "a person, usually a woman, whose job is to manage the shopping, cooking, cleaning, etc. in a house or an institution",
+        "vocabulary": "(n): quản gia; người coi nhà, người giữ nhà",
+        "example": {
+            "vi": "Công việc đầu tiên của Eloise ở khách sạn là người trực buồng và bây giờ cô đã là người quản lý.",
+            "en": "Eloise's first job at the hotel was as a housekeeper and now she is the manager"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/notify.jpg",
+        "audio": {
+            "audio_url": "audio/notify.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "notify",
+        "pronunciation": "/'noutifai/",
+        "explanation": "to formally or officially tell someone about something",
+        "vocabulary": "(v): báo, thông báo, khai báo",
+        "example": {
+            "vi": "Họ đã thông báo với khách sạn rằng họ đã bị chậm trễ trong giao thông và sẽ đến muộn.",
+            "en": "They notified the hotel that they had been delayed in traffic and would be arriving late."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/preclude.jpg",
+        "audio": {
+            "audio_url": "audio/preclude.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "preclude",
+        "pronunciation": "/pri'klu:d/",
+        "explanation": "to prevent something from happening or someone from doing something; to make something impossible",
+        "vocabulary": "(v): loại trừ, trừ bỏ, ngăn ngừa; đẩy ra",
+        "example": {
+            "vi": "Cơn mưa giông kinh khủng đã ngăn chúng tôi du hành thêm nữa.",
+            "en": "The horrible rainstorm precluded us from traveling any further."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/quote.jpg",
+        "audio": {
+            "audio_url": "audio/quote.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "quote",
+        "pronunciation": "/kwout/",
+        "explanation": "to repeat the exact words that another person has said or written",
+        "vocabulary": "(v): (n) sự trích dẫn, lời trích dẫn, đoạn trích dẫn, định giá; (v) trích dẫn",
+        "example": {
+            "vi": "Chúng tôi đã định giá 89 đô la cho một phòng trong một đêm.",
+            "en": "We were quoted a price of $89 for the room for one night"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/rate.jpg",
+        "audio": {
+            "audio_url": "audio/rate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "rate",
+        "pronunciation": "/reit/",
+        "explanation": "a measurement of the speed at which something happens",
+        "vocabulary": "(n): mức, giá (giá được tính theo các nấc căn cứ theo chất lượng)",
+        "example": {
+            "vi": "Biển hiệu ở trong hành lang liệt kê các mức giá theo từng mùa.",
+            "en": "The sign in the lobby lists the seasonal rates"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/reservation.jpg",
+        "audio": {
+            "audio_url": "audio/reservation.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "reservation",
+        "pronunciation": "/,rezə'veiʃn/",
+        "explanation": "an arrangement for a seat on a plane or train, a room in a hotel, etc. to be kept for you",
+        "vocabulary": "(n): sự dành trước, sự đặt chổ trước",
+        "example": {
+            "vi": "Tôi biết rằng tôi đã đặt chổ tối nay, nhưng nhân viên khách sạn không lưu nó vào hệ thống.",
+            "en": "I know I made a reservation for tonight, but the hotel staff has no record of it in the system"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/service.jpg",
+        "audio": {
+            "audio_url": "audio/service.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "service",
+        "pronunciation": "/'sə:vis/",
+        "explanation": "useful function",
+        "vocabulary": "(n): dịch vụ, sự phục vụ",
+        "example": {
+            "vi": "Thức ăn thì rất ngon nhưng dịch vụ thì quá tồi.",
+            "en": "The food was good but the service was very slow."
+        }
+    }
+]

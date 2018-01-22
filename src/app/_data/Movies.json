@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/attainment.jpg",
+        "audio": {
+            "audio_url": "audio/attainment.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "attainment",
+        "pronunciation": "/ə'teinmənt/",
+        "explanation": "something that you achieved",
+        "vocabulary": "(n): đạt được, giành được",
+        "example": {
+            "vi": "Việc đạt được những tham vọng của ông vẫn còn là một giấc mơ.",
+            "en": "The attainment of his ambitions was still a dream."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/combine.jpg",
+        "audio": {
+            "audio_url": "audio/combine.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "combine",
+        "pronunciation": "/'kɔmbain/",
+        "explanation": "to come together to form a single thing or group",
+        "vocabulary": "(v): kết hợp, phối hợp",
+        "example": {
+            "vi": "Đạo diễn đã kết hợp 2 kỹ xảo hình ảnh riêng biệt trước đây lại với nhau",
+            "en": "The director combined two previously separate visual techniques"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/continue.jpg",
+        "audio": {
+            "audio_url": "audio/continue.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "continue",
+        "pronunciation": "/kən'tinju:/",
+        "explanation": "happening without stopping",
+        "vocabulary": "(v): tiếp tục, tiếp diễn, làm tiếp, duy trì",
+        "example": {
+            "vi": "Bộ phim tiếp nối câu chuyện được bắt đầu trong một bộ phim trước đây",
+            "en": "The film continues the story set out in an earlier film"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/description.jpg",
+        "audio": {
+            "audio_url": "audio/description.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "description",
+        "pronunciation": "/dis'kripʃn/",
+        "explanation": "a piece of writing or speech that says what someone or something is like; the act of writing or saying in words what someone or something is like",
+        "vocabulary": "(n): ‹sự› diễn tả, mô tả; diện mạo, hình dạng",
+        "example": {
+            "vi": "Sự mô tả về bộ phim đã không xứng với những gì chúng ta thấy trên màn ảnh",
+            "en": "The description of the film did not match what we saw on screen"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/disperse.jpg",
+        "audio": {
+            "audio_url": "audio/disperse.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "disperse",
+        "pronunciation": "/dis'pə:s/",
+        "explanation": "to move apart and go away in different directions",
+        "vocabulary": "(v): giải tán, phân tán",
+        "example": {
+            "vi": "Cảnh sát giải tán người biểu tình bằng hơi cay.",
+            "en": "Police dispersed the protesters with tear gas."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/entertainment.jpg",
+        "audio": {
+            "audio_url": "audio/entertainment.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "entertainment",
+        "pronunciation": "/,entə'teinmənt/",
+        "explanation": "movies, music, etc. used to entertain people",
+        "vocabulary": "(n): ‹sự› giải trí, tiêu khiển",
+        "example": {
+            "vi": "Không có trò giải trí nào cho những vị khách trẻ em ở khách sạn",
+            "en": "There was not entertainment for children of guests at the hotel"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/influence.jpg",
+        "audio": {
+            "audio_url": "audio/influence.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "influence",
+        "pronunciation": "/'influəns/",
+        "explanation": "the effect that someone or something has on the way a person thinks",
+        "vocabulary": "(n): ảnh hưởng đến, tác động đến; khiến cho",
+        "example": {
+            "vi": "Nhà sản xuất có thể tác động hội đồng thành phố cho phép bà được quay phim trong công viên",
+            "en": "The producer was able to influence the town council to allow her to film in the park"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/range.jpg",
+        "audio": {
+            "audio_url": "audio/range.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "range",
+        "pronunciation": "/reɪndʒ/",
+        "explanation": "a variety of things of a particular type",
+        "vocabulary": "(n): vùng, phạm vi, lĩnh vực",
+        "example": {
+            "vi": "Tầm nhìn của đạo diện là đầy ấn tượng",
+            "en": "The range of the director's vision is impressive"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/release.jpg",
+        "audio": {
+            "audio_url": "audio/release.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "release",
+        "pronunciation": "/ri'li:s/",
+        "explanation": "to let someone or something come out of a place where they have been kept",
+        "vocabulary": "(v): công bố, phát hành",
+        "example": {
+            "vi": "Bộ phim cuối cùng đã được phát hành cho các rạp chiếu phim sau nhiều trì hoãn",
+            "en": "The film was finally released to movie theaters after many delays"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/representation.jpg",
+        "audio": {
+            "audio_url": "audio/representation.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "representation",
+        "pronunciation": "/,reprizen'teiʃn/",
+        "explanation": "the act of presenting someone or something in a particular way",
+        "vocabulary": "(n): đại diện, thay mặt; tiêu biểu,tượng trưng; diễn tả, đóng vai",
+        "example": {
+            "vi": "Sự diễn tả của bộ phim về thế giới bần cùng thông qua nhân vật đứa trẻ đói khát thì khá là thương tâm.",
+            "en": "The film's representation of world poverty through the character of the hungry child was quite moving"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/separately.jpg",
+        "audio": {
+            "audio_url": "audio/separately.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "separately",
+        "pronunciation": "/ˈsɛprətli/",
+        "explanation": "as a separate person or thing; not together",
+        "vocabulary": "(adv): tách rời, riêng rẽ",
+        "example": {
+            "vi": "Rạp hát rất đông nên chúng tôi phải ngồi riêng rẽ",
+            "en": "The theater was very crowded so we had to sit separately"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/successive.png",
+        "audio": {
+            "audio_url": "audio/successive.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "successive",
+        "pronunciation": "/sək'sesiv/",
+        "explanation": "following immediately one after the other",
+        "vocabulary": "(adj): kế tiếp, liên tiếp, liên tục; lần lượt",
+        "example": {
+            "vi": "Đây là chiến thắng thứ tư liên tiếp của họ.",
+            "en": "This was their fourth successive win."
+        }
+    }
+]

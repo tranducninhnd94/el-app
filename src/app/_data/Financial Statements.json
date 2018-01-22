@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/desire.jpg",
+        "audio": {
+            "audio_url": "audio/desire.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "desire",
+        "pronunciation": "/di'zaiə/",
+        "explanation": "a strong wish to have or do something",
+        "vocabulary": "(v): thèm muốn, khao khát, ao ước",
+        "example": {
+            "vi": "Chúng tôi ao ước có ngôi nhà riêng",
+            "en": "We desire to have our own home"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/detail.jpg",
+        "audio": {
+            "audio_url": "audio/detail.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "detail",
+        "pronunciation": "/'di:teil/",
+        "explanation": "to give a list of facts or all the available information",
+        "vocabulary": "(v): chi tiết, tỉ mỉ",
+        "example": {
+            "vi": "Quản lý văn phòng trình bày chi tiết từng bước của quá trình kiểm kê tại cuộc họp NV",
+            "en": "The office manager detailed each step of the inventory process at the staff meeting"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/forecast.jpg",
+        "audio": {
+            "audio_url": "audio/forecast.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "forecast",
+        "pronunciation": "/fɔ:'kɑ:st/",
+        "explanation": "a statement about what will happen in the future, based on information that is available now",
+        "vocabulary": "(n): (n) sự dự báo trước; (v) dự báo, dự đoán, đoán trước",
+        "example": {
+            "vi": "Các nhà phân tích dự báo một viễn cảnh kinh tế sung sức",
+            "en": "Analysts forecast a strong economic outlook"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/level.jpg",
+        "audio": {
+            "audio_url": "audio/level.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "level",
+        "pronunciation": "/'levl/",
+        "explanation": "the amount of something that exists in a particular situation at a particular time",
+        "vocabulary": "(n): mức, cấp, cấp bậc, trình độ",
+        "example": {
+            "vi": "Trước đây chúng tôi không bao giờ có một NV kế toán làm với trình độ tinh vi đến thế",
+            "en": "We have never had an accountant work at such a sophisticated level before"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/overall.jpg",
+        "audio": {
+            "audio_url": "audio/overall.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "overall",
+        "pronunciation": "/'ouvərɔ:l/",
+        "explanation": "general",
+        "vocabulary": "(adj): toàn bộ, toàn thể, tất cả; nói chung",
+        "example": {
+            "vi": "Nói chung, chi phí của chúng ta đang vận hành đúng như dự kiến",
+            "en": "Overall, our costs are running true to prediction"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/perspective.jpg",
+        "audio": {
+            "audio_url": "audio/perspective.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "perspective",
+        "pronunciation": "/pə'spektiv/",
+        "explanation": "a way of thinking about something",
+        "vocabulary": "(n): luật xa gần, luật phối cảnh; cảnh trông xa, viễn cảnh, triển vọng",
+        "example": {
+            "vi": "Bản báo cáo ngân sách sẽ cho người trưởng phòng một vài khía cạnh về việc tìm ra chi phí vận hành công việc ở chỗ nào",
+            "en": "The budget statement will give the manager some perspective on where the costs of running the business are to be found"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/project.jpg",
+        "audio": {
+            "audio_url": "audio/project.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "project",
+        "pronunciation": "/project/",
+        "explanation": "to plan an activity, a project etc, for a time in the future",
+        "vocabulary": "(v): kế hoạch, đồ án, dự án",
+        "example": {
+            "vi": "Người giám đốc lập kế hoạch là công ty sẽ cần phải thuê 10 nhân viên mới trong năm nay",
+            "en": "The director projects that the company will need to hire ten new employees his year"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/realistic.jpg",
+        "audio": {
+            "audio_url": "audio/realistic.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "realistic",
+        "pronunciation": "/riə'listik/",
+        "explanation": "accepting in a sensible way what it is actually possible to do or achieve in a particular situation",
+        "vocabulary": "(adj): hiện thực, thực tế",
+        "example": {
+            "vi": "Stefano thấy rằng công việc kế toán chính xác đã cho anh một ý niệm thực tế về việc quản trị tài chính trong công việc của mình",
+            "en": "Stefano found that an accurate accounting gave him a realistic idea of his business's financial direction"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/target.jpg",
+        "audio": {
+            "audio_url": "audio/target.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "target",
+        "pronunciation": "/'tɑ:git/",
+        "explanation": "to try to have an effect on a particular group of people",
+        "vocabulary": "(v, n): (v) đặt mục tiêu nhắm vào; (n) mục tiêu, mục đích (goal)",
+        "example": {
+            "vi": "Chúng tôi đặt ra mục tiêu tháng Ba là hạn chót để hoàn tất báo cáo tài chính",
+            "en": "We targeted March as the deadline for completing the financial statement"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/translation.png",
+        "audio": {
+            "audio_url": "audio/translation.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "translation",
+        "pronunciation": "/træns'leiʃn/",
+        "explanation": "the process of changing something that is written or spoken into another language",
+        "vocabulary": "(n): bản dịch, bài dịch; ‹sự› dịch, chuyển sang, giải thích, truyền đạt",
+        "example": {
+            "vi": "Bản dịch báo cáo từ tiếng Nhật sang tiếng Anh là rất có ích",
+            "en": "The translation of the statement from Japanese into English was very helpful"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/typically.jpg",
+        "audio": {
+            "audio_url": "audio/typically.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "typically",
+        "pronunciation": "/ˈtɪpɪkli/",
+        "explanation": "used to say that something usually happens in the way that you are stating",
+        "vocabulary": "(adv): tiêu biểu, điển hình; đặc thù, đặc trưng, đặc tính",
+        "example": {
+            "vi": "Các chi phí văn phòng bao gồm tiêu biểu những thứ như là: tiền lương, tiền thuê và đồ dùng dự trữ văn phòng",
+            "en": "Office expenses typically include such things as salaries, rent, and office supplies"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/yield.jpg",
+        "audio": {
+            "audio_url": "audio/yield.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "yield",
+        "pronunciation": "/jiːld/",
+        "explanation": "the total amount of crops, profits",
+        "vocabulary": "(n, v): sản lượng; lợi tức, hoa lợi",
+        "example": {
+            "vi": "Việc đầu tư của công ty đã mang lại tiền lãi cao hơn",
+            "en": "The company's investment yielded high returns"
+        }
+    }
+]

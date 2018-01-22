@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/affordable.jpg",
+        "audio": {
+            "audio_url": "audio/affordable.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "affordable",
+        "pronunciation": "/əˈfɔːd/",
+        "explanation": "cheap enough for most people to buy",
+        "vocabulary": "(adj): có đủ khả năng, có đủ điều kiện (sức lực/thời gian/tiền bạc)",
+        "example": {
+            "vi": "Ưu tiên trước hết của công ty là tìm một hệ thống điện thoại có đủ khả năng (hoạt động)",
+            "en": "The company's first priority was to find an affordable phone system"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/as_need.jpg",
+        "audio": {
+            "audio_url": "audio/as_needed.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "as needed",
+        "pronunciation": "N/A",
+        "explanation": "In need",
+        "vocabulary": "(adv): khi cần, lúc cần, cần thiết",
+        "example": {
+            "vi": "Hợp đồng dịch vụ nói rằng việc sửa chữa sẽ được thực hiện dựa trên cơ sở mỗi khi cần",
+            "en": "The service contract states that repairs will be made on an as-needed basis"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/be_in_charge_of.jpg",
+        "audio": {
+            "audio_url": "audio/be_in_charge _of.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "be in charge of",
+        "pronunciation": "N/A",
+        "explanation": "be responsible for",
+        "vocabulary": "(v): chịu trách nhiệm về; đang điều khiển, đang chỉ huy",
+        "example": {
+            "vi": "Ông ấy chọn người nào đó chịu trách nhiệm duy trì việc cung cấp giấy cho máy fax",
+            "en": "He appointed someone to be in charge of maintaining a supply of paper in the fax machine"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/capacity.jpg",
+        "audio": {
+            "audio_url": "audio/capacity.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "capacity",
+        "pronunciation": "/kə'pæsiti/",
+        "explanation": "the number of things or people that a container or space can hold",
+        "vocabulary": "(n): sức chứa, dung tích, khả năng chứa đựng; khả năng, năng lực",
+        "example": {
+            "vi": "Phòng họp mới thì lớn hơn nhiều (phòng cũ) và có khả năng chứa được một trăm người",
+            "en": "The new conference room is much larger and has a capacity of one hundred people"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/durable.jpg",
+        "audio": {
+            "audio_url": "audio/durable.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "durable",
+        "pronunciation": "/ˈdjʊərəbl/",
+        "explanation": "likely to last for a long time",
+        "vocabulary": "(adj): bền, lâu, lâu bền",
+        "example": {
+            "vi": "Những cái ghế này bền hơn nhiều những cái ghế đầu tiên mà chúng ta đã thấy",
+            "en": "These chairs are more durable than the first ones we looked at"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/initiative.jpg",
+        "audio": {
+            "audio_url": "audio/initiative.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "initiative",
+        "pronunciation": "/i'niʃiətiv/",
+        "explanation": "the ability to decide and act on your own without waiting for somebody to tell you what to do",
+        "vocabulary": "(n): bắt đầu, khởi đầu, khởi xướng",
+        "example": {
+            "vi": "\nNhân viên được khuyến khích đi đầu và chia sẻ ý tưởng của họ với ban quản lý",
+            "en": "Employees are encouraged to take the initiative and share their ideas with management."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/physically.jpg",
+        "audio": {
+            "audio_url": "audio/physically.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "physically",
+        "pronunciation": "/ˈfɪzɪkli /",
+        "explanation": "in a way that is connected with a person's body rather than their mind",
+        "vocabulary": "(adv): về thân thể/cơ thể/thể chất; theo quy luật tự nhiên, một cách vật lý",
+        "example": {
+            "vi": "\nMàn hình máy tính khiến cho cô ta khó chịu về mặt thể chất",
+            "en": "The computer screen is making her physically sick."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/provider.jpg",
+        "audio": {
+            "audio_url": "audio/provider.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "provider",
+        "pronunciation": "/provider/",
+        "explanation": "a person or an organization that supplies somebody with something they need",
+        "vocabulary": "(n): người cung cấp, nhà cung cấp (supplier)",
+        "example": {
+            "vi": "Bộ phận hết sức hài lòng với dịch vụ mà họ nhận được từ nhà cung cấp dịch vụ điện thoại",
+            "en": "The deparment was extremely pleased with the service they received from the phone provide."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/recur.jpg",
+        "audio": {
+            "audio_url": "audio/recur.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "recur",
+        "pronunciation": "/ri'kə:/",
+        "explanation": "to happen again",
+        "vocabulary": "(v): lặp lại, diễn lại, tái diễn, tái phát; lặp đi lặp lại",
+        "example": {
+            "vi": "Các trưởng phòng không muốn những lỗi cá biệt đó lại tái diễn",
+            "en": "The managers did not want that particular error to recur"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/reduction.jpg",
+        "audio": {
+            "audio_url": "audio/reduction.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "reduction",
+        "pronunciation": " /ri'dʌkʃn/",
+        "explanation": "an act of  making something less or smaller",
+        "vocabulary": "(n): ‹sự› giảm, hạ, thu nhỏ, hạ thấp (lessening, decrease)",
+        "example": {
+            "vi": "Cửa hàng tiêu thụ đã giảm giá 20% với các kệ sách và tủ sách",
+            "en": "The outlet store gave a 20 percent reduction in the price of the shelves and bookcases"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/stay_on_top_of.jpg",
+        "audio": {
+            "audio_url": "audio/stay_on_top_of.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "stay on top of",
+        "pronunciation": "N/A",
+        "explanation": "Have the newest informatiion",
+        "vocabulary": "(v): nắm bắt tình hình (đang xảy ra), hiểu biết thông tin mới nhất",
+        "example": {
+            "vi": "Trong ngành công nghiệp này, anh phải nắm bắt được tình hình về các diễn biến hiện tại",
+            "en": "In this industry, you must stay on top of current developments"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/stock.jpg",
+        "audio": {
+            "audio_url": "audio/stock.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "stock",
+        "pronunciation": "/stɒk/",
+        "explanation": "a supply of goods that is available for sale",
+        "vocabulary": "(v, n): kho/hàng dự trữ; vốn, cổ phần",
+        "example": {
+            "vi": "Các nhân viên trữ hàng lên kệ căn cứ theo mỗi tuần",
+            "en": "The employees stocked the shelves on a weekly basis"
+        }
+    }
+]

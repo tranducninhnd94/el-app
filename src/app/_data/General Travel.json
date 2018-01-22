@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/agent.jpg",
+        "audio": {
+            "audio_url": "audio/agent.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "agent",
+        "pronunciation": "/'eidʤənt/",
+        "explanation": "representative of a company",
+        "vocabulary": "(n): đại lý, đại diện (của một công ty)",
+        "example": {
+            "vi": "Đại lý du lịch thường có thể tìm cho bạn những giao dịch tốt nhất vè vé và khách sạn.",
+            "en": "A travel agent can usually find you the best deals on tickets and hotels"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/announcement.jpg",
+        "audio": {
+            "audio_url": "audio/announcement.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "announcement",
+        "pronunciation": "/ə'naunsmənt/",
+        "explanation": "a spoken or written statement that informs people about something",
+        "vocabulary": "(n): ‹sự/lời› thông báo, công bố, tuyên bố; cáo thị, thông cáo",
+        "example": {
+            "vi": "Anh đã nghe thông báo về giờ khởi hành mới của chúng ta chưa?",
+            "en": "Did you hear an announcement about our new departure time?"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/beverage.jpg",
+        "audio": {
+            "audio_url": "audio/beverage.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "beverage",
+        "pronunciation": "/'bəvəridʤ/",
+        "explanation": "any type of drink except water",
+        "vocabulary": "(n): đồ uống, thức uống (tất cả các loại, trừ nước lọc)",
+        "example": {
+            "vi": "Tiếp viên hành không đã mời mọi hành khách một thức uống lạnh trong suốt chuyển bay.",
+            "en": "The flight attendant offered all passenders a cold beverage during the flight"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/blanket.jpg",
+        "audio": {
+            "audio_url": "audio/blanket.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "blanket",
+        "pronunciation": "/'blæɳkit/",
+        "explanation": "a large cover, often made of wool, used especially on beds to keep people warm",
+        "vocabulary": "(n, v): (n) mềm, chăn, lớp phủ; (v) phủ lên, che phủ",
+        "example": {
+            "vi": "Tuyết bao phủ kính chắn gió, khiến cho việc nhìn thấy đường sá rất khó",
+            "en": "The snow blanketed the windshield making it difficult to see the roads"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/board.JPG",
+        "audio": {
+            "audio_url": "audio/board.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "board",
+        "pronunciation": "/bɔ:d/",
+        "explanation": "to get on a ship, train, plane, bus, etc",
+        "vocabulary": "(v): Lên tàu / máy bay / xe lửa",
+        "example": {
+            "vi": "Các hành khách đang chờ để lên máy bay",
+            "en": "Passengers are waiting to board"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/claim.jpg",
+        "audio": {
+            "audio_url": "audio/claim.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "claim",
+        "pronunciation": "/kleim/",
+        "explanation": "to say that something is true",
+        "vocabulary": "(v): nhận lại, lấy lại; đòi hỏi, yêu cầu; tuyên bố, xác nhận; khai báo",
+        "example": {
+            "vi": "Vui lòng tiếp tục đi thẳng đến khu vực nhận hành lý để nhận lại hành lý của bạn.",
+            "en": "Please proceed directly to the baggage arrival area to claim your luggage"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/delay.jpg",
+        "audio": {
+            "audio_url": "audio/delay.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "delay",
+        "pronunciation": "/di'lei/",
+        "explanation": "a period of time when someone or something has to wait because of a problem",
+        "vocabulary": "(v): chậm trễ, trì hoãn, hoãn lại",
+        "example": {
+            "vi": "Xe bus bị chậm trễ tại vì thời tiết khắc nghiệt",
+            "en": "The bus was delayed due to inclement weather"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/depart.jpg",
+        "audio": {
+            "audio_url": "audio/depart.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "depart",
+        "pronunciation": "/di'pɑ:t/",
+        "explanation": "to leave a place, especially to start a trip",
+        "vocabulary": "(v): rời khỏi, khởi hành",
+        "example": {
+            "vi": "Chuyến bay khởi hành từ Rome cho Terminal 3",
+            "en": "Flights for Rome depart from Terminal 3."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/embarkation.jpg",
+        "audio": {
+            "audio_url": "audio/embarkation.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "embarkation",
+        "pronunciation": "/em'bɑ:'keiʃn/",
+        "explanation": "to get onto a ship",
+        "vocabulary": "(n): ‹sự/quá trình› lên tàu, cho lên tàu",
+        "example": {
+            "vi": "Phi hành đoàn phải kiểm tra giấy tờ của hành khách trước khi cho lên máy bay.",
+            "en": "The flight creaw must check the passengers's documents before embarkation"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/itinerary.jpg",
+        "audio": {
+            "audio_url": "audio/itinerary.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "itinerary",
+        "pronunciation": "/ai'tinərəri/",
+        "explanation": "a plan of a trip, including the route and the places that you visit",
+        "vocabulary": "(n): lịch trình",
+        "example": {
+            "vi": "Tôi đã phải đổi lộ trình khi tôi đã quyết định thêm vào 2 quốc gia nữa cho kỳ nghỉ của tôi.",
+            "en": "I had to change my itinerary when I decided to add two more countries to my vacation"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/prohibit.jpg",
+        "audio": {
+            "audio_url": "audio/prohibit.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "prohibit",
+        "pronunciation": "/prohibit/",
+        "explanation": "to stop something from being done or used, especially by law",
+        "vocabulary": "(v): ngăn cấm, ngăn chặn",
+        "example": {
+            "vi": "Chính sách mới cấm hút thuốc trên sân trường.",
+            "en": "The policy prohibits smoking on school grounds."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/valid.jpg",
+        "audio": {
+            "audio_url": "audio/valid.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "valid",
+        "pronunciation": "/'vælid/",
+        "explanation": "that is legally or officially acceptable",
+        "vocabulary": "(adj): có giá trị, có hiệu lực, hợp lệ (đặc biệt về mặt pháp lý)",
+        "example": {
+            "vi": "Tôi cần biết chắc rằng hộ chiếu của tôi có giá trị nếu chúng tôi dự tính xuất ngoại tháng 12 này.",
+            "en": "I need to make certain that my passport is valid if we plan to go overseas this December"
+        }
+    }
+]

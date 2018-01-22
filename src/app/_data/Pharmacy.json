@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/consult.jpg",
+        "audio": {
+            "audio_url": "audio/consult.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "consult",
+        "pronunciation": "/kən'sʌlt/",
+        "explanation": "to go to someone for information or advice",
+        "vocabulary": "(v): hỏi ý kiến, tham khảo",
+        "example": {
+            "vi": "Nếu cơn đau vẫn tiếp tục, thì bạn tham khảo ý kiến bác sĩ của bạn.",
+            "en": "If the pain continues, consult your doctor."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/control.jpg",
+        "audio": {
+            "audio_url": "audio/control.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "control",
+        "pronunciation": "/kən'troul/",
+        "explanation": "the ability to make someone or something do what you want",
+        "vocabulary": "(v): kiểm tra, kiểm soát; điều khiển, chỉ huy",
+        "example": {
+            "vi": "Vui lòng uống thuốc mỗi ngày để kiểm soát huyết áp cao của ông",
+            "en": "Please take your medication every day to control your high blood pressure"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/convenient.jpg",
+        "audio": {
+            "audio_url": "audio/convenient.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "convenient",
+        "pronunciation": "/kən'vi:njənt/",
+        "explanation": "useful, easy, or quick to do; not causing problems",
+        "vocabulary": "(adj): thuận lợi, thuận tiện; ở gần, dễ đi đến",
+        "example": {
+            "vi": "Đây có phải là một địa điểm thuận tiện cho anh lấy toa thuốc của mình không?",
+            "en": "Is this a convenient location for you to pick up your prescription?"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/detect.jpg",
+        "audio": {
+            "audio_url": "audio/detect.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "detect",
+        "pronunciation": "/di'tekt/",
+        "explanation": "to discover something",
+        "vocabulary": "(v): dò ra, tìm ra, khám phá ra, phát hiện ra",
+        "example": {
+            "vi": "Các xét nghiệm này được thiết kế để phát hiện bệnh sớm.",
+            "en": "The tests are designed to detect the disease early."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/factor.jpg",
+        "audio": {
+            "audio_url": "audio/factor.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "factor",
+        "pronunciation": "/'fæktə/",
+        "explanation": "one of several things that cause or influence something",
+        "vocabulary": "(n): nhân tố, yếu tố",
+        "example": {
+            "vi": "Con mèo của tôi có thể là một yếu tố góp phần cho bệnh hen suyễn của tôi hay không?",
+            "en": "Could my cat be a factor contributing to my asthma?"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/interaction.jpg",
+        "audio": {
+            "audio_url": "audio/interaction.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "interaction",
+        "pronunciation": "/,intər'ækʃn/",
+        "explanation": "communicate with somebody, especially while you work, play or spend time with them",
+        "vocabulary": "(n): ‹sự› tương tác, ảnh hưởng lẫn nhau, tác động qua lại",
+        "example": {
+            "vi": "Dược sĩ của tôi lo lắng về sự tương tác của 2 loại thuốc mà tôi được kê toa",
+            "en": "My pharmacist was concerned about the interaction of the two medications I was prescribed"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/limit.jpg",
+        "audio": {
+            "audio_url": "audio/limit.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "limit",
+        "pronunciation": "/'limit/",
+        "explanation": "a point at which something stops being possible or existing",
+        "vocabulary": "(n): giới hạn, hạn định, ranh giới",
+        "example": {
+            "vi": "Chúng tôi đã đạt đến giới hạn của nền văn minh.",
+            "en": "We were reaching the limits of civilization."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/monitor.jpg",
+        "audio": {
+            "audio_url": "audio/monitor.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "monitor",
+        "pronunciation": "/'mɔnitə/",
+        "explanation": "to watch and check something over a period of time",
+        "vocabulary": "(v): màn hình vi tính, lớp trưởng",
+        "example": {
+            "vi": "Người bệnh có các cuộc hẹn hàng tuần để cho bác sĩ có thể theo dõi tiến triển của họ",
+            "en": "The patient had weekly appointments so that the doctor could monitor their progress"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/potential.jpg",
+        "audio": {
+            "audio_url": "audio/potential.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "potential",
+        "pronunciation": "/pə'tenʃəl/",
+        "explanation": "that can develop into something or be developed in the future",
+        "vocabulary": "(adj): tiềm tàng, tiềm năng, tiềm lực, khả năng",
+        "example": {
+            "vi": "Để tránh bất kỳ phản ứng phụ tiềm tàng nào từ thuốc, hãy bảo đảm là kể cho bác sĩ tất cả loại thuốc mà bạn hiện tại đang uống",
+            "en": "To avoid any potential side effects from the medication, be sure to tell your doctor all the drugs you are currently taking"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/sample.jpg",
+        "audio": {
+            "audio_url": "audio/sample.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "sample",
+        "pronunciation": "/ˈsæmpl/",
+        "explanation": "a small amount of a substance taken from a larger amount and tested in order to obtain information about the substance",
+        "vocabulary": "(n): mẫu, hàng mẫu",
+        "example": {
+            "vi": "Một số người dân uống loại thuốc mới đã được khảo sát để xác định xem nó có gây ra phản ứng phụ hay không",
+            "en": "A sample of the population taking the new medicine was surveyed to determine whether it caused side effects"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/sense.jpg",
+        "audio": {
+            "audio_url": "audio/sense.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "sense",
+        "pronunciation": "/sens/",
+        "explanation": "a feeling about something important",
+        "vocabulary": "(n): giác quan, cảm giác, ý thức, tri thức; sự thông minh, khả năng phán đoán",
+        "example": {
+            "vi": "Tôi có cảm giác sẽ tốt hơn khi uống theo toa của tôi ngay lập tức",
+            "en": "I got the sense it would be better to get my prescription filled right away"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/volunteer.jpg",
+        "audio": {
+            "audio_url": "audio/volunteer.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "volunteer",
+        "pronunciation": "/,vɔlən'tiə/",
+        "explanation": "to offer to do something without being forced to do it",
+        "vocabulary": "(n): tình nguyện viên, người xung phong",
+        "example": {
+            "vi": "Một số nhân viên tình nguyện nghỉ hưu sớm",
+            "en": "Several staff members volunteered for early retirement"
+        }
+    }
+]

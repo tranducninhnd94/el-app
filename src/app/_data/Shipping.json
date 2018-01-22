@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/accurately.jpg",
+        "audio": {
+            "audio_url": "audio/accurately.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "accurately",
+        "pronunciation": "/ˈækjərət/",
+        "explanation": "correct and true in every detail",
+        "vocabulary": "(adv): ‹một cách› chính xác, đúng đắn, xác đáng",
+        "example": {
+            "vi": "Để đánh giá chính xác những con số này, trước hết chúng ta cần lấy một số dữ kiện từ bộ phận vận chuyển hàng hóa",
+            "en": "To gauge these figures accurately, we first need to get some facts from the shipping department"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/carrier.jpg",
+        "audio": {
+            "audio_url": "audio/carrier.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "carrier",
+        "pronunciation": "/'kæriə/ ",
+        "explanation": "a company that carries goods or passengers from one place to another, especially by air",
+        "vocabulary": "(n): ‹người/vật/hãng/công ty› mang, đưa, chuyên chở, vận chuyển, vận tải",
+        "example": {
+            "vi": "Lou, người vận chuyển ưa thich của chúng tôi, đã phải cẩn thận hơn thường lệ với những cái hộp của chúng tôi có dán nhãn \"Dễ vỡ\"",
+            "en": "Lou, our favorite carrier, takes extra care of our boxes marked 'fragile'"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/fulfill.jpg",
+        "audio": {
+            "audio_url": "audio/fulfill.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "fulfill",
+        "pronunciation": "/ful'fil/",
+        "explanation": "to do or achieve what was hoped for or expected",
+        "vocabulary": "(v): thực hiện, thi hành; hoàn thành, làm tròn",
+        "example": {
+            "vi": "Những mong đợi của cô ta quá cao, chúng tôi biết họ thật khó để thực hiện",
+            "en": "Her expectations were so high, we knew they would be hard to fulfill"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/catalog.jpg",
+        "audio": {
+            "audio_url": "audio/catalog.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "catalog",
+        "pronunciation": "/ˈkat(ə)lɒg/",
+        "explanation": "",
+        "vocabulary": "(v, n): bản liệt kê, quyển danh mục, tập giới thiệu SP",
+        "example": {
+            "vi": "Ellen chia thành từng mục các lời phàn nàn tùy theo tính nghiêm trọng",
+            "en": "Ellen cataloged the complaints according to severity"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/integral.jpg",
+        "audio": {
+            "audio_url": "audio/integral.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "integral",
+        "pronunciation": "/'intigrəl/",
+        "explanation": "being an essential part of something",
+        "vocabulary": "(adj): tính toàn bộ/toàn vẹn, cần cho tính toàn bộ/toàn vẹn; cần thiết, không thể thiếu",
+        "example": {
+            "vi": "Một dòng tóm tắt có căn cứ là không thể thiếu cho vận chuyển xác thực của các đơn hàng",
+            "en": "A dependable stream of inventory is integral to reliable shipping of orders"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/inventory.jpg",
+        "audio": {
+            "audio_url": "audio/inventory.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "inventory",
+        "pronunciation": "/in'ventri/",
+        "explanation": "a written list of all the objects, furniture, etc. in a particular building",
+        "vocabulary": "(n): ‹sự/bản› kiểm kê, tóm tắt; hàng hóa tồn kho, hàng trong kho",
+        "example": {
+            "vi": "Cửa hàng đóng cửa 1 ngày mỗi năm để cho nhân viên có thể thực hiện kiểm kê kho hàng",
+            "en": "The store closes one day a year so that the staff can take inventory of the stockroom"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/minimize.jpg",
+        "audio": {
+            "audio_url": "audio/minimize.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "minimize",
+        "pronunciation": "/'minimaiz/",
+        "explanation": "to reduce something, especially something bad, to the lowest possible level",
+        "vocabulary": "(v): giảm thiểu, giảm đến mức tối thiểu, tối thiểu hóa; đánh giá thấp",
+        "example": {
+            "vi": "Nhân viên hãng tàu đã giảm thiểu lời phàn nàn của khách hàng bằng cách làm việc ngoài giờ để phân phối các gói hàng nhanh chóng",
+            "en": "The shipping staff minimized customer complaints by working overtime to deliver the packages quickly"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/on hand.jpg",
+        "audio": {
+            "audio_url": "audio/on_hand.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "on hand",
+        "pronunciation": "N/A",
+        "explanation": "available",
+        "vocabulary": "(adj): có thể dùng được, có sẵn",
+        "example": {
+            "vi": "Chúng ta đang có sẵn quá nhiều hàng tồn, vậy chúng ta phải có một đợt bán giá hạ mùa hè",
+            "en": "We had too much stock on hand, so we had a summer sale"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/remember.jpg",
+        "audio": {
+            "audio_url": "audio/remember.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "remember",
+        "pronunciation": "/ri'membə/",
+        "explanation": "to have or keep an image in your memory of an event, a person, a place, etc. from the past",
+        "vocabulary": "(v): nhớ, ghi nhớ",
+        "example": {
+            "vi": "Tôi sẽ nhớ khóa số của két sắt mà không phải ghi lại nó",
+            "en": "I will remember the combination to the safe without writing it down"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/ship.jpg",
+        "audio": {
+            "audio_url": "audio/ship.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "ship",
+        "pronunciation": "/ʃip/",
+        "explanation": "to send",
+        "vocabulary": "(v): tàu thủy, máy bay",
+        "example": {
+            "vi": "Eva đã chuyển hàng một cách cẩn thận, bởi vì cô biết bên trong được làm bằng thủy tinh",
+            "en": "Eva shipped the package carefully, since she knew the contents were made of glass"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/sufficiently.jpg",
+        "audio": {
+            "audio_url": "audio/sufficiently.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "sufficiently",
+        "pronunciation": "/səˈfɪʃnt/",
+        "explanation": "enough for a particular purpose; as much as you need",
+        "vocabulary": "(adv): đủ, có đủ",
+        "example": {
+            "vi": "Chúng tôi đã tạo ra đủ để bắt đầu chuyển các tấm nâng hàng (pa-let) vào ngày mai",
+            "en": "We are sufficiently organized to begin transferring the palettes tomorrow"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/supply.jpg",
+        "audio": {
+            "audio_url": "audio/supply.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "supply",
+        "pronunciation": "/sə'plai/",
+        "explanation": "an amount of something that is provided or available to be used",
+        "vocabulary": "(n, v): (n) ‹sự/đồ/nguồn/_› cung cấp, đáp ứng, dự trữ, tiếp tế cấp; (v) cung cấp",
+        "example": {
+            "vi": "",
+            "en": "By making better use of our supplies, we can avoid ordering until next monthBằng cách dùng tốt hơn đồ dự trữ của mình, chúng tôi khỏi phải đặt hàng cho đến tháng tới"
+        }
+    }
+]

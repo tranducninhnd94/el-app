@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/action.jpg",
+        "audio": {
+            "audio_url": "audio/action.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "action",
+        "pronunciation": "/'ækʃn/",
+        "explanation": "the events in a story, play, etc.",
+        "vocabulary": "(n): Diễn biến (của vở kịch)",
+        "example": {
+            "vi": "Cô bắt đầu sự nghiệp diễn xuất của cô trong khi vẫn còn ở trường.",
+            "en": "She started her acting career while still at school."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/approach.jpg",
+        "audio": {
+            "audio_url": "audio/approach.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "approach",
+        "pronunciation": "/ə'proutʃ/",
+        "explanation": "to come near to someone or something in distance or time",
+        "vocabulary": "(v): tiến gần, tiếp cận; đường tiến vào, lối vào; thăm dò, tiếp xúc",
+        "example": {
+            "vi": "Việc diễn kịch gần như là hoàn hảo",
+            "en": "The performance approaches perfection"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/audience.jpg",
+        "audio": {
+            "audio_url": "audio/audience.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "audience",
+        "pronunciation": "/'ɔ:djəns/",
+        "explanation": "people who have gathered to watch or listen to something (a play, concert, someone speaking, etc.)",
+        "vocabulary": "(n): khán giả, thính giả, độc giả",
+        "example": {
+            "vi": "Khán giả đã hoan hô các diễn viên khi họ rời khỏi sân khấu",
+            "en": "The audience cheered the actors as they walked off the stage"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/creative.jpg",
+        "audio": {
+            "audio_url": "audio/creative.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "creative",
+        "pronunciation": "/kri:'eitiv/",
+        "explanation": "involving the use of skill and the imagination to produce something new or a work of art",
+        "vocabulary": "(adj): sáng tạo",
+        "example": {
+            "vi": "Sự diễn tả sáng tạo vở kịch \"7 trọng tội\" của nhà văn đã làm kinh ngạc",
+            "en": "The writer's creative representation of the Seven Deadly Sins was astounding"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/dialogue.gif",
+        "audio": {
+            "audio_url": "audio/dialogue.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "dialogue",
+        "pronunciation": "/'daiəlɔg/",
+        "explanation": "conversations in a book, play, or movie",
+        "vocabulary": "(n): cuộc đối thoại, giai thoại",
+        "example": {
+            "vi": "Các diễn viên trình diễn cuộc đối thoại mà không dùng kịch bản",
+            "en": "The actors performed the dialogue without using scripts"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/element.jpg",
+        "audio": {
+            "audio_url": "audio/element.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "element",
+        "pronunciation": "/'elimənt/",
+        "explanation": "a necessary or typical part of something",
+        "vocabulary": "(n): yếu tố, nguyên tố",
+        "example": {
+            "vi": "Khán giả là một yếu tố thiết yếu của nhà hát sống (nhà hát trực tiếp)",
+            "en": "The audience is an essential element of live theater"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/experience.jpg",
+        "audio": {
+            "audio_url": "audio/experience.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "experience",
+        "pronunciation": "/iks'piəriəns/",
+        "explanation": "the knowledge and skill that you have gained through doing something for a period of time",
+        "vocabulary": "(n): kinh nghiệm, từng trải",
+        "example": {
+            "vi": "Sự từng trải của nhà hát sống là rất ly kỳ",
+            "en": "The experience of live theater is very thrilling"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/occur.jpg",
+        "audio": {
+            "audio_url": "audio/occur.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "occur",
+        "pronunciation": "/ə'kə:/",
+        "explanation": "to happen",
+        "vocabulary": "(v): xuất hiện; xảy ra, xảy đến",
+        "example": {
+            "vi": "Vụ án mạng trong vở kịch xuất hiện ở hồi thứ 2",
+            "en": "The murder in the play occurs in the second act"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/perform.jpg",
+        "audio": {
+            "audio_url": "audio/perform.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "perform",
+        "pronunciation": "/pə'fɔ:m/",
+        "explanation": "to do something, such as a piece of work, task, or duty",
+        "vocabulary": "(v): thực hiện, thi hành; trình bày, biểu diễn, đóng vai",
+        "example": {
+            "vi": "Nhóm diễn kịch đang trình diễn một vở kịch có 3 hồi",
+            "en": "The theater group performed a three-act play"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/rehearse.jpg",
+        "audio": {
+            "audio_url": "audio/rehearse.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "rehearse",
+        "pronunciation": "/ri'hə:s/",
+        "explanation": "to practice or make people practice a play, piece of music, etc. in preparation for a public performance",
+        "vocabulary": "(v): diễn tập; nhắc lại, kể lại",
+        "example": {
+            "vi": "Hôm nay, chúng tôi sẽ chỉ được tập luyện cảnh cuối cùng.",
+            "en": "Today, we'll just be rehearsing the final scene."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/review.jpg",
+        "audio": {
+            "audio_url": "audio/review.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "review",
+        "pronunciation": "/ri'vju:/",
+        "explanation": "an examination of something, with the intention of changing it if necessary",
+        "vocabulary": "(n, v): sự phê bình, lời phê bình",
+        "example": {
+            "vi": "Các điều khoản của hợp đồng đang được xem xét.",
+            "en": "The terms of the contract are under review."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/sell out.jpg",
+        "audio": {
+            "audio_url": "audio/sell out.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "sell out",
+        "pronunciation": "/'selaut/",
+        "explanation": "to sell all the tickets",
+        "vocabulary": "(v): hết vé",
+        "example": {
+            "vi": "Các vé đã được bán hết trong vài giờ",
+            "en": "The tickets sold out within hours."
+        }
+    }
+]

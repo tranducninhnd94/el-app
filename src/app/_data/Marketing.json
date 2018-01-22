@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/attract.jpg",
+        "audio": {
+            "audio_url": "audio/attract.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "attract",
+        "pronunciation": "/ə'trækt/",
+        "explanation": "to draw by appeal",
+        "vocabulary": "(v): hấp dẫn, lôi cuốn, thu hút",
+        "example": {
+            "vi": "Việc trưng bày đã thu hút được một số người tại hội nghị",
+            "en": "The display attracted a number of people at the convention"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/compare.jpg",
+        "audio": {
+            "audio_url": "audio/compare.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "compare",
+        "pronunciation": "/kəm'peə/",
+        "explanation": "to examine people or things to see how they are similar and how they are different",
+        "vocabulary": "(v): so sánh, đối chiếu",
+        "example": {
+            "vi": "Khi mà người khách hàng được so sánh 2 sản phẩm, sự lựa chọn của cô ta sẽ dễ dàng hơn.",
+            "en": "Once the customer compared the two products, her choice was easy."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/competition.jpg",
+        "audio": {
+            "audio_url": "audio/competition.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "competition",
+        "pronunciation": "/,kɔmpi'tiʃn/",
+        "explanation": "a situation in which people or organizations compete with each other for something that not everyone can have",
+        "vocabulary": "(v): ‹sự/cuộc› cạnh tranh, tranh giành, thi đấu",
+        "example": {
+            "vi": "Trong cuộc thi của các quán ăn chiều, của hàng Hector đã được xếp hạng nhất.",
+            "en": "In the competition for afternoon dinners, Hector's has come out on top"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/consume.jpg",
+        "audio": {
+            "audio_url": "audio/consume.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "consume",
+        "pronunciation": "/kən'sju:m/",
+        "explanation": "to use something, especially fuel, engery or time",
+        "vocabulary": "(v): tiêu thụ, tiêu dùng",
+        "example": {
+            "vi": "Cái máy in ngốn nhiều ống mực hơn là cái máy in ở dưới nhà",
+            "en": "The printer consumes more toner than the downstairs printer"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/convince.jpg",
+        "audio": {
+            "audio_url": "audio/convince.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "convince",
+        "pronunciation": "/kən'vins/",
+        "explanation": "to make somebody / yourselft believe that something is true",
+        "vocabulary": "(v): Thuyết phục",
+        "example": {
+            "vi": "Anh ấy đã thuyết phục tôi rằng anh ấy đã đúng.",
+            "en": "He convinced me that he was right."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/currently.jpg",
+        "audio": {
+            "audio_url": "audio/currently.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "currently",
+        "pronunciation": "/ˈkʌrəntli/",
+        "explanation": "at the present time",
+        "vocabulary": "(adv): hiện thời, hiện nay, lúc này",
+        "example": {
+            "vi": "Hiện nay, khách hàng đang đòi hỏi những khoản giảm giá nhiều cho những đơn hàng lớn",
+            "en": "Currently, customers are demanding big discounts for bulk orders"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/fad.jpg",
+        "audio": {
+            "audio_url": "audio/fad.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "fad",
+        "pronunciation": "/fæd/",
+        "explanation": "something that people are interested in for only a short period of time.",
+        "vocabulary": "(n): mốt nhất thời, sự thích thú tạm thời; dở hơi, gàn dở",
+        "example": {
+            "vi": "Váy ngắn là mốt tạm thời mỗi khi ý tưởng bị hết, nhưng hiện giờ nó đang quay trở lại",
+            "en": "The mini dress was a fad once thought to be finished, but now it is making a comeback"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/inspiration.jpg",
+        "audio": {
+            "audio_url": "audio/inspiration.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "inspiration",
+        "pronunciation": "/,inspə'reiʃn/",
+        "explanation": "a thing or person that arouses a feeling",
+        "vocabulary": "(n): ‹sự/người/vật› truyền cảm hứng, gây cảm hứng",
+        "example": {
+            "vi": "Công việc của anh ta là một nguồn cảm hứng cho bộ phận tiếp thị",
+            "en": "His work is an inspiration to the marketing department."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/market.jpg",
+        "audio": {
+            "audio_url": "audio/market.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "market",
+        "pronunciation": "/'mɑ:kit/",
+        "explanation": "to advertise and offer a product for sale",
+        "vocabulary": "(v): thị trường, chợ, nơi mua bán sản phẩm...",
+        "example": {
+            "vi": "Thị trường của trang phục màu sắc sặc sỡ rất phát đạt vào năm ngoái, nhưng nó lại chuyển động uể oải trong năm nay",
+            "en": "The market for brightly colored clothing was brisk last year, but it's moving sluggishly this year"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/persuasion.jpg",
+        "audio": {
+            "audio_url": "audio/persuasion.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "persuasion",
+        "pronunciation": "/pə'sweiʤn/",
+        "explanation": "the power to influence, a deep conviction or belief.",
+        "vocabulary": "(n): ‹sự› thuyết phục, làm cho tin (chú ý: persuade > convince)",
+        "example": {
+            "vi": "Hội thảo giảng dạy những kỹ thuật thuyết phục để gia tăng doanh số",
+            "en": "The seminar teaches techniques of persuasion to increase sales."
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/productive.jpg",
+        "audio": {
+            "audio_url": "audio/productive.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "productive",
+        "pronunciation": "/prəˈdʌktɪv/",
+        "explanation": "making goods or growing crops.",
+        "vocabulary": "(adj): sản xuất, sinh sản; sinh lợi nhiều, có hiệu quả",
+        "example": {
+            "vi": "Hội nghị kinh doanh phi lợi nhuận đã làm cho nhiều nhân viên phàn nàn",
+            "en": "The unproductive sales meeting brought many staff complaints"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/satisfaction.jpg",
+        "audio": {
+            "audio_url": "audio/satisfaction.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "satisfaction",
+        "pronunciation": "/,sætis'fækʃn/",
+        "explanation": "the good feeling that you have when you have achieved something",
+        "vocabulary": "(n): sự làm thỏa mãn, sự hài lòng",
+        "example": {
+            "vi": "\nSự hài lòng của bạn được bảo đảm, hoặc là bạn sẽ được nhận lại tiền của mình",
+            "en": "Your satisfaction is guaranteed or you'll get your money back."
+        }
+    }
+]

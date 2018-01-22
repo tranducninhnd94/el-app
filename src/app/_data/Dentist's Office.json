@@ -1,0 +1,182 @@
+[
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/aware.jpg",
+        "audio": {
+            "audio_url": "audio/aware.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "aware",
+        "pronunciation": "/ə'weə/",
+        "explanation": "knowing or realizing something",
+        "vocabulary": "(adj): biết, nhận thấy, nhận thức thấy",
+        "example": {
+            "vi": "Nha sĩ của tôi làm cho tôi biết rằng tôi nên hẹn gặp 2 lần mỗi năm (để khám răng)",
+            "en": "My dentist made me aware that I should have an appointment twice a year"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/catch up.jpg",
+        "audio": {
+            "audio_url": "audio/catch_up.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "catch up",
+        "pronunciation": "N/A",
+        "explanation": "to bring up to date",
+        "vocabulary": "(v): làm kịp, kịp thời gian",
+        "example": {
+            "vi": "Người trợ tá nha sĩ đã kịp làm công việc giấy tờ của mình giữa các lần khám bệnh nhân",
+            "en": "The dental assistant caught up on her paperwork in between patients"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/distraction.jpg",
+        "audio": {
+            "audio_url": "audio/distraction.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "distraction",
+        "pronunciation": "/dis'trækʃn/",
+        "explanation": "a thing that takes your attention away from what you are doing",
+        "vocabulary": "(n): ‹sự› sao nhãng, lãng trí, rối trí; sự giải trí, trò tiêu khiển",
+        "example": {
+            "vi": "Để tránh khỏi tiếng ồn, nha sĩ của Luisa đã đưa ra cho cô một cặp tai nghe",
+            "en": "To provide a distraction from the noise, Luisa's dentist offered her a pair of earphones"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/encouragement.jpg",
+        "audio": {
+            "audio_url": "audio/encouragement.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "encouragement",
+        "pronunciation": "/in'kʌridʤmənt/",
+        "explanation": "the act of encouraging someone to do something",
+        "vocabulary": "(n): khuyến khích, cổ vũ, niềm động viên",
+        "example": {
+            "vi": "Để tôi sẵn sàng cho anh vài sự động viên về hàm răng lệch lạc của anh",
+            "en": "Let me offer you some encouragement about your crooked teeth"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/evident.jpg",
+        "audio": {
+            "audio_url": "audio/evident.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "evident",
+        "pronunciation": "/'evidənt/",
+        "explanation": "clear; easily seen",
+        "vocabulary": "(adj): rõ ràng, hiển nhiên, rành rành",
+        "example": {
+            "vi": "Sự có mặt của cái răng khôn thì không rõ ràng cho đến khi nha sĩ bắt đầu khám bệnh nhân",
+            "en": "The presence of a wisdom tooth was not evident until the dentist started to examine the patient"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/habit.jpg",
+        "audio": {
+            "audio_url": "audio/habit.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "habit",
+        "pronunciation": "/'hæbit/",
+        "explanation": "a thing that you do often and almost without thinking",
+        "vocabulary": "(n): thói quen, tập quán",
+        "example": {
+            "vi": "Bệnh nhân có một thói quen nghiến răng ken két trong khi ngủ",
+            "en": "The patient had a habit of grinding his teeth during his sleep"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/illuminate.jpg",
+        "audio": {
+            "audio_url": "audio/illuminate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "illuminate",
+        "pronunciation": "/i'ju:mineit/",
+        "explanation": "to shine light on something",
+        "vocabulary": "(v): chiếu sáng, soi sáng; giải thích rõ, làm sáng tỏ",
+        "example": {
+            "vi": "Để tôi bật thêm đèn để chiếu sáng đúng mức hàm răng đen",
+            "en": "Let me turn on more lights to properly illuminate the back teeth"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/irritate.jpg",
+        "audio": {
+            "audio_url": "audio/irritate.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "irritate",
+        "pronunciation": "/'iriteit/",
+        "explanation": "to annoy someone, especially by something you continuously do",
+        "vocabulary": "(v): kích thích; làm tấy lên, làm rát",
+        "example": {
+            "vi": "Aspirin kích ứng dạ dày của tôi",
+            "en": "Aspirin irritates my stomach"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/overview.jpg",
+        "audio": {
+            "audio_url": "audio/overview.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "overview",
+        "pronunciation": "/ˈoʊvərˌvyu/",
+        "explanation": "a general description something",
+        "vocabulary": "(n): chung, tổng quan, tổng quát",
+        "example": {
+            "vi": "Tôi đã khám tổng quát nhanh hàm răng của anh và chúng trông có vẻ tốt",
+            "en": "I did a quick overview of your teeth and they look in good shape"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/position.jpg",
+        "audio": {
+            "audio_url": "audio/position.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "position",
+        "pronunciation": "/pə'ziʃn/",
+        "explanation": "the place where someone or something is located",
+        "vocabulary": "(n): vị trí, chỗ, thế, tư thế; địa vị, chức vụ",
+        "example": {
+            "vi": "Để tôi nghiêng đầu anh đến vị trí thoải mái hơn cho anh",
+            "en": "Let me tilt your head to a more comfortable position for you"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/regularl.jpg",
+        "audio": {
+            "audio_url": "audio/regularly.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "regularly",
+        "pronunciation": "/'regjuləri/",
+        "explanation": "at regular intervals or times",
+        "vocabulary": "(adv): đều đặn, thường xuyên; theo quy tắc, có quy củ",
+        "example": {
+            "vi": "Cô ta chải (răng) đều đặn sau mỗi bữa ăn",
+            "en": "She brushes regularly after every meal"
+        }
+    },
+    {
+        "image_url": "http://600tuvungtoeic.com/template/english/images/study/restore.jpg",
+        "audio": {
+            "audio_url": "audio/restore.mp3",
+            "audio_type": "audio/mpeg"
+        },
+        "name": "restore",
+        "pronunciation": "/rɪˈstɔr/",
+        "explanation": "to bring back a situation or feeling that existed before",
+        "vocabulary": "(v): phục hồi, khôi phục",
+        "example": {
+            "vi": "Việc làm sạch răng đã phục hồi độ trắng của hàm răng tôi",
+            "en": "The cleaning restored the whiteness of my teeth"
+        }
+    }
+]
