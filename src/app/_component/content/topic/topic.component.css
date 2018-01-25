@@ -1,9 +1,20 @@
 .gallery-item{
     padding: 10px;
     margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
 }
 .gallery-item img {
     width: 100%;
+    -moz-transition: all 1.9s;
+    -webkit-transition: all 1.9s;
+    transition: all 1.9s;
+}
+
+.gallery-item:hover img {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .gallery-item .content-gallery{

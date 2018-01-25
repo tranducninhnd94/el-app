@@ -1,0 +1,46 @@
+.page-title{
+    color: #b10021;
+    font-size: 24px;
+    font-weight: 600;
+}
+.word{
+    clear: left;
+}
+
+.stt{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: #E8A930;
+    float: left;
+    margin: 20px;
+    /* border: 1px solid black */
+}
+.image{
+    width: 20%;
+    float: left;
+    max-height: 180px;
+    min-height: 180px;
+    /* border: 1px solid black */
+}
+
+.image img{
+    width: 200px;
+    height: 150px;
+    max-width: 100%;
+    display: block;
+    margin:auto;
+}
+
+.content{
+    float: left;
+    width: 60%;
+    /* border: 1px solid black */
+}
+.bold {
+    font-weight: bold;
+}

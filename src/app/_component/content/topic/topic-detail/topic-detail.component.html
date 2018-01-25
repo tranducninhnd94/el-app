@@ -1,3 +1,32 @@
-<h3>
-    Detail topic
-</h3>
+<div class="container" *ngIf="arrWords">
+    <div align="center">
+        <h2 class="page-title">{{(arrWords.list && arrWords.list.length && arrWords.list[0].topic.name) ? arrWords.list[0].topic.name : 'Undefined'}}</h2>
+    </div>
+    <div *ngIf="arrWords">
+        <div *ngFor="let word of arrWords.list; let i = index" class="word">
+            <div class="stt">{{i + 1}}</div>
+            <div class="image">
+                <img class="img-responsive" src="{{word.image_url}}" />
+            </div>
+            <div class="content">
+                <span style="color: blue; font-size: 16px ! important;">{{word.name}}</span>
+                <span style="color: red;">{{word.pronunciation}}</span>
+                <br>
+                <span class="bold">Giải thích: </span>
+                {{word.explanation}}
+                <br>
+                <span class="bold">Từ loại: </span>
+                {{word.vocabulary}}
+                <br>
+                <span class="bold">Ví dụ: </span>
+                {{word.example.en}}
+                <br>            {{word.example.vi}}
+                <br>
+                <audio controls>
+                    <source src="{{serverHost}}{{word.audio.audio_url}}" type="audio/mpeg">
+                </audio>
+            </div>
+            <!-- <div style=" border: 1px solid rgb(212, 208, 208) ; height: 10px;"></div> -->
+        </div>
+    </div>
+</div>

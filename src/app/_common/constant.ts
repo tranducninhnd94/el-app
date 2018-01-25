@@ -1,0 +1,9 @@
+export class Constants {
+
+    public static SERVER_HOST = "http://localhost:8000/";
+
+    public static URL_GET_TOPIC = Constants.SERVER_HOST + "topic/list";
+
+    public static URL_GET_WORD_BY_TOPIC = Constants.SERVER_HOST + "word";
+
+}
