@@ -25,6 +25,12 @@ export class WordService {
             .catch(this.handleServerError)
     }
 
+    getAll(): Observable<ObjectSuccessResponse<ArrayObject<Array<WordResponse>>>> {
+        return this.http.get(Constants.URL_GET_ALL_WORD)
+            .map((res: Response) => res.json())
+            .catch(this.handleServerError)
+    }
+
     private handleServerError(error: Response): Observable<ObjectErrorResponse<any>> {
         return Observable.throw(error.json() || 'Server error'); // Observable.throw() is undefined at runtime using Webpack
     }
