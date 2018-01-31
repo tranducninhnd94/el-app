@@ -1,12 +1,74 @@
-<button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>
+<!-- <button class="btn btn-primary" (click)="lgModal.show()">Large modal</button> -->
 
-<!-- <div *ngIf="word"> -->
-<!-- <audio #audioElement controls preload="auto">
-    <source [src]="Sourcelink" type="audio/mpeg" #audioplayersource> Your browser does not support the audio element.
-</audio> -->
-<!-- </div> -->
+
+<div class="container">
+    <!-- <i style="font-size: 20px;">Question</i> -->
+    <div style="margin-bottom: 50px;">
+        <audio #audioElement controls preload="auto" style="display: none">
+            <source [src]="Sourcelink" type="audio/mpeg" #audioplayersource> Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div *ngIf="!isLoser">
+        <div class="row" style="margin-bottom: 20px">
+            <div class="col-sm-5 col-sm-offset-2 " style="border: 1px solid black; height: 50px; border-radius: 20px">
+
+                <!-- <div class="elquestion">
+                <h3>Agreement</h3>
+            </div> -->
+                <div class="viquestion">
+                    <h4> {{question}} </h4>
+                </div>
+            </div>
+            <div class="col-sm-2 timer" style="height: 50px;">
+                <div class="time">
+                    {{time}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-2 answer" style="height: 50px;">
+                <input #answerInput [(ngModel)]="answer" type="text" (blur)="isFocus = false" (focus)="isFocus = true" (keyup)="onKey($event)" style="font-size: 20px; width: 100%; border: none; border-bottom :1px solid black; outline: none" placeholder="  Enter your answer in here!">
+            </div>
+
+        </div>
+    </div>
+    <div *ngIf="isLoser">
+        <div class="row">
+            <div class="col-sm-offset-2">
+                <div *ngIf="word" class="word">
+                    <div class="image">
+                        <img class="img-responsive" src="{{word.image_url}}" />
+                    </div>
+                    <div class="content">
+                        <span style="color: blue; font-size: 16px ! important;">{{word.name}}</span>
+                        <span style="color: red;">{{word.pronunciation}}</span>
+                        <br>
+                        <span class="bold">Giải thích: </span>
+                        {{word.explanation}}
+                        <br>
+                        <span class="bold">Từ loại: </span>
+                        {{word.vocabulary}}
+                        <br>
+                        <span class="bold">Ví dụ: </span>
+                        {{word.example.en}}
+                        <br>            {{word.example.vi}}
+                        <br>
+                    </div>
+                    <!-- <div style=" border: 1px solid rgb(212, 208, 208) ; height: 10px;"></div> -->
+                </div>
+            </div>
+            <div class="col-sm-offset-2" style="clear: left">
+                <button type="submit" class="btn btn-default" (click)="doContinue()">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- <div class="container">
-
+    <audio #audioElement controls preload="auto">
+        <source [src]="Sourcelink" type="audio/mpeg" #audioplayersource> Your browser does not support the audio element.
+    </audio>
     <div class="time">
         {{time}}
     </div>
@@ -40,51 +102,7 @@
         <button *ngIf="isLoser" type="submit" class="btn btn-default" (click)="doContinue()">Continue</button>
     </div>
 </div> -->
-<div class="container">
-    <div class="time">
-        {{time}}
-    </div>
-    <div *ngIf="word" class="image" style="float:left; width: 20%; height: 200px; border: 1px solid black">
-        <img class="img-responsive" src="{{word.image_url}}" />
-    </div>
 
-    <div *ngIf="word" style="width: 70%; height: 120px; border: 1px solid black; float: left">
-        <div class="content">
-            <div>
-                <span style="color: blue; font-size: 16px ! important;">{{word.name}}</span>
-                <span style="color: red;">{{word.pronunciation}} {{words[position].name}} {{position}}</span>
-            </div>
-            <div>
-                <span class="bold">Giải thích: </span>
-                {{words[position].explanation}} {{position}}
-            </div>
-            <div>
-                <span class="bold">Từ loại: </span>
-                {{word.vocabulary}}
-            </div>
-            <div>
-                <span class="bold">Ví dụ: </span>
-                {{word.example.en}}
-                <br>            {{word.example.vi}}
-            </div>
-
-        </div>
-    </div>
-    <div style="width:  70%; height: 90px; border: 1px solid black; float: left">
-        <audio #audioElement controls preload="auto">
-            <source [src]="Sourcelink" type="audio/mpeg" #audioplayersource> Your browser does not support the audio element.
-        </audio>
-        <div style="clear: left">
-            <input [(ngModel)]="answer" name="answer" type="text" (blur)="isFocus = false" (focus)="isFocus = true" (keyup)="onKey($event)"
-                style="height: 40px; border-radius: 20px; outline:none" placeholder="Enter your answer in here">
-        </div>
-
-    </div>
-   
-    <div class="col-md-4 center-block" style="clear: left;">
-        <button type="submit" class="btn btn-default" (click)="doContinue()">Continue</button>
-    </div>
-</div>
 
 <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
     [config]="{backdrop: 'static'}">

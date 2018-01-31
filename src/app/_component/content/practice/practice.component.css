@@ -8,8 +8,8 @@
 .time{
     width : 50px;
     height: 50px;
-    margin: 5px;
-    float: right; 
+    /* margin: 5px; */
+    /* float: right;  */
     border-radius: 50px;
     font-size: 20px;
     color: #fff;
@@ -17,25 +17,28 @@
     text-align: center;
     background: #E8A930;
 }
-audio{
-    width: 30%;
-    float: left;
-    margin-bottom: 20px;
-}
-
-input[type ="text"]{
-    font-size: 20px;
-}
-
 .word{
     clear: left;
 }
 
+.stt{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: #E8A930;
+    float: left;
+    margin: 20px;
+    /* border: 1px solid black */
+}
 .image{
-    float:left;
     width: 20%;
-    height: 200px;
-    border: 1px solid black
+    float: left;
+    max-height: 180px;
+    min-height: 180px;
     /* border: 1px solid black */
 }
 
@@ -49,7 +52,7 @@ input[type ="text"]{
 
 .content{
     float: left;
-    width: 90%;
+    width: 60%;
     /* border: 1px solid black */
 }
 .bold {

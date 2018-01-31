@@ -21,9 +21,7 @@ export class PracticeComponent implements OnInit, AfterViewInit {
 
     @ViewChild('audioplayersource') audioplayersource: ElementRef;
 
-    @ViewChild('audioElement1') audioElement1: ElementRef;
-
-    @ViewChild('audioplayersource1') audioplayersource1: ElementRef;
+    @ViewChild('answerInput') answerInput: ElementRef;
 
     private modalRef: BsModalRef;
 
@@ -37,8 +35,6 @@ export class PracticeComponent implements OnInit, AfterViewInit {
 
     private answer = '';
 
-    private answer1 = 'aaa';
-
     private valueRes: ArrayObject<Array<WordResponse>>;
 
     private words: Array<WordResponse>;
@@ -51,10 +47,14 @@ export class PracticeComponent implements OnInit, AfterViewInit {
 
     private myVar: any;
 
-    private nameWord = "";
+    private Sourcelink = "";
+
+    private question = "";
+
+    private TIME_CONSTANT = 15;
 
     constructor(private modalService: BsModalService, private wordService: WordService, private toastService: ToastService) {
-        this.time = 10;
+        this.time = this.TIME_CONSTANT;
         console.log('position: ', this.position);
     }
 
@@ -63,15 +63,13 @@ export class PracticeComponent implements OnInit, AfterViewInit {
     }
 
     ngOnInit(): void {
-
         this.getAllWords();
-
-
-        console.log('position: ', this.position);
+        this.isLoser = false;
+        // this.setFocus();
     }
 
     countDown(): void {
-        this.time = 10;
+        this.time = this.TIME_CONSTANT;
         this.myVar = setInterval(() => {
             this.time--;
             if (this.time == 0) {
@@ -85,13 +83,14 @@ export class PracticeComponent implements OnInit, AfterViewInit {
         clearInterval(this.myVar);
     }
 
-    Sourcelink = "";
+
 
     ngAfterViewInit(): void {
 
         if (this.myVar) {
             this.clearTimeout();
         }
+
         this.countDown();
     }
 
@@ -100,12 +99,8 @@ export class PracticeComponent implements OnInit, AfterViewInit {
             if (response.result == 200) {
                 this.valueRes = response.value;
                 this.words = this.valueRes.list;
-                console.log(this.valueRes);
-                console.log(this.words);
             }
-
             this.setValue(this.position);
-            console.log('element : ', this.audioplayersource);
         }, error => {
             console.log('error: ', error);
         })
@@ -114,10 +109,9 @@ export class PracticeComponent implements OnInit, AfterViewInit {
     setValue(i): void {
 
         if (i >= 0 && i < this.valueRes.total) {
-            console.log('position :1 ', this.position)
             this.word = this.words[i];
+            this.question = this.word.vocabulary;
             this.Sourcelink = this.serverHost + this.word.audio.audio_url;
-            console.log(this.nameWord);
             this.audioElement.nativeElement.load();
             setTimeout(() => {
                 this.audioElement.nativeElement.play();
@@ -127,38 +121,29 @@ export class PracticeComponent implements OnInit, AfterViewInit {
 
     onKey(event: KeyboardEvent) {
         if (this.isFocus == true && event.keyCode == 13 && event.shiftKey == false) {
-            if (this.word.name && this.answer) {
-                this.word = null;
-                this.answer = "";
-                console.log('-----', this.position);
-                this.clearTimeout();
-                this.countDown();
-                this.setValue(++this.position);
-
+            if (this.answer.trim() == this.word.name.trim()) {
+                this.toastService.showSuccess('Good');
+                this.reset();
             } else {
-                this.answer = "";
-                this.toastService.showError('Wrong!')
-            }
-        }
-    }
-
-
-    onKey1(event: KeyboardEvent) {
-        console.log('aaaaaaaaaaaaaaaa');
-        if (event.keyCode == 13 && event.shiftKey == false) {
-            if (this.answer1 == '1') {
-                console.log('111111111111111');
-                this.doContinue();
-            } else {
-                console.log('22222222222222222');
+                this.toastService.showError('Bad');
             }
         }
     }
 
     doContinue(): void {
         this.isLoser = false;
+        this.reset();
+    }
+
+    reset(): void {
+        this.answer = "";
         this.clearTimeout();
         this.countDown();
         this.setValue(++this.position);
+    }
+
+    setFocus(): void {
+        if (!this.isLoser)
+            this.answerInput.nativeElement.focus();
     }
 }
