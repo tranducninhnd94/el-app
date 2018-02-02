@@ -1,13 +1,18 @@
-import { Component, TemplateRef, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, TemplateRef, OnInit, ElementRef, ViewChild, AfterViewInit, OnDestroy } from '@angular/core';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
 import { WordService } from '../../../_service/word.service';
 import { ToastService } from '../../../_service/toast.service';
+import { TopicService } from '../../../_service/topic.service';
 
 import { ArrayObject } from '../../../_model/response/arr.res';
 import { WordResponse } from '../../../_model/response/word.res';
+import { TopicResponse } from '../../../_model/response/topic.res';
 import { Constants } from '../../../_common/constant';
+import { ModalSelect } from '../../modal/modal-select/modal-select.component';
+import { ModalService } from '../../../_service/modal.service';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
     selector: 'practice-partial',
@@ -15,13 +20,16 @@ import { Constants } from '../../../_common/constant';
     styleUrls: ['./practice.component.css']
 })
 
-export class PracticeComponent implements OnInit, AfterViewInit {
+export class PracticeComponent implements OnInit, AfterViewInit, OnDestroy {
+
 
     @ViewChild('audioElement') audioElement: ElementRef;
 
     @ViewChild('audioplayersource') audioplayersource: ElementRef;
 
     @ViewChild('answerInput') answerInput: ElementRef;
+
+    private subscription: Subscription;
 
     private modalRef: BsModalRef;
 
@@ -35,9 +43,13 @@ export class PracticeComponent implements OnInit, AfterViewInit {
 
     private answer = '';
 
-    private valueRes: ArrayObject<Array<WordResponse>>;
+    private wordsRes: ArrayObject<Array<WordResponse>>;
+
+    private topicsRes: ArrayObject<Array<TopicResponse>>;
 
     private words: Array<WordResponse>;
+
+    private topics: Array<TopicResponse>;
 
     private position = 0;
 
@@ -53,7 +65,7 @@ export class PracticeComponent implements OnInit, AfterViewInit {
 
     private TIME_CONSTANT = 15;
 
-    constructor(private modalService: BsModalService, private wordService: WordService, private toastService: ToastService) {
+    constructor(private modalService: BsModalService, private wordService: WordService, private topicService: TopicService, private toastService: ToastService, private modalCustomService: ModalService) {
         this.time = this.TIME_CONSTANT;
         console.log('position: ', this.position);
     }
@@ -63,7 +75,12 @@ export class PracticeComponent implements OnInit, AfterViewInit {
     }
 
     ngOnInit(): void {
-        this.getAllWords();
+        this.getAllTopic();
+
+        setTimeout(() => {
+            this.openModalSelect();
+        }, 0);
+        // this.getAllWords();
         this.isLoser = false;
         // this.setFocus();
     }
@@ -83,9 +100,9 @@ export class PracticeComponent implements OnInit, AfterViewInit {
         clearInterval(this.myVar);
     }
 
-
-
     ngAfterViewInit(): void {
+
+        this.getValueFromModal();
 
         if (this.myVar) {
             this.clearTimeout();
@@ -97,8 +114,8 @@ export class PracticeComponent implements OnInit, AfterViewInit {
     getAllWords(): void {
         this.wordService.getAll().subscribe(response => {
             if (response.result == 200) {
-                this.valueRes = response.value;
-                this.words = this.valueRes.list;
+                this.wordsRes = response.value;
+                this.words = this.wordsRes.list;
             }
             this.setValue(this.position);
         }, error => {
@@ -106,9 +123,20 @@ export class PracticeComponent implements OnInit, AfterViewInit {
         })
     }
 
+    getAllTopic(): void {
+        this.topicService.getAllTopic().subscribe(res => {
+            if (res.result == 200) {
+                this.topics = res.value.list;
+                console.log(this.topics);
+            }
+        }, error => {
+            console.log(error);
+        })
+    }
+
     setValue(i): void {
 
-        if (i >= 0 && i < this.valueRes.total) {
+        if (i >= 0 && i < this.wordsRes.total) {
             this.word = this.words[i];
             this.question = this.word.vocabulary;
             this.Sourcelink = this.serverHost + this.word.audio.audio_url;
@@ -146,4 +174,40 @@ export class PracticeComponent implements OnInit, AfterViewInit {
         if (!this.isLoser)
             this.answerInput.nativeElement.focus();
     }
+
+    openModalWithComponent() {
+        const initialState = {
+
+            arrTopics: this.topics,
+
+            title: 'Modal with component'
+        };
+        this.modalRef = this.modalService.show(ModalSelect, { initialState, class: 'modal-lg', backdrop: 'static' });
+        this.modalRef.content.closeBtnName = 'Close';
+    }
+
+    openModalSelect(): void {
+        const initialState = {
+
+            arrTopics: this.topics,
+
+            title: 'Modal with component'
+        };
+        this.modalRef = this.modalService.show(ModalSelect, { initialState, class: 'modal-lg', backdrop: 'static' });
+        this.modalRef.content.closeBtnName = 'Close';
+        this.modalRef.content.confirmBtnName = 'Confirm';
+    }
+
+    ngOnDestroy(): void {
+        this.modalCustomService.clearData();
+    }
+
+    getValueFromModal(): void {
+        this.subscription = this.modalCustomService.getData().subscribe(data=>{
+            console.log('data ', data);
+        }, error=>{
+            console.log('error', error);
+        })
+    }
+
 }

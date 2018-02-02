@@ -11,7 +11,7 @@ import { ArrayObject } from '../../../_model/response/arr.res';
 
 export class TopicComponent implements OnInit {
 
-    public arrTopic: ArrayObject<TopicResponse>;
+    public arrTopic: ArrayObject<Array<TopicResponse>>;
 
     constructor(private topicService: TopicService) {
 

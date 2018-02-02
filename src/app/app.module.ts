@@ -19,6 +19,8 @@ import { PracticeComponent } from './_component/content/practice/practice.conpon
 import { TopicService } from './_service/topic.service';
 import { WordService } from './_service/word.service';
 import { ToastService } from './_service/toast.service';
+import { ModalSelect } from './_component/modal/modal-select/modal-select.component';
+import { ModalService } from './_service/modal.service';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ToastService } from './_service/toast.service';
     TopicDetailComponent,
     TopComponent,
     PageNotFoundComponent,
-    PracticeComponent
+    PracticeComponent,
+    ModalSelect
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,10 @@ import { ToastService } from './_service/toast.service';
     ToastModule.forRoot(),
     ModalModule.forRoot()
   ],
-  providers: [TopicService, WordService, ToastService],
+  entryComponents : [
+    ModalSelect
+  ],
+  providers: [TopicService, WordService, ToastService, ModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

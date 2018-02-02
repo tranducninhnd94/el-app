@@ -1,0 +1,24 @@
+<div class="modal-header">
+    <h4 class="modal-title pull-left">{{title}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div *ngIf="arrTopics">
+        <p>
+            <i>Choose topic</i>
+        </p>
+        <div class="row">
+            <form #formSelect="ngForm">
+                <div *ngFor="let topic of arrTopics" class="col-sm-3">
+                    <input #inputSelect type="checkbox" name="topic" value="{{topic.name}}">{{topic.name}}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="doConfirmSelect(formSelect.value)">{{confirmBtnName}}</button>
+    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>

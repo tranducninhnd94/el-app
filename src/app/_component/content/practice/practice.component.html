@@ -1,6 +1,6 @@
-<!-- <button class="btn btn-primary" (click)="lgModal.show()">Large modal</button> -->
+<button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>
 
-
+<button type="button" class="btn btn-primary" (click)="openModalWithComponent()">Create modal with component</button>
 <div class="container">
     <!-- <i style="font-size: 20px;">Question</i> -->
     <div style="margin-bottom: 50px;">
@@ -28,7 +28,8 @@
         </div>
         <div class="row">
             <div class="col-sm-5 col-sm-offset-2 answer" style="height: 50px;">
-                <input #answerInput [(ngModel)]="answer" type="text" (blur)="isFocus = false" (focus)="isFocus = true" (keyup)="onKey($event)" style="font-size: 20px; width: 100%; border: none; border-bottom :1px solid black; outline: none" placeholder="  Enter your answer in here!">
+                <input #answerInput [(ngModel)]="answer" type="text" (blur)="isFocus = false" (focus)="isFocus = true" (keyup)="onKey($event)"
+                    style="font-size: 20px; width: 100%; border: none; border-bottom :1px solid black; outline: none" placeholder="  Enter your answer in here!">
             </div>
 
         </div>
@@ -65,45 +66,6 @@
     </div>
 </div>
 
-<!-- <div class="container">
-    <audio #audioElement controls preload="auto">
-        <source [src]="Sourcelink" type="audio/mpeg" #audioplayersource> Your browser does not support the audio element.
-    </audio>
-    <div class="time">
-        {{time}}
-    </div>
-    <div *ngIf="!isLoser" style="margin: 20px; clear: left">
-        <input [(ngModel)]="answer" type="text" (blur)="isFocus = false" (focus)="isFocus = true" (keyup)="onKey($event)" style="width: 40%; height: 50px; border-radius: 20px; outline:none">
-    </div>
-
-    <div>
-        <div *ngIf="word && isLoser" class="word">
-            <div class="image">
-                <img class="img-responsive" src="{{word.image_url}}" />
-            </div>
-            <div class="content">
-                <span style="color: blue; font-size: 16px ! important;">{{word.name}}</span>
-                <span style="color: red;">{{word.pronunciation}}</span>
-                <br>
-                <span class="bold">Giải thích: </span>
-                {{word.explanation}}
-                <br>
-                <span class="bold">Từ loại: </span>
-                {{word.vocabulary}}
-                <br>
-                <span class="bold">Ví dụ: </span>
-                {{word.example.en}}
-                <br>            {{word.example.vi}}
-                <br>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 center-block" style="clear: left;">
-        <button *ngIf="isLoser" type="submit" class="btn btn-default" (click)="doContinue()">Continue</button>
-    </div>
-</div> -->
-
-
 <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
     [config]="{backdrop: 'static'}">
     <div class="modal-dialog">
@@ -115,34 +77,21 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="btn-group" data-toggle="buttons" style="clear: left">
-                    <label class="btn btn-success ">
-                        <input type="checkbox" autocomplete="off">
-                        <span class="glyphicon glyphicon-ok"></span>
-                    </label>
-                    <b>aaaaaaaaaaaaaaaa</b>
+                <div>
+                    <p>
+                        <i>Choose topic</i>
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+                        </div>
+                    </div>
                 </div>
-                <div class="btn-group" data-toggle="buttons" style="clear: left">
-                    <label class="btn btn-success ">
-                        <input type="checkbox" autocomplete="off">
-                        <span class="glyphicon glyphicon-ok"></span>
-                    </label>
-                    <b>aaaaaaaaaaaaaaaa</b>
-                </div>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-success ">
-                        <input type="checkbox" autocomplete="off">
-                        <span class="glyphicon glyphicon-ok"></span>
-                    </label>
-                    <b>aaaaaaaaaaaaaaaa</b>
-                </div>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-success ">
-                        <input type="checkbox" autocomplete="off">
-                        <span class="glyphicon glyphicon-ok"></span>
-                    </label>
-                    <b>aaaaaaaaaaaaaaaa</b>
-                </div>
+                <br>
+            </div>
+            <div class="modal-bottom">
+                <button class="btn btn-default">Confim</button>
+                <button class="btn btn-default">Cancel</button>
             </div>
         </div>
     </div>

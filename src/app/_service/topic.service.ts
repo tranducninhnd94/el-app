@@ -18,7 +18,7 @@ export class TopicService {
 
     }
 
-    getAllTopic(): Observable<ObjectSuccessResponse<ArrayObject<TopicResponse>>> {
+    getAllTopic(): Observable<ObjectSuccessResponse<ArrayObject<Array<TopicResponse>>>> {
         return this.http.get(Constants.URL_GET_TOPIC)
             .map((res: Response) => res.json())
             .catch(this.handleServerError)
