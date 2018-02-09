@@ -1,21 +1,19 @@
 export class WordResponse {
-    _id: string;
+  _id: string;
 
-    image_url: string;
+  image_url: string;
 
-    audio: any;
+  audio: any;
 
-    name: string;
+  name: string;
 
-    pronunciation: string;
+  pronunciation: string;
 
-    explanation: string;
+  explanation: string;
 
-    vocabulary: string;
-    
-    example: any;
+  vocabulary: string;
 
-    constructor(obj) {
+  example: any;
 
-    }
+  constructor() {}
 }

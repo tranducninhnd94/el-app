@@ -11,14 +11,19 @@
         </p>
         <div class="row">
             <form #formSelect="ngForm">
-                <div *ngFor="let topic of arrTopics" class="col-sm-3">
-                    <input #inputSelect type="checkbox" name="topic" value="{{topic.name}}">{{topic.name}}
+                <div class="col-sm-3">
+                    <input type="checkbox" name="topic" value="all" (change)="changeAllCheckbox($event)">
+                    <b>All</b>
+                </div>
+                <div *ngFor="let topic of arrTopics; let i = index" class="col-sm-3">
+                    <input #inputSelect type="checkbox" name="topic" value="{{topic.name}}" [checked]="topic.checked" (change)="updateCheckedOptions(i,
+                        $event)">{{topic.name}}
                 </div>
             </form>
         </div>
     </div>
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-default" (click)="doConfirmSelect(formSelect.value)">{{confirmBtnName}}</button>
+    <button type="button" class="btn btn-default" (click)="doConfirmSelect()">{{confirmBtnName}}</button>
     <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
 </div>
