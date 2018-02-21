@@ -1,35 +1,82 @@
-export class User{
-    _id: string;
+export class User {
+  _id: string;
 
-    fullname: string;
+  fullname: string;
 
-    gender: string;
+  gender: string;
 
-    email:string;
+  email: string;
 
-    position: string;
+  position: string;
 
-    avatar_url: string;
+  avatar_url: string;
 
-    description: string;
+  description: string;
 
-    // role
-    
-    location: string;
+  // role
 
-    graduation: string;
+  location: string;
 
-    department: string;
+  graduation: string;
 
-    job: string;
+  department: string;
 
-    skill: string;
+  job: string;
 
-    phone_number: string;
+  skill: string;
 
-    birthday: string;
+  phone_number: string;
 
-    create_at: Date;
+  birthday: string;
 
-    update_at: Date;
+  create_at: Date;
+
+  update_at: Date;
+}
+
+export class UserResponse {
+  _id: string;
+
+  fullname: string;
+
+  gender: string;
+
+  email: string;
+
+  position: string;
+
+  avatar_url: string;
+
+  description: string;
+
+  // role
+
+  location: string;
+
+  graduation: string;
+
+  department: string;
+
+  job: string;
+
+  skill: string;
+
+  phone_number: string;
+
+  birthday: string;
+
+  create_at: Date;
+
+  update_at: Date;
+}
+
+export class UserRequest { }
+
+export class LoginInfo {
+  
+  token: string;
+
+  infor: {
+
+  }
 }

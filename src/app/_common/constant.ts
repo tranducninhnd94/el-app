@@ -1,4 +1,6 @@
 export class Constants {
+  public static RESULT_SUCCESS = 200;
+
   public static SERVER_HOST = "http://localhost:8000/";
 
   public static URL_GET_TOPIC = Constants.SERVER_HOST + "topic/list";
@@ -8,4 +10,10 @@ export class Constants {
   public static URL_GET_ALL_WORD = Constants.SERVER_HOST + "word/list/all";
 
   public static URL_GET_WORD_BY_IDS_TOPIC = Constants.SERVER_HOST + "word/list/idtopic";
+
+  public static URL_CREATE_USER = Constants.SERVER_HOST + "user";
+
+  public static URL_LOGIN_USER = Constants.SERVER_HOST + "user/login";
+
+  public static COOKIE_TOKEN_NAME = "token";
 }

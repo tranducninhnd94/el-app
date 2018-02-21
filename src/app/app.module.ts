@@ -15,13 +15,17 @@ import { TopicDetailComponent } from "./_component/content/topic/topic-detail/to
 import { TopComponent } from "./_component/top/top.component";
 import { PageNotFoundComponent } from "./_component/notFound/pageNotFoundComponent";
 import { PracticeComponent } from "./_component/practice/practice.component";
+
 import { ModalSelect } from "./_component/modal/modal-select/modal-select.component";
+import { ModalRegister } from "./_component/modal/modal-register/modal-register.component";
 
 import { ModalService } from "./_service/modal.service";
 import { TopicService } from "./_service/topic.service";
 import { WordService } from "./_service/word.service";
 import { ToastService } from "./_service/toast.service";
-import { ModalRegister } from "./_component/modal/modal-register/modal-register.component";
+import { UserService } from "./_service/user.service";
+import { ModalLogin } from "./_component/modal/modal-login/modal-login.component";
+import { CookieService } from "./_service/cookie.service";
 
 @NgModule({
   declarations: [
@@ -32,7 +36,8 @@ import { ModalRegister } from "./_component/modal/modal-register/modal-register.
     PageNotFoundComponent,
     PracticeComponent,
     ModalSelect,
-    ModalRegister
+    ModalRegister,
+    ModalLogin
   ],
   imports: [
     BrowserModule,
@@ -44,8 +49,8 @@ import { ModalRegister } from "./_component/modal/modal-register/modal-register.
     ToastModule.forRoot(),
     ModalModule.forRoot()
   ],
-  entryComponents: [ModalSelect, ModalRegister],
-  providers: [TopicService, WordService, ToastService, ModalService],
+  entryComponents: [ModalSelect, ModalRegister, ModalLogin],
+  providers: [TopicService, WordService, ToastService, ModalService, UserService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

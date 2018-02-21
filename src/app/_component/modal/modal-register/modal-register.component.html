@@ -6,17 +6,23 @@
 </div>
 <div class="modal-body">
     <form class="form-horizontal" #registerForm="ngForm">
-        <div class="message-text text-danger" *ngIf="fullnameRegister.touched && fullnameRegister.value.length < 4">
-            fullname is required
+        <div class="col-sm-9 col-sm-offset-3">
+            <div class="message-text text-danger" *ngIf="fullnameRegister.touched && fullnameRegister.value.length < 4">
+                fullname is required
+            </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-3 control-label">Fullname</label>
+            <label class="col-sm-3 control-label">Fullname
+                <span class="text-danger">*</span>
+            </label>
             <div class="col-sm-9">
                 <input type="text" name="fullname" ngModel class="form-control" placeholder="Name display" #fullnameRegister="ngModel" required>
             </div>
         </div>
-        <div class="message-text text-danger" *ngIf="emailRegister.touched && (emailRegister.invalid || emailRegister.value.length > 45)">
-            Must be email, required and less than 45 character
+        <div class="col-sm-9 col-sm-offset-3">
+            <div class="message-text text-danger" *ngIf="emailRegister.touched && (emailRegister.invalid || emailRegister.value.length > 45)">
+                Must be email, required and less than 45 character
+            </div>
         </div>
         <div class="form-group">
             <label class="col-sm-3 control-label">Email
@@ -26,8 +32,10 @@
                 <input type="email" name="email" ngModel class="form-control" email="true" placeholder="Email" #emailRegister="ngModel" required>
             </div>
         </div>
-        <div class="message-text text-danger" *ngIf="passConfirmRegister.touched && passRegister.value.length <4">
-            Password at least 4 character
+        <div class="col-sm-9 col-sm-offset-3">
+            <div class="message-text text-danger" *ngIf="passConfirmRegister.touched && passRegister.value.length <4">
+                Password at least 4 character
+            </div>
         </div>
         <div class="form-group">
             <label class="col-sm-3 control-label">Password
@@ -37,8 +45,10 @@
                 <input type="password" name="password" ngModel class="form-control" placeholder="Password" #passRegister="ngModel" required>
             </div>
         </div>
-        <div class="message-text text-danger" *ngIf="passConfirmRegister.touched && (passConfirmRegister.value != passRegister.value)">
-            Password and Confirm password aren't same
+        <div class="col-sm-9 col-sm-offset-3">
+            <div class="message-text text-danger" *ngIf="passConfirmRegister.touched && (passConfirmRegister.value != passRegister.value)">
+                Password and Confirm password aren't same
+            </div>
         </div>
         <div class="form-group">
             <label class="col-sm-3 control-label">Comfirm Password
@@ -54,14 +64,14 @@
             <label class="col-sm-3 control-label">Gender</label>
             <div class="col-sm-9">
                 <label class="radio-inline">
-                    <input type="radio" name="gender" ngModel value="Man">Male</label>
+                    <input type="radio" name="gender" ngModel value="Male">Male</label>
                 <label class="radio-inline">
-                    <input type="radio" name="gender" ngModel value="Woman">Female</label>
+                    <input type="radio" name="gender" ngModel value="Female">Female</label>
             </div>
         </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">Close</button>
+            <button type="button" class="btn btn-default" [disabled]="!registerForm.valid" (click)="doRegister()">Register</button>
+        </div>
     </form>
-</div>
-<div class="modal-bottom">
-    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">Close</button>
-    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">Register</button>
 </div>

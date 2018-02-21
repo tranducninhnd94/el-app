@@ -9,6 +9,11 @@ import { PracticeComponent } from '../_component/practice/practice.component';
 
 const routes: Routes = [
     {
+        path: '',
+        redirectTo: '/topic',
+        pathMatch: 'full'
+    },
+    {
         path: 'topic',
         component: TopicComponent,
         // children: [
