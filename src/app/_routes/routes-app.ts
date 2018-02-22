@@ -6,12 +6,16 @@ import { TopicDetailComponent } from '../_component/content/topic/topic-detail/t
 import { TopComponent } from '../_component/top/top.component';
 import { PageNotFoundComponent } from '../_component/notFound/pageNotFoundComponent';
 import { PracticeComponent } from '../_component/practice/practice.component';
+import { DiscussitonComponent } from '../_component/content/discussion/discussion.component';
 
 const routes: Routes = [
     {
         path: '',
         redirectTo: '/topic',
         pathMatch: 'full'
+    },
+    {
+        path: "discussion", component: DiscussitonComponent
     },
     {
         path: 'topic',

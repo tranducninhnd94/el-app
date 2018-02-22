@@ -16,4 +16,8 @@ export class Constants {
   public static URL_LOGIN_USER = Constants.SERVER_HOST + "user/login";
 
   public static COOKIE_TOKEN_NAME = "token";
+
+   // file
+   public static URL_DONWLOAD_FILE = Constants.SERVER_HOST + 'file/download?filePath=public\\';
+   public static URL_UPLOAD_FILE = Constants.SERVER_HOST + 'file/upload';
 }

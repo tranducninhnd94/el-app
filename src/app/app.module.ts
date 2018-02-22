@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { Routing } from "./_routes/routes-app";
 import { HttpModule } from "@angular/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-
+import { HttpClientModule } from '@angular/common/http'; 
 import { ToastModule } from "ng2-toastr/ng2-toastr";
 
 import { AppComponent } from "./app.component";
@@ -26,6 +26,9 @@ import { ToastService } from "./_service/toast.service";
 import { UserService } from "./_service/user.service";
 import { ModalLogin } from "./_component/modal/modal-login/modal-login.component";
 import { CookieService } from "./_service/cookie.service";
+import { DiscussitonComponent } from "./_component/content/discussion/discussion.component";
+import { ModalPosts } from "./_component/modal/modal-posts/modal-posts.component";
+import { FileService } from "./_service/file.service";
 
 @NgModule({
   declarations: [
@@ -35,13 +38,16 @@ import { CookieService } from "./_service/cookie.service";
     TopComponent,
     PageNotFoundComponent,
     PracticeComponent,
+    DiscussitonComponent,
     ModalSelect,
     ModalRegister,
-    ModalLogin
+    ModalLogin,
+    ModalPosts
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    HttpClientModule,
     Routing,
     FormsModule,
     ReactiveFormsModule,
@@ -49,8 +55,8 @@ import { CookieService } from "./_service/cookie.service";
     ToastModule.forRoot(),
     ModalModule.forRoot()
   ],
-  entryComponents: [ModalSelect, ModalRegister, ModalLogin],
-  providers: [TopicService, WordService, ToastService, ModalService, UserService, CookieService],
+  entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts],
+  providers: [TopicService, WordService, ToastService, ModalService, UserService, CookieService, FileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
