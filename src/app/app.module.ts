@@ -4,11 +4,12 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { Routing } from "./_routes/routes-app";
 import { HttpModule } from "@angular/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from "@angular/common/http";
 import { ToastModule } from "ng2-toastr/ng2-toastr";
 
 import { AppComponent } from "./app.component";
 import { ModalModule } from "ngx-bootstrap/modal";
+import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 
 import { TopicComponent } from "./_component/content/topic/topic.component";
 import { TopicDetailComponent } from "./_component/content/topic/topic-detail/topic-detail.component";
@@ -29,6 +30,9 @@ import { CookieService } from "./_service/cookie.service";
 import { DiscussitonComponent } from "./_component/content/discussion/discussion.component";
 import { ModalPosts } from "./_component/modal/modal-posts/modal-posts.component";
 import { FileService } from "./_service/file.service";
+import { PostService } from "./_service/post.service";
+import { PostDetail } from "./_component/content/post-detail/post-detail.component";
+
 
 @NgModule({
   declarations: [
@@ -39,6 +43,7 @@ import { FileService } from "./_service/file.service";
     PageNotFoundComponent,
     PracticeComponent,
     DiscussitonComponent,
+    PostDetail,
     ModalSelect,
     ModalRegister,
     ModalLogin,
@@ -53,10 +58,21 @@ import { FileService } from "./_service/file.service";
     ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    ProgressbarModule.forRoot()
   ],
   entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts],
-  providers: [TopicService, WordService, ToastService, ModalService, UserService, CookieService, FileService],
+  providers: [
+    TopicService,
+    WordService,
+    ToastService,
+    ModalService,
+    UserService,
+    CookieService,
+    FileService,
+    PostService
+  ],
+  exports: [PostDetail],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

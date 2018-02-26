@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>
+                Home / General Discussion/ {{postRes && postRes.title?postRes.title: ""}}
+            </h4>
+        </div>
+
+        <div *ngIf="postRes" class="col-sm-12">
+            <div>
+                <div [innerHTML]="postRes.content"></div>
+            </div>
+            <div style="clear:left">
+                <p>
+                    <b>author</b> :
+                    <i>{{postRes.user.fullname}}</i>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <h3>Comments</h3>
+    </div>
+    <!-- <div>
+        <comment-partial [postId]="postId"></comment-partial>
+    </div> -->
+</div>

@@ -14,10 +14,10 @@ import { Constants } from "../_common/constant";
 
 @Injectable()
 export class UserService {
-  constructor(private http: Http) { }
+  constructor(private http: Http) {}
 
   createUser(userRequest): Observable<ObjectSuccessResponse<UserResponse>> {
-    let headers = new Headers();
+    const headers = new Headers();
     headers.append("Content-type", "application/json");
     let options = { headers: headers };
     return this.http
@@ -27,9 +27,9 @@ export class UserService {
   }
 
   loginUser(userRequest): Observable<ObjectSuccessResponse<LoginInfo>> {
-    let headers = new Headers();
+    const headers = new Headers();
     headers.append("Content-type", "application/json");
-    let options = { headers: headers };
+    const options = { headers: headers };
     return this.http
       .post(Constants.URL_LOGIN_USER, userRequest, options)
       .map((res: Response) => res.json())

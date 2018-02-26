@@ -70,13 +70,18 @@ export class UserResponse {
   update_at: Date;
 }
 
-export class UserRequest { }
+export class UserRequest {}
 
 export class LoginInfo {
-  
   token: string;
 
-  infor: {
+  info: {
+    email: string;
 
-  }
+    fullname: string;
+
+    _id: string;
+
+    avatar_url: string;
+  };
 }

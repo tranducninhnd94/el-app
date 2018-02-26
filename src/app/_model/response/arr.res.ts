@@ -1,11 +1,10 @@
 export class ArrayObject<T> {
-    total: Number;
+  total: number;
 
-    list: T;
+  list: T;
 
-
-    constructor(obj) {
-        this.total = obj.total;
-        this.list = obj.list;
-    }
+  constructor(obj) {
+    this.total = obj.total;
+    this.list = obj.list;
+  }
 }

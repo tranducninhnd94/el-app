@@ -15,9 +15,23 @@ export class Constants {
 
   public static URL_LOGIN_USER = Constants.SERVER_HOST + "user/login";
 
+  // cookie
   public static COOKIE_TOKEN_NAME = "token";
 
-   // file
-   public static URL_DONWLOAD_FILE = Constants.SERVER_HOST + 'file/download?filePath=public\\';
-   public static URL_UPLOAD_FILE = Constants.SERVER_HOST + 'file/upload';
+  public static COOKIE_EMAIL = "email";
+
+  public static COOKIE_FULLNAME = "fullname";
+
+  public static COOKIE_ID = "_id";
+
+  public static COOKIE_AVATAR_URL = "avatar_url";
+
+  // file
+  public static URL_DONWLOAD_FILE = Constants.SERVER_HOST + "file/download?filePath=public\\";
+  public static URL_UPLOAD_FILE = Constants.SERVER_HOST + "file/upload";
+
+  // post
+  public static URL_GET_ALL_POST = Constants.SERVER_HOST + "post/list";
+  public static URL_GET_ONE_POST = Constants.SERVER_HOST + "post/detail";
+  public static URL_CREATE_POST = Constants.SERVER_HOST + "post";
 }
