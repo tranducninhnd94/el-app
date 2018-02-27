@@ -1,20 +1,31 @@
 <div class="container">
+    <h4>
+        <a routerLink="/home">Home</a> /
+        <a routerLink="/home">General Discussion</a>
+    </h4>
     <div class="row">
-        <div class="col-sm-12">
-            <h4>
-                Home / General Discussion/ {{postRes && postRes.title?postRes.title: ""}}
-            </h4>
-        </div>
-
         <div *ngIf="postRes" class="col-sm-12">
-            <div>
+            <div class="title">
+                <h3>
+                    <b>{{postRes && postRes.title?postRes.title: ""}}</b>
+                </h3>
+            </div>
+            <div class="content">
                 <div [innerHTML]="postRes.content"></div>
             </div>
-            <div style="clear:left">
-                <p>
-                    <b>author</b> :
-                    <i>{{postRes.user.fullname}}</i>
-                </p>
+            <div class="meta text-right">
+
+
+                <span class="posted-on">
+                    <a href="#" rel="bookmark">
+                      <time>{{postRes.create_at | date:'yyyy-MM-dd HH:mm a'}}</time>
+                    </a>
+                </span>
+                <span class="byline"> bởi
+                    <span class="author">
+                        <a  href="#">{{postRes.user.fullname}}</a>
+                    </span>
+                </span>
             </div>
 
         </div>
@@ -23,7 +34,7 @@
     <div class="row">
         <h3>Comments</h3>
     </div>
-    <!-- <div>
+    <div>
         <comment-partial [postId]="postId"></comment-partial>
-    </div> -->
+    </div>
 </div>

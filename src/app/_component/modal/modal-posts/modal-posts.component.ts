@@ -7,6 +7,7 @@ import { FileService } from "../../../_service/file.service";
 import { HttpEventType, HttpResponse } from "@angular/common/http";
 import { Constants } from "../../../_common/constant";
 import { PostService } from "../../../_service/post.service";
+import { Base64 } from "js-base64";
 
 declare var jquery: any;
 declare var $: any;
@@ -28,7 +29,7 @@ export class ModalPosts implements OnInit, OnDestroy {
     private toastService: ToastService,
     private fileService: FileService,
     private postService: PostService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     $("#summernote").summernote({
@@ -52,11 +53,11 @@ export class ModalPosts implements OnInit, OnDestroy {
         ["help", ["help"]]
       ],
       callbacks: {
-        onImageUpload: function(files) {
+        onImageUpload: function (files) {
           this.fileUpload(files);
         }.bind(this),
 
-        onMediaDelete: function(target) {
+        onMediaDelete: function (target) {
           console.log("target", target);
           this.fileDelete(target[0]);
         }.bind(this)
@@ -89,7 +90,7 @@ export class ModalPosts implements OnInit, OnDestroy {
                 class: "image_upload",
                 alt: file_url[0].originalname
               })
-              .css({ "max-width": 600 });
+              .css({ "max-width": 300, float: "left" });
             $("#summernote").summernote("insertNode", imageTag[0]);
           }
         }
@@ -105,10 +106,14 @@ export class ModalPosts implements OnInit, OnDestroy {
   doNewPosts() {
     let textareaValue = $("#summernote").summernote("code");
     let title = this.newPostsForm.value.title;
-    let encodeTitle = btoa(title);
-    let encodeContent = btoa(textareaValue);
+    let description = this.newPostsForm.value.description;
+    console.log('description : ', description);
+    // encode
+    // let encodeTitle = this.utoa(title);
+    let encodeContent = this.utoa(textareaValue);
+    // let encodeDescription = this.utoa(description);
     let fileNameUsed = this.getAttrImg();
-    let objectRequest = { title: encodeTitle, content: encodeContent, fileNameUsed: fileNameUsed };
+    let objectRequest = { title, description, content: encodeContent, fileNameUsed: fileNameUsed };
     console.log(objectRequest);
 
     // call service
@@ -126,11 +131,16 @@ export class ModalPosts implements OnInit, OnDestroy {
 
   getAttrImg(): any {
     var fileNameUsed = $(".image_upload")
-      .map(function() {
+      .map(function () {
         return $(this).attr("alt");
       })
       .get();
     console.log("namesUsed : ", fileNameUsed);
     return fileNameUsed;
+  }
+
+  // encode string
+  utoa(str) {
+    return Base64.encode(str);
   }
 }

@@ -1,0 +1,124 @@
+<div class="row">
+    <div class=" col-sm-1">
+        <figure class="thumbnail">
+            <img class="img-responsive" class="img-circle" [src]=" host + (myAvatarUrl ? myAvatarUrl : avatarDefault)" />
+        </figure>
+    </div>
+    <div class="col-sm-10">
+        <!-- style="border : 1px solid black; height: auto" -->
+        <form #formComment="ngForm">
+            <textarea name="content" ngModel required cols="30" rows="4" placeholder="Add comment..." style=" margin: 0px; width: 100%; max-height: 70px;">
+            </textarea>
+        </form>
+    </div>
+    <div class="col-sm-1 center-block">
+        <button type="submit" class="btn btn-default btn-sumit-comment center-block" (click)="doComment(formComment.value)">Comment</button>
+    </div>
+</div>
+
+<div *ngIf="comments">
+    <div class="row" *ngFor="let comment of comments; let i = index ">
+        <br>
+        <div class=" col-sm-1">
+            <figure class="thumbnail">
+                <img class="img-responsive" class="img-circle" [src]="host+ ((comment.user && comment.user.avatar_url) ? comment.user.avatar_url : avatarDefault)"
+                />
+            </figure>
+        </div>
+        <div class="col-sm-11">
+            <!-- style="border : 1px solid black; height: auto" -->
+            <div class="comment-header" style="border-bottom: 1px solid #eee">
+                <div class="comment-user">
+                    <p class="text-left" style="float :left; padding-right: 1%;">
+                        <a [routerLink]="['/user/search/' + comment.user._id]">{{comment.user.fullname}}</a>
+                    </p>
+                    <p class="text-left"> {{comment.create_at | date:'yyyy-MM-dd HH:mm a'}}</p>
+                </div>
+            </div>
+            <div class="body" style="margin-top: 10px">
+                <div class="comment-content">
+                    <p>
+                        {{comment.content}}
+                    </p>
+                </div>
+                <div class="comment-info">
+                    <p class="text-left" style="float:left">
+                        <button class="btn btn-default btn-sm">
+                            <i class="fa fa-thumbs-up"></i>
+                        </button>
+                    </p>
+                    <p *ngIf="!arrCheckDisplay[i]" class="text-left" style="float:left">
+                        <button class="btn btn-default btn-sm" (click)="enableFormReply(i)">
+                            <i class="fa fa-comments"></i>
+                        </button>
+                    </p>
+                    <p class="text-left" style="float:left">
+                        <button class="btn btn-default btn-sm">Replies: {{comment.total_replies}}</button>
+                    </p>
+                    <p class="text-left" style="float:left">
+                        <button class="btn btn-default btn-sm">Total like</button>
+                    </p>
+
+                    <!-- <p class="text-right"><button class="btn btn-default btn-sm">Like</button></p> -->
+                </div>
+                <div class="row" *ngIf="arrCheckDisplay[i]">
+                    <div class="col-sm-11">
+                        <!-- style="border : 1px solid black; height: auto" -->
+                        <form #formReply="ngForm">
+                            <div class="comment-reply">
+                                <textarea name="content" ngModel required cols="30" rows="2" placeholder="reply..." style=" margin: 0px; width: 100%; height: auto;"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-1">
+                        <button style="max-width: 80px; max-height:30px;" type="submit" class="btn btn-default btn-reply-comment " (click)="doReply(comment._id, formReply.value)">
+                            <p class="text-center">Reply</p>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div *ngIf="comment.replies" style="clear: left">
+                <div *ngFor="let child of comment.replies">
+                    <div class="row child-comment" style="margin-bottom: 15px">
+                        <div class=" col-sm-1">
+                            <figure class="thumbnail">
+                                <img class="img-responsive" class="img-circle" [src]="host+((child.user && child.user.avatar_url) ? child.user.avatar_url : avatarDefault)"
+                                />
+
+                            </figure>
+                        </div>
+                        <div class="col-sm-11">
+                            <!-- style="border : 1px solid black; height: auto" -->
+                            <div class="comment-header">
+                                <div class="comment-user">
+                                    <p class="text-left" style="float :left; padding-right : 10px">
+                                        <a [routerLink]="['/user/search/' + child.user._id]">{{child.user.fullname}}</a>
+                                    </p>
+                                    <p class="text-left"> {{child.create_at | date:'yyyy-MM-dd HH:mm a'}}</p>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="comment-content">
+                                    <p>
+                                        {{child.content}}
+                                    </p>
+                                </div>
+                                <div class="comment-info">
+                                    <p class="text-left" style="float:left">
+                                        <button class="btn btn-default btn-sm">Total like</button>
+                                    </p>
+                                    <!-- <p class="text-right"><button class="btn btn-default btn-sm">Like</button></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button class="btn btn-default btn-sm" (click)="loadMore()">load more</button>
+    </div>
+</div>

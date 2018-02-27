@@ -1,8 +1,8 @@
 <div class="container">
 
-    <div *ngIf="arrTopic">
+    <div class="arrTopic" *ngIf="arrTopic">
         <div class="row">
-            <div *ngFor="let topic of arrTopic.list; let i = index" class="col-md-2 col-sm-3" style="border: 1px solid black; max-height: 192px;min-height: 192px">
+            <div *ngFor="let topic of arrTopic.list; let i = index" class="col-md-2 col-sm-3" style=" max-height: 192px;min-height: 192px">
                 <div class="gallery-item">
                     <div class="image">
                         <a routerLink="/topic/{{topic._id}}">

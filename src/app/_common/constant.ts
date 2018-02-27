@@ -3,6 +3,8 @@ export class Constants {
 
   public static SERVER_HOST = "http://localhost:8000/";
 
+  public static CLIENT_HOST = "http://107.113.193.92:4200/";
+
   public static URL_GET_TOPIC = Constants.SERVER_HOST + "topic/list";
 
   public static URL_GET_WORD_BY_TOPIC = Constants.SERVER_HOST + "word";
@@ -34,4 +36,16 @@ export class Constants {
   public static URL_GET_ALL_POST = Constants.SERVER_HOST + "post/list";
   public static URL_GET_ONE_POST = Constants.SERVER_HOST + "post/detail";
   public static URL_CREATE_POST = Constants.SERVER_HOST + "post";
+
+  // comment URL
+  public static URL_GET_COMMENT_BY_POST = Constants.SERVER_HOST + "comment/post/";
+  public static URL_REPLY_COMMENT = Constants.SERVER_HOST + "comment/reply/";
+  public static URL_POST_COMMENT = Constants.SERVER_HOST + "comment";
+
+  // empty and null
+  public static ERROR_EMPTY_CONTENT_COMMENT = "Comment must be not empty!";
+
+  public static AVATAR_DEFAULT = "images/default_img.png";
+
+  public static DESCRIPTION_DEFAULT_OF_POST = "nothing .................";
 }

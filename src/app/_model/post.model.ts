@@ -3,6 +3,8 @@ import { Status } from "./enum.model";
 export class PostRequest {
   title: string;
 
+  description: string;
+
   content: String;
 }
 
@@ -10,6 +12,8 @@ export class PostResponse {
   _id: string;
 
   title: string;
+
+  description: string;
 
   content: string;
 

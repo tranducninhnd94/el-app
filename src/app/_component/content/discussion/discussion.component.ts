@@ -6,6 +6,9 @@ import { PostService } from "../../../_service/post.service";
 import { ToastService } from "../../../_service/toast.service";
 import { Constants } from "../../../_common/constant";
 import { PostResponse } from "../../../_model/post.model";
+import { Base64 } from "js-base64";
+import { DatePipe } from '@angular/common';
+
 @Component({
   selector: "discussion-partial",
   templateUrl: "./discussion.component.html",
@@ -25,6 +28,12 @@ export class DiscussitonComponent implements OnInit {
   private pageSize: any = 5;
 
   private pagination = [];
+
+  private avatarDefault = Constants.AVATAR_DEFAULT;
+
+  private server_host = Constants.SERVER_HOST;
+
+  private descriptionDefault = Constants.DESCRIPTION_DEFAULT_OF_POST;
 
   constructor(
     private bsModalService: BsModalService,
@@ -67,8 +76,8 @@ export class DiscussitonComponent implements OnInit {
   decodePost(arrPost): void {
     if (arrPost) {
       arrPost.forEach(post => {
-        post.title = atob(post.title);
-        post.content = atob(post.content);
+        // post.title = this.atou(post.title);
+        post.content = this.atou(post.content);
       });
     }
   }
@@ -91,5 +100,10 @@ export class DiscussitonComponent implements OnInit {
     this.params.pageSize = 5;
 
     this.getAllPosts(false);
+  }
+
+  // decode
+  atou(str) {
+    return Base64.decode(str);
   }
 }

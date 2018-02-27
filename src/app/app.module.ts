@@ -32,6 +32,11 @@ import { ModalPosts } from "./_component/modal/modal-posts/modal-posts.component
 import { FileService } from "./_service/file.service";
 import { PostService } from "./_service/post.service";
 import { PostDetail } from "./_component/content/post-detail/post-detail.component";
+import { CommentComponent } from "./_component/content/comment/comment.component";
+import { CommentService } from "./_service/comment.service";
+
+// import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 
 
 @NgModule({
@@ -44,6 +49,7 @@ import { PostDetail } from "./_component/content/post-detail/post-detail.compone
     PracticeComponent,
     DiscussitonComponent,
     PostDetail,
+    CommentComponent,
     ModalSelect,
     ModalRegister,
     ModalLogin,
@@ -59,7 +65,8 @@ import { PostDetail } from "./_component/content/post-detail/post-detail.compone
     BrowserAnimationsModule,
     ToastModule.forRoot(),
     ModalModule.forRoot(),
-    ProgressbarModule.forRoot()
+    ProgressbarModule.forRoot(),
+    Angular2FontawesomeModule
   ],
   entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts],
   providers: [
@@ -70,9 +77,9 @@ import { PostDetail } from "./_component/content/post-detail/post-detail.compone
     UserService,
     CookieService,
     FileService,
-    PostService
+    PostService,
+    CommentService
   ],
-  exports: [PostDetail],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

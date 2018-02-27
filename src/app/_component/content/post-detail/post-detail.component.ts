@@ -1,37 +1,36 @@
-import { Component, OnInit , Pipe, PipeTransform} from "@angular/core";
+import { Component, OnInit, ViewEncapsulation, SecurityContext } from "@angular/core";
 import { PostService } from "../../../_service/post.service";
 import { ToastService } from "../../../_service/toast.service";
 import { ActivatedRoute } from "@angular/router";
 import { Location } from "@angular/common";
 import { Constants } from "../../../_common/constant";
+import { Base64 } from "js-base64";
+import { DomSanitizer } from "@angular/platform-browser";
 
-import { DomSanitizer } from '@angular/platform-browser';
-
-
-@Pipe({ name: 'safeHtml'})
 @Component({
   selector: "post-detail",
-  templateUrl: "./post-detail.component.html"
+  templateUrl: "./post-detail.component.html",
+  encapsulation: ViewEncapsulation.None
 })
-export class PostDetail implements OnInit, PipeTransform {
-  transform(value: any) {
-    return this.sanitized.bypassSecurityTrustHtml(value);
-  }
+export class PostDetail implements OnInit {
   public postRes: any;
 
   public postId: string;
 
   public urlImageDetails: any;
 
+  //SafeResourceUrl
+  private iframe;
+
   constructor(
     private postService: PostService,
     private toastService: ToastService,
     private router: ActivatedRoute,
     private location: Location,
-    private sanitized: DomSanitizer
-  ) { }
-
-
+    private sanitizer: DomSanitizer
+  ) {
+    // this.iframe = sanitizer.bypassSecurityTrustResourceUrl("https://www.google.com");
+  }
 
   ngOnInit(): void {
     this.getPost();
@@ -51,6 +50,7 @@ export class PostDetail implements OnInit, PipeTransform {
           if (response.value) {
             this.postRes = response.value;
             this.decodePost(this.postRes);
+            this.postRes.content = this.sanitizer.bypassSecurityTrustHtml(this.postRes.content);
             console.log("response: ", this.postRes);
           }
         },
@@ -63,8 +63,11 @@ export class PostDetail implements OnInit, PipeTransform {
 
   decodePost(post): void {
     if (post) {
-      post.title = atob(post.title);
-      post.content = atob(post.content);
+      post.content = this.atou(post.content);
     }
+  }
+
+  atou(str) {
+    return Base64.decode(str);
   }
 }

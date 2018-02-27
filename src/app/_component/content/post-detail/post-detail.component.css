@@ -1,0 +1,9 @@
+.meta {
+    margin-bottom: 10px;
+    float: right;
+    border: 1px solid black;
+}
+
+.title, .meta, .content {
+    margin-top: 10px;
+} 

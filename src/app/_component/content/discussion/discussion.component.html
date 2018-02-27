@@ -2,23 +2,54 @@
     <div class="row">
         <button class="btn btn-primary" id="btn_new_topic" (click)="openNewPostsModal()">New Topic</button>
     </div>
-    <!-- <div *ngIf="arrPost">
-        <div *ngFor="let post of arrPost; let i = index">
-            {{post.title}}
-            <div [innerHTML]="post.content"></div>
-        </div>
 
-    </div> -->
     <div class="row list-post">
-        <div class="list-group" *ngFor="let post of arrPost; let i = index">
-            <a routerLink="/post/detail/{{post._id}}" class="list-group-item ">
-                <h4 class="list-group-item-heading">{{post.title}}</h4>
-                <p class="list-group-item-text">...</p>
-                <i>{{post.user.fullname}}</i>
-            </a>
-        </div>
+        <div *ngFor="let post of arrPost; let i = index">
+            <div class="row">
+                <div class="post">
+                    <div class="col-sm-1">
+                        <figure class="thumbnail">
+                            <img class="img-responsive" class="img-circle" [src]="server_host+ ((post.user && post.user.avatar_url) ? post.user.avatar_url : avatarDefault)"
+                            />
+                        </figure>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="title">
+                            <h3>
+                                <a routerLink="/post/detail/{{post._id}}">{{post.title}}</a>
+                            </h3>
+                        </div>
+                        <div class="tag">
+                            <a href="">TAGG</a>
+                        </div>
+                        <div class="description">
+                            {{post.description ? post.description : descriptionDefault}}
+                        </div>
+                        <div class="meta">
+                            <span class="posted-on">
+                                <a href="https://blogit.vn/bai-1-cach-tao-mot-ung-dung-angularjs.html" rel="bookmark">
+                                    <time>{{post.create_at | date:'yyyy-MM-dd HH:mm a'}}</time>
+                                </a>
+                            </span>
+                            <span class="byline"> bởi
+                                <span class="author vcard">
+                                    <a class="url fn n" href="https://blogit.vn/author/huule">{{post.user.fullname}}</a>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="smart-meta">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            2,876 |
+                            <i class="fa fa-comment-o"></i>
+                            4
+                            <br>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="pagination">
+            </div>
+        </div>
+        <div class="pagination ">
             <div>
                 <ul class="pagination pagination-lg" *ngFor="let index of pagination">
                     <li>
@@ -28,19 +59,4 @@
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-sm-4">
-            <progressbar [value]="55"></progressbar>
-        </div>
-        <div class="col-sm-4">
-            <progressbar [value]="22" type="warning" [striped]="true">22%</progressbar>
-        </div>
-        <div class="col-sm-4">
-            <progressbar max="200" [value]="166" type="danger" [striped]="true" [animate]="true">
-                <i>166 / 200</i>
-            </progressbar>
-        </div>
-    </div>
-
 </div>

@@ -9,3 +9,48 @@ h1{
 .list-post{
     clear: left;
 }
+
+.post{
+    max-height: 300px; 
+    min-height: 200px ; 
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.title h3 a{
+    /* text-decoration: none; */
+    color: #00AF60;
+}
+.title h3{
+    font-size: 1.2em;
+    font-weight: 100;
+    display: initial;
+}
+
+.meta {
+    color: #bbb;
+    font-size: .8em;
+    margin-top: .5em;
+}
+
+.detail {
+    color: #555;
+    margin-top: .3em;
+}
+
+.tag  a {
+    background-color: #eaeaea;
+    color: #333;
+    padding: .3em .5em;
+    margin-right: .5em;
+    border-radius: 5px;
+}
+.title, .tag, .meta {
+    margin-bottom: 10px;;
+}
+
+.smart-meta {
+    margin-top: .5em;
+    color: #00AF60;
+    font-size: .8em;
+}
