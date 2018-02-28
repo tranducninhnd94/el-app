@@ -7,3 +7,36 @@ textarea {
   width: 100%;
   height: 70px;
 }
+.comment-content p small {
+  color: #00af60;
+}
+.smart-meta {
+  margin-top: 0.5em;
+  color: #00af60;
+  font-size: 0.8em;
+}
+
+/* .comment-content p {
+  
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+} */
+
+.comment-content .relative {
+  /* position: relative; */
+  
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+}
+
+.comment-content .relative .absolute {
+  /* position: absolute; */
+   width: 100px; height: 20px;
+  float:right;
+  /* top: 80%;
+  left: 92%; */
+  margin-top: -10px;
+  color: #00af60;
+}

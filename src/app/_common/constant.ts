@@ -41,6 +41,8 @@ export class Constants {
   public static URL_GET_COMMENT_BY_POST = Constants.SERVER_HOST + "comment/post/";
   public static URL_REPLY_COMMENT = Constants.SERVER_HOST + "comment/reply/";
   public static URL_POST_COMMENT = Constants.SERVER_HOST + "comment";
+  public static URL_LIKE_COMMENT = Constants.SERVER_HOST + "comment/user/like/";
+  public static URL_DISKLIKE_COMMENT = Constants.SERVER_HOST + "comment/user/disklike/";
 
   // empty and null
   public static ERROR_EMPTY_CONTENT_COMMENT = "Comment must be not empty!";

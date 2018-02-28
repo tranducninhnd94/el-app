@@ -51,17 +51,47 @@ export class CommentService {
   }
 
   replyComment(parentId, _body): Observable<ObjectSuccessResponse<any>> {
-    let url = Constants.URL_REPLY_COMMENT + parentId;
-    let token = this.cookieService.getValue(Constants.COOKIE_TOKEN_NAME);
+    const url = Constants.URL_REPLY_COMMENT + parentId;
+    const token = this.cookieService.getValue(Constants.COOKIE_TOKEN_NAME);
 
-    let headers = new Headers();
+    const headers = new Headers();
     headers.append("Content-Type", "application/json");
     headers.append("authorization", "Bearer " + token);
 
-    let options = new RequestOptions({ headers: headers });
+    const options = new RequestOptions({ headers: headers });
 
     return this.http
       .post(url, _body, options)
+      .map((res: Response) => res.json())
+      .catch(this.handleServerError);
+  }
+
+  likeComment(commentId): Observable<ObjectSuccessResponse<any>> {
+    const url = Constants.URL_LIKE_COMMENT + commentId;
+    const token = this.cookieService.getValue(Constants.COOKIE_TOKEN_NAME);
+
+    const headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    headers.append("authorization", "Bearer " + token);
+
+    const options = new RequestOptions({ headers: headers });
+    return this.http
+      .put(url, null, options)
+      .map((res: Response) => res.json())
+      .catch(this.handleServerError);
+  }
+
+  disklikeComment(commentId): Observable<ObjectSuccessResponse<any>> {
+    const url = Constants.URL_DISKLIKE_COMMENT + commentId;
+    const token = this.cookieService.getValue(Constants.COOKIE_TOKEN_NAME);
+
+    const headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    headers.append("authorization", "Bearer " + token);
+
+    const options = new RequestOptions({ headers: headers });
+    return this.http
+      .put(url, null, options)
       .map((res: Response) => res.json())
       .catch(this.handleServerError);
   }

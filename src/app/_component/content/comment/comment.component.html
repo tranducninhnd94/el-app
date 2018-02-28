@@ -37,13 +37,51 @@
             </div>
             <div class="body" style="margin-top: 10px">
                 <div class="comment-content">
-                    <p>
-                        {{comment.content}}
-                    </p>
+                    <!-- <div>
+                        <p>
+                            {{comment.content}}
+                            <br>
+                            <small *ngIf="comment.users_like && comment.users_like.length > 0" (click)="showUserLikeComment(comment._id)" style="margin-left: 90%;cursor: pointer;">
+
+                                <i class="fa fa-thumbs-up" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="show user like"></i>
+                                {{comment.users_like.length}}
+                            </small>
+                            <small *ngIf="comment.total_replies > 0">|
+                                <i class="fa fa-comment-o"></i>
+                                {{comment.total_replies}}</small>
+                        </p>
+                    </div> -->
+                    <div class="relative">
+                        <p>
+                            {{comment.content}}
+                        </p>
+                        <div class="absolute">
+
+                            <small *ngIf="comment.total_replies > 0" style=" float:right">
+                                {{comment.total_replies}}
+                                <i class="fa fa-comment-o"></i>
+                            </small>
+                            <small *ngIf="comment.users_like && comment.users_like.length > 0" [tooltip]="infoTooltip" placement="top" (click)="showUserLikeComment(comment._id)"
+                                style="cursor: pointer; float:right">
+                                {{comment.users_like.length}}
+                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                            </small>
+                            <br>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="comment-info">
-                    <p class="text-left" style="float:left">
-                        <button class="btn btn-default btn-sm">
+
+                    <p *ngIf="arrIsLikeComment && arrIsLikeComment[i]" class="text-left" style="float:left">
+                        <button class="btn btn-default btn-sm" (click)="doDisklikeComment(comment._id)" style="color: #00af60;">
+                            <i class="fa  fa-thumbs-up "></i>
+                        </button>
+                    </p>
+
+                    <p *ngIf="!arrIsLikeComment || (arrIsLikeComment && !arrIsLikeComment[i])" class="text-left" style="float:left">
+                        <button class="btn btn-default btn-sm" (click)="doLikeComment(comment._id)">
                             <i class="fa fa-thumbs-up"></i>
                         </button>
                     </p>
@@ -52,16 +90,16 @@
                             <i class="fa fa-comments"></i>
                         </button>
                     </p>
-                    <p class="text-left" style="float:left">
+                    <!-- <p class="text-left" style="float:left">
                         <button class="btn btn-default btn-sm">Replies: {{comment.total_replies}}</button>
                     </p>
                     <p class="text-left" style="float:left">
                         <button class="btn btn-default btn-sm">Total like</button>
-                    </p>
+                    </p> -->
 
                     <!-- <p class="text-right"><button class="btn btn-default btn-sm">Like</button></p> -->
                 </div>
-                <div class="row" *ngIf="arrCheckDisplay[i]">
+                <div class="row" *ngIf="arrCheckDisplay[i]" style="clear: left">
                     <div class="col-sm-11">
                         <!-- style="border : 1px solid black; height: auto" -->
                         <form #formReply="ngForm">
@@ -100,14 +138,26 @@
                             </div>
                             <div class="body">
                                 <div class="comment-content">
-                                    <p>
-                                        {{child.content}}
-                                    </p>
+                                    <div class="relative">
+                                        <p>
+                                            {{child.content}}
+                                        </p>
+                                        <!-- <div class="absolute">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            28 |
+                                            <i class="fa fa-comment-o"></i>
+                                            4
+                                            <br>
+                                        </div> -->
+                                    </div>
+
                                 </div>
                                 <div class="comment-info">
-                                    <p class="text-left" style="float:left">
-                                        <button class="btn btn-default btn-sm">Total like</button>
-                                    </p>
+                                    <!-- <p class="text-left" style="float:left; margin-top:10px">
+                                        <button class="btn btn-default btn-sm" (click)="doLikeComment(comment._id)">
+                                            <i class="fa fa-thumbs-up"></i>
+                                        </button>
+                                    </p> -->
                                     <!-- <p class="text-right"><button class="btn btn-default btn-sm">Like</button></p> -->
                                 </div>
                             </div>

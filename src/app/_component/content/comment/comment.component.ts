@@ -42,6 +42,10 @@ export class CommentComponent implements OnInit {
 
   public userLink = this.clientHost + "user/search/";
 
+  private arrIsLikeComment: Array<boolean>;
+
+  private infoTooltip = "show users";
+
   // form reply
   public arrCheckDisplay: Array<boolean> = []; // using display form reply
 
@@ -50,7 +54,7 @@ export class CommentComponent implements OnInit {
     private commentService: CommentService,
     private toastService: ToastService,
     private cookieService: CookieService
-  ) {}
+  ) { }
 
   loadCommentByPost(): void {
     this.commentService.getCommentByPost(this.postId, this.params).subscribe(
@@ -59,6 +63,8 @@ export class CommentComponent implements OnInit {
           let tmp = obj.value;
           this.comments = obj.value;
           this.setArrcheckDisplay(this.comments);
+          console.log("coments :", this.comments);
+          this.setArrLikeComment(this.comments);
         }
       },
       error => {
@@ -150,9 +156,67 @@ export class CommentComponent implements OnInit {
     this.commentReq = {};
   }
 
-  loadMore(): void {}
+  loadMore(): void { }
 
   enableFormReply(index): void {
-    this.setIndexInArrCheckDisplay(index);
+    if (!this.cookieService.getValue(Constants.COOKIE_ID)) {
+      this.toastService.showError("You must to login!");
+    } else {
+      this.setIndexInArrCheckDisplay(index);
+    }
+  }
+
+  doLikeComment(commentId) {
+    if (!this.cookieService.getValue(Constants.COOKIE_ID)) {
+      this.toastService.showError("You must to login!");
+    } else {
+      this.commentService.likeComment(commentId).subscribe(
+        response => {
+          if (response.result == Constants.RESULT_SUCCESS) {
+            this.loadCommentByPost();
+          }
+        },
+        error => {
+          this.toastService.showError(error.message);
+        }
+      );
+    }
+  }
+
+  doDisklikeComment(commentId) {
+    if (!this.cookieService.getValue(Constants.COOKIE_ID)) {
+      this.toastService.showError("You must to login!");
+    } else {
+      this.commentService.disklikeComment(commentId).subscribe(
+        response => {
+          if (response.result == Constants.RESULT_SUCCESS) {
+            this.loadCommentByPost();
+          }
+        },
+        error => {
+          this.toastService.showError(error.message);
+        }
+      );
+    }
+  }
+
+  setArrLikeComment(arrComment): void {
+    let _id = this.cookieService.getValue(Constants.COOKIE_ID);
+    if (_id) {
+      this.arrIsLikeComment = new Array<boolean>();
+      arrComment.forEach((comment, index) => {
+        this.arrIsLikeComment[index] = false;
+        if (comment.users_like && comment.users_like.length > 0) {
+          let users_like = comment.users_like;
+          if (users_like.indexOf(_id) != -1) {
+            this.arrIsLikeComment[index] = true;
+          }
+        }
+      });
+    }
+  }
+
+  showUserLikeComment(commentId) {
+    console.log('commentID', commentId);
   }
 }

@@ -34,6 +34,7 @@ import { PostService } from "./_service/post.service";
 import { PostDetail } from "./_component/content/post-detail/post-detail.component";
 import { CommentComponent } from "./_component/content/comment/comment.component";
 import { CommentService } from "./_service/comment.service";
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 // import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
@@ -66,6 +67,7 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
     ToastModule.forRoot(),
     ModalModule.forRoot(),
     ProgressbarModule.forRoot(),
+    TooltipModule.forRoot(),
     Angular2FontawesomeModule
   ],
   entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts],
