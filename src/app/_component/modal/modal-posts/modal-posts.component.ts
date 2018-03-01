@@ -8,6 +8,8 @@ import { HttpEventType, HttpResponse } from "@angular/common/http";
 import { Constants } from "../../../_common/constant";
 import { PostService } from "../../../_service/post.service";
 import { Base64 } from "js-base64";
+import { CookieService } from "../../../_service/cookie.service";
+import { Router } from "@angular/router";
 
 declare var jquery: any;
 declare var $: any;
@@ -28,7 +30,8 @@ export class ModalPosts implements OnInit, OnDestroy {
     private bsModalRef: BsModalRef,
     private toastService: ToastService,
     private fileService: FileService,
-    private postService: PostService
+    private postService: PostService,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -104,6 +107,9 @@ export class ModalPosts implements OnInit, OnDestroy {
     console.log("delete file");
   }
   doNewPosts() {
+
+
+
     let textareaValue = $("#summernote").summernote("code");
     let title = this.newPostsForm.value.title;
     let description = this.newPostsForm.value.description;
@@ -120,13 +126,18 @@ export class ModalPosts implements OnInit, OnDestroy {
     this.postService.createPost(objectRequest).subscribe(
       response => {
         if (response.result == Constants.RESULT_SUCCESS) {
+          this.bsModalRef.hide();
           this.toastService.showSuccess(response.message);
+          location.reload();
+        } else {
+          this.toastService.showError("Error create new post");
         }
       },
       error => {
         this.toastService.showError(error.message);
       }
     );
+
   }
 
   getAttrImg(): any {

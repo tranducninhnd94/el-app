@@ -8,6 +8,7 @@ import { Constants } from "../../../_common/constant";
 import { PostResponse } from "../../../_model/post.model";
 import { Base64 } from "js-base64";
 import { DatePipe } from '@angular/common';
+import { CookieService } from "../../../_service/cookie.service";
 
 @Component({
   selector: "discussion-partial",
@@ -38,11 +39,16 @@ export class DiscussitonComponent implements OnInit {
   constructor(
     private bsModalService: BsModalService,
     private postService: PostService,
-    private toastService: ToastService
-  ) {}
+    private toastService: ToastService,
+    private cookieService: CookieService
+  ) { }
 
   openNewPostsModal() {
-    this.modalRef = this.bsModalService.show(ModalPosts, { backdrop: "static", class: "modal-lg" });
+    if (this.cookieService.getValue(Constants.COOKIE_TOKEN_NAME)) {
+      this.modalRef = this.bsModalService.show(ModalPosts, { backdrop: "static", class: "modal-lg" });
+    } else {
+      this.toastService.showError("You need to login before creating post");
+    }
   }
 
   ngOnInit(): void {

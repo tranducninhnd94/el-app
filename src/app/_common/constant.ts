@@ -50,4 +50,7 @@ export class Constants {
   public static AVATAR_DEFAULT = "images/default_img.png";
 
   public static DESCRIPTION_DEFAULT_OF_POST = "nothing .................";
+
+  // error
+  public static ERROR_NOT_LOGIN = "You need to login";
 }
