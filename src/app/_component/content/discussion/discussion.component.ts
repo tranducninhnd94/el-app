@@ -24,9 +24,9 @@ export class DiscussitonComponent implements OnInit {
 
   private totalPost: number = 0;
 
-  private pageNum: any = 0;
+  private pageNum = Constants.PAGE_NUM_DEFAULT;
 
-  private pageSize: any = 5;
+  private pageSize = Constants.PAGE_SIZE_DEFAULT;
 
   private pagination = [];
 
@@ -56,7 +56,7 @@ export class DiscussitonComponent implements OnInit {
   }
 
   getAllPosts(isPagination): void {
-    this.postService.getAllPost(this.params).subscribe(
+    this.postService.getAllPostV2(this.params).subscribe(
       response => {
         if (response.result == Constants.RESULT_SUCCESS) {
           let value = response.value;

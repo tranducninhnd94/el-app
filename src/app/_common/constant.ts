@@ -34,6 +34,7 @@ export class Constants {
 
   // post
   public static URL_GET_ALL_POST = Constants.SERVER_HOST + "post/list";
+  public static URL_GET_ALL_POST_V2 = Constants.SERVER_HOST + "post/listv2";
   public static URL_GET_ONE_POST = Constants.SERVER_HOST + "post/detail";
   public static URL_CREATE_POST = Constants.SERVER_HOST + "post";
 
@@ -53,4 +54,10 @@ export class Constants {
 
   // error
   public static ERROR_NOT_LOGIN = "You need to login";
+
+  // query request
+  public static PAGE_NUM_DEFAULT = 0;
+
+  public static PAGE_SIZE_DEFAULT = 10;
+
 }

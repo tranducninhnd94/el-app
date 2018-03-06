@@ -14,6 +14,43 @@ import { ArrayObject } from "../_model/response/arr.res";
 export class PostService {
   constructor(private cookeiService: CookieService, private http: Http) {}
 
+
+  getAllPostV2(params): Observable<ObjectSuccessResponse<ArrayObject<PostResponse[]>>> {
+    const myParams = new URLSearchParams();
+    if (params) {
+      // if (params.title) {
+      //   myParams.append("title", params.title);
+      // }
+      // if (params.author) {
+      //   myParams.append("author", params.author);
+      // }
+      // if (params.createAt) {
+      //   myParams.append("createAt", params.createAt);
+      // }
+      if (params.pageNum) {
+        myParams.append("pageNum", params.pageNum);
+      }
+      if (params.pageSize) {
+        myParams.append("pageSize", params.pageSize);
+      }
+      if (params.status){
+        myParams.append("status", params.status);
+      }
+      // if (params.sortBy) {
+      //   myParams.append("sortBy", params.sortBy);
+      // }
+      // if (params.asc) {
+      //   myParams.append("orderBy", params.asc);
+      // }
+    }
+
+    const options = new RequestOptions({ params: myParams });
+    return this.http
+      .get(Constants.URL_GET_ALL_POST_V2, options)
+      .map((res: Response) => res.json())
+      .catch(this.handleServerError);
+  }
+
   getAllPost(params): Observable<ObjectSuccessResponse<ArrayObject<PostResponse[]>>> {
     let myParams = new URLSearchParams();
     if (params) {
