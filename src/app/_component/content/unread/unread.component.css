@@ -1,12 +1,9 @@
-#btn_new_topic { 
-    float: right; margin-top: 20px; margin-bottom: 20px; 
-}
-
 h1{
     float: left;
 }
 
 .list-post{
+    margin-top: 100px;
     clear: left;
 }
 

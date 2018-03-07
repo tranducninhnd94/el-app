@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row list-post">
+        <div *ngFor="let post of arrPost; let i = index">
+            <div class="row">
+                <div class="post">
+                    <div class="col-sm-1">
+                        <figure class="thumbnail">
+                            <img class="img-responsive" class="img-circle" [src]="server_host+ ((post.user && post.user.avatar_url) ? post.user.avatar_url : avatarDefault)"
+                            />
+                        </figure>
+                    </div>
+                    <div class="col-sm-11">
+                        <div class="title">
+                            <h3>
+                                <a routerLink="/post/detail/{{post._id}}">{{post.title}}</a>
+                            </h3>
+                        </div>
+                        <div class="tag">
+                            <a href="">TAGG</a>
+                        </div>
+                        <div class="description">
+                            {{post.description ? post.description : descriptionDefault}}
+                        </div>
+                        <div class="meta">
+                            <span class="posted-on">
+                                <a href="https://blogit.vn/bai-1-cach-tao-mot-ung-dung-angularjs.html" rel="bookmark">
+                                    <time>{{post.create_at | date:'yyyy-MM-dd HH:mm a'}}</time>
+                                </a>
+                            </span>
+                            <span class="byline"> bởi
+                                <span class="author vcard">
+                                    <a class="url fn n" href="https://blogit.vn/author/huule">{{post.user.fullname}}</a>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="smart-meta">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            {{post.total_view}} |
+                            <i class="fa fa-comment-o"></i>
+                            {{post.total_comment}}
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="pagination ">
+            <div>
+                <ul class="pagination pagination-lg" *ngFor="let index of pagination">
+                    <li>
+                        <button class="btn btn-default" (click)="changePagination(index - 1)">{{index}}</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

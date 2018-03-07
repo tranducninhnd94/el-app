@@ -12,7 +12,7 @@ import { ArrayObject } from "../_model/response/arr.res";
 
 @Injectable()
 export class PostService {
-  constructor(private cookeiService: CookieService, private http: Http) {}
+  constructor(private cookeiService: CookieService, private http: Http) { }
 
 
   getAllPostV2(params): Observable<ObjectSuccessResponse<ArrayObject<PostResponse[]>>> {
@@ -33,7 +33,7 @@ export class PostService {
       if (params.pageSize) {
         myParams.append("pageSize", params.pageSize);
       }
-      if (params.status){
+      if (params.status) {
         myParams.append("status", params.status);
       }
       // if (params.sortBy) {
@@ -96,12 +96,40 @@ export class PostService {
   }
 
   getOne(_id): Observable<ObjectSuccessResponse<PostResponse>> {
-    let url = `${Constants.URL_GET_ONE_POST}/${_id}`;
+    const url = `${Constants.URL_GET_ONE_POST}/${_id}`;
+    const headers = new Headers();
+    if (this.cookeiService.getValue(Constants.COOKIE_TOKEN_NAME)) {
+      headers.append("authorization", "Bearer " + this.cookeiService.getValue(Constants.COOKIE_TOKEN_NAME));
+    }
+    const options = { headers };
     return this.http
-      .get(url)
+      .get(url, options)
       .map((res: Response) => res.json())
       .catch(this.handleServerError);
   }
+
+  getAllPostUnread(params): Observable<ObjectSuccessResponse<ArrayObject<PostResponse[]>>> {
+    const myParams = new URLSearchParams();
+    if (params) {
+
+      if (params.pageNum) {
+        myParams.append("pageNum", params.pageNum);
+      }
+      if (params.pageSize) {
+        myParams.append("pageSize", params.pageSize);
+      }
+    }
+
+    const headers = new Headers();
+    headers.append("authorization", "Bearer " + this.cookeiService.getValue(Constants.COOKIE_TOKEN_NAME));
+
+    const options = new RequestOptions({ params: myParams, headers });
+    return this.http
+      .get(Constants.URL_GET_ALL_POST_UNREAD, options)
+      .map((res: Response) => res.json())
+      .catch(this.handleServerError);
+  }
+
   private handleServerError(error: Response): Observable<ObjectErrorResponse<any>> {
     return Observable.throw(error.json() || "Server error"); // Observable.throw() is undefined at runtime using Webpack
   }

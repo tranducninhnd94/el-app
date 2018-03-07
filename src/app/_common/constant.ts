@@ -17,6 +17,8 @@ export class Constants {
 
   public static URL_LOGIN_USER = Constants.SERVER_HOST + "user/login";
 
+  public static URL_USER_COUNT_POST_UNREAD = Constants.SERVER_HOST + "user/count/post/unread";
+
   // cookie
   public static COOKIE_TOKEN_NAME = "token";
 
@@ -35,8 +37,11 @@ export class Constants {
   // post
   public static URL_GET_ALL_POST = Constants.SERVER_HOST + "post/list";
   public static URL_GET_ALL_POST_V2 = Constants.SERVER_HOST + "post/listv2";
+  public static URL_GET_ALL_POST_UNREAD = Constants.SERVER_HOST + "post/unread/list";
   public static URL_GET_ONE_POST = Constants.SERVER_HOST + "post/detail";
   public static URL_CREATE_POST = Constants.SERVER_HOST + "post";
+
+
 
   // comment URL
   public static URL_GET_COMMENT_BY_POST = Constants.SERVER_HOST + "comment/post/";

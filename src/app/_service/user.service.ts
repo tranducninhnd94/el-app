@@ -11,10 +11,11 @@ import { ObjectErrorResponse } from "../_model/response/obj.error.res";
 import { ArrayObject } from "../_model/response/arr.res";
 import { UserResponse, UserRequest, LoginInfo } from "../_model/user.model";
 import { Constants } from "../_common/constant";
+import { CookieService } from "./cookie.service";
 
 @Injectable()
 export class UserService {
-  constructor(private http: Http) {}
+  constructor(private http: Http, private cookeiService: CookieService) { }
 
   createUser(userRequest): Observable<ObjectSuccessResponse<UserResponse>> {
     const headers = new Headers();
@@ -39,4 +40,15 @@ export class UserService {
   private handleServerError(error: Response): Observable<ObjectErrorResponse<any>> {
     return Observable.throw(error.json() || "Server error"); // Observable.throw() is undefined at runtime using Webpack
   }
+
+  countPostUnread(): Observable<ObjectSuccessResponse<Number>> {
+    const headers = new Headers();
+    headers.append("authorization", "Bearer " + this.cookeiService.getValue(Constants.COOKIE_TOKEN_NAME));
+    let options = { headers: headers };
+    return this.http
+      .get(Constants.URL_USER_COUNT_POST_UNREAD, options)
+      .map((res: Response) => res.json())
+      .catch(this.handleServerError);
+  }
+
 }

@@ -8,11 +8,12 @@ import { PageNotFoundComponent } from "../_component/notFound/pageNotFoundCompon
 import { PracticeComponent } from "../_component/practice/practice.component";
 import { DiscussitonComponent } from "../_component/content/discussion/discussion.component";
 import { PostDetail } from "../_component/content/post-detail/post-detail.component";
+import { UnreadComponent } from "../_component/content/unread/unread.component";
 
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "/topic",
+    redirectTo: "/english/topic",
     pathMatch: "full"
   },
   {
@@ -24,7 +25,7 @@ const routes: Routes = [
     component: PostDetail
   },
   {
-    path: "topic",
+    path: "english/topic",
     component: TopicComponent
     // children: [
     //     {
@@ -43,8 +44,12 @@ const routes: Routes = [
     component: TopicDetailComponent
   },
   {
-    path: "practice",
+    path: "english/practice",
     component: PracticeComponent
+  },
+  {
+    path: "unread",
+    component: UnreadComponent
   },
   {
     path: "**",

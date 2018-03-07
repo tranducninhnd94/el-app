@@ -8,6 +8,7 @@ import { CookieService } from "../../_service/cookie.service";
 import { Constants } from "../../_common/constant";
 import { Router } from "@angular/router";
 import { ModalService } from "../../_service/modal.service";
+import { UserService } from "../../_service/user.service";
 
 @Component({
   selector: "top-partial",
@@ -21,9 +22,21 @@ export class TopComponent implements OnInit, OnDestroy {
 
   private isLogin: boolean = false;
 
+  private totalPostUnread: Number = 0;
+
   ngOnInit(): void {
     if (this.cookieService.getValue(Constants.COOKIE_TOKEN_NAME)) {
       this.isLogin = true;
+
+      //count unread post
+      this.userService.countPostUnread().subscribe(response => {
+        if (response.result == Constants.RESULT_SUCCESS) {
+          this.totalPostUnread = response.value;
+        }
+        console.log(response);
+      }, error => {
+        console.log(error);
+      })
     }
 
     this.modalService.getData().subscribe(result => {
@@ -38,7 +51,7 @@ export class TopComponent implements OnInit, OnDestroy {
 
   private modalRef: BsModalRef;
 
-  constructor(private bsModalService: BsModalService, private cookieService: CookieService, private router: Router, private modalService: ModalService) {
+  constructor(private bsModalService: BsModalService, private cookieService: CookieService, private router: Router, private modalService: ModalService, private userService: UserService) {
 
   }
 

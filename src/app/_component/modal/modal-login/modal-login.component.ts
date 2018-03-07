@@ -43,7 +43,7 @@ export class ModalLogin {
 
           this.bsModalRef.hide();
           this.modalService.setData({ isLogin: true });
-          this.router.navigate(["topic"]);
+          this.router.navigate(["english/topic"]);
         }
       },
       error => {

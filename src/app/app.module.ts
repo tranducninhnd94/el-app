@@ -38,6 +38,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 // import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
+import { UnreadComponent } from "./_component/content/unread/unread.component";
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
     DiscussitonComponent,
     PostDetail,
     CommentComponent,
+    UnreadComponent,
     ModalSelect,
     ModalRegister,
     ModalLogin,
