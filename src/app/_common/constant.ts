@@ -1,9 +1,12 @@
 export class Constants {
   public static RESULT_SUCCESS = 200;
 
+  // public static SERVER_HOST = "http://107.113.193.92:8000/";
+
+  // public static CLIENT_HOST = "http://107.113.193.92:4200/";
   public static SERVER_HOST = "http://localhost:8000/";
 
-  public static CLIENT_HOST = "http://107.113.193.92:4200/";
+  public static CLIENT_HOST = "http://localhost:4200/";
 
   public static URL_GET_TOPIC = Constants.SERVER_HOST + "topic/list";
 
@@ -41,8 +44,6 @@ export class Constants {
   public static URL_GET_ONE_POST = Constants.SERVER_HOST + "post/detail";
   public static URL_CREATE_POST = Constants.SERVER_HOST + "post";
 
-
-
   // comment URL
   public static URL_GET_COMMENT_BY_POST = Constants.SERVER_HOST + "comment/post/";
   public static URL_REPLY_COMMENT = Constants.SERVER_HOST + "comment/reply/";
@@ -64,5 +65,4 @@ export class Constants {
   public static PAGE_NUM_DEFAULT = 0;
 
   public static PAGE_SIZE_DEFAULT = 10;
-
 }

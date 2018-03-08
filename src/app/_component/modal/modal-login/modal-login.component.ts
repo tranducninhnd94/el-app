@@ -43,7 +43,12 @@ export class ModalLogin {
 
           this.bsModalRef.hide();
           this.modalService.setData({ isLogin: true });
-          this.router.navigate(["english/topic"]);
+
+          // reload page
+          let currentUrl = this.router.url;
+          console.log("currentUrl :", currentUrl);
+          this.router.navigate([currentUrl]);
+          // location.reload();
         }
       },
       error => {
@@ -51,6 +56,10 @@ export class ModalLogin {
       }
     );
   }
+
+  doLoginWithFacebook() {}
+
+  doLoginWithGoogle() {}
 
   setInfoToCookie(token, email, fullname, _id, avatar_url) {
     this.cookieService.deleteAll();

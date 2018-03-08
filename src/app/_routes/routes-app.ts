@@ -9,6 +9,7 @@ import { PracticeComponent } from "../_component/practice/practice.component";
 import { DiscussitonComponent } from "../_component/content/discussion/discussion.component";
 import { PostDetail } from "../_component/content/post-detail/post-detail.component";
 import { UnreadComponent } from "../_component/content/unread/unread.component";
+import { WerewolfComponent } from "../_component/content/game/werewolf/Werewolf.component";
 
 const routes: Routes = [
   {
@@ -27,17 +28,6 @@ const routes: Routes = [
   {
     path: "english/topic",
     component: TopicComponent
-    // children: [
-    //     {
-    //         path: '',
-    //         redirectTo: '',
-    //         pathMatch: 'full'
-    //     },
-    //     {
-    //         path: 'detail/:nameTopic',
-    //         component: TopicDetailComponent
-    //     }
-    // ]
   },
   {
     path: "topic/:_idTopic",
@@ -52,9 +42,14 @@ const routes: Routes = [
     component: UnreadComponent
   },
   {
+    path: "game/werewolf",
+    component: WerewolfComponent
+  },
+  {
     path: "**",
     component: PageNotFoundComponent
   }
 ];
 
+// export const Routing = RouterModule.forRoot(routes, { useHash: true });
 export const Routing = RouterModule.forRoot(routes);

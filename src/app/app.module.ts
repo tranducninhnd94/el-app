@@ -34,12 +34,15 @@ import { PostService } from "./_service/post.service";
 import { PostDetail } from "./_component/content/post-detail/post-detail.component";
 import { CommentComponent } from "./_component/content/comment/comment.component";
 import { CommentService } from "./_service/comment.service";
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { TooltipModule } from "ngx-bootstrap/tooltip";
 
 // import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
+import { Angular2FontawesomeModule } from "angular2-fontawesome/angular2-fontawesome";
 import { UnreadComponent } from "./_component/content/unread/unread.component";
 
+// deploy
+import { LocationStrategy, HashLocationStrategy } from "@angular/common";
+import { WerewolfComponent } from "./_component/content/game/werewolf/Werewolf.component";
 
 @NgModule({
   declarations: [
@@ -53,6 +56,7 @@ import { UnreadComponent } from "./_component/content/unread/unread.component";
     PostDetail,
     CommentComponent,
     UnreadComponent,
+    WerewolfComponent,
     ModalSelect,
     ModalRegister,
     ModalLogin,
@@ -82,7 +86,8 @@ import { UnreadComponent } from "./_component/content/unread/unread.component";
     CookieService,
     FileService,
     PostService,
-    CommentService
+    CommentService,
+    // { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })

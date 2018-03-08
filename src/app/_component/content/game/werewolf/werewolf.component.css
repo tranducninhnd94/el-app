@@ -1,0 +1,56 @@
+.list-gamer-timer{
+    border: 1px solid black;
+    height: 800px;
+}
+/* .list-gamer-voter .list-gamer{
+    height: 400px;
+}
+
+.list-gamer-voter .list-voter{
+    height: 400px;
+} */
+
+.list-gamer-timer .timer{
+    border: 1px solid blue;
+    height: 50px;
+}
+
+.list-character{
+    border: 1px solid black;
+    height: 500px;
+}
+
+.list-character .character{
+    border: 1px solid black;
+    width: 13%;
+    height: 200px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.list-character .character img{
+    max-width: 100%;
+}
+
+.list-chat .private-chat{
+    border: 1px solid black;
+    height: 300px;
+}
+
+.list-chat .private-chat .content-private-chat{
+    height: 80%;
+    border: 1px solid red;
+    height: 250px;
+}
+
+.list-chat .public-chat{
+    border: 1px solid black;
+    height: 300px;
+}
+
+.list-chat .public-chat .content-public-chat{
+    height: 80%;
+    height: 250px;
+    border: 1px solid red;
+}
