@@ -43,6 +43,9 @@ import { UnreadComponent } from "./_component/content/unread/unread.component";
 // deploy
 import { LocationStrategy, HashLocationStrategy } from "@angular/common";
 import { WerewolfComponent } from "./_component/content/game/werewolf/Werewolf.component";
+import { SocketService } from "./_service/socket.service";
+import { LobbyComponent } from "./_component/content/game/lobby/lobby.component";
+import { ModalRoom } from "./_component/modal/modal-room/modal-room.component";
 
 @NgModule({
   declarations: [
@@ -56,11 +59,13 @@ import { WerewolfComponent } from "./_component/content/game/werewolf/Werewolf.c
     PostDetail,
     CommentComponent,
     UnreadComponent,
+    LobbyComponent,
     WerewolfComponent,
     ModalSelect,
     ModalRegister,
     ModalLogin,
-    ModalPosts
+    ModalPosts,
+    ModalRoom
   ],
   imports: [
     BrowserModule,
@@ -76,7 +81,7 @@ import { WerewolfComponent } from "./_component/content/game/werewolf/Werewolf.c
     TooltipModule.forRoot(),
     Angular2FontawesomeModule
   ],
-  entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts],
+  entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts, ModalRoom],
   providers: [
     TopicService,
     WordService,
@@ -87,6 +92,7 @@ import { WerewolfComponent } from "./_component/content/game/werewolf/Werewolf.c
     FileService,
     PostService,
     CommentService,
+    SocketService
     // { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]

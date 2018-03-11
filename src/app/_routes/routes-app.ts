@@ -10,6 +10,7 @@ import { DiscussitonComponent } from "../_component/content/discussion/discussio
 import { PostDetail } from "../_component/content/post-detail/post-detail.component";
 import { UnreadComponent } from "../_component/content/unread/unread.component";
 import { WerewolfComponent } from "../_component/content/game/werewolf/Werewolf.component";
+import { LobbyComponent } from "../_component/content/game/lobby/lobby.component";
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: "unread",
     component: UnreadComponent
+  },
+  {
+    path: "game/lobby",
+    component: LobbyComponent
   },
   {
     path: "game/werewolf",

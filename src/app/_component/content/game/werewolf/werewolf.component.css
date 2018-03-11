@@ -1,6 +1,10 @@
-.list-gamer-timer{
-    border: 1px solid black;
-    height: 800px;
+.list-gamer-timer .panel .panel-body i {
+  cursor: pointer;
+}
+
+.list-gamer-timer {
+  border: 1px solid black;
+  height: 850px;
 }
 /* .list-gamer-voter .list-gamer{
     height: 400px;
@@ -10,47 +14,78 @@
     height: 400px;
 } */
 
-.list-gamer-timer .timer{
-    border: 1px solid blue;
-    height: 50px;
+.list-gamer-timer .timer {
+  border: 1px solid blue;
+  height: 50px;
 }
 
-.list-character{
-    border: 1px solid black;
-    height: 500px;
+.list-character {
+  border: 1px solid black;
+  height: 500px;
 }
 
-.list-character .character{
-    border: 1px solid black;
-    width: 13%;
-    height: 200px;
-    float: left;
-    margin-top: 30px;
-    margin-left: 20px;
+.list-character .character {
+  width: 10%;
+  height: 200px;
+  float: left;
+  margin-left: 20px;
 }
 
-.list-character .character img{
-    max-width: 100%;
+.list-character .character .character-image {
+  position: relative;
+  margin: 0 auto;
+  height: 150px;
 }
 
-.list-chat .private-chat{
-    border: 1px solid black;
-    height: 300px;
+.list-character .character .name-user {
+  margin-top: 10px;
+  height: 40px;
 }
 
-.list-chat .private-chat .content-private-chat{
-    height: 80%;
-    border: 1px solid red;
-    height: 250px;
+.list-character .character img {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
-.list-chat .public-chat{
-    border: 1px solid black;
-    height: 300px;
+.list-character .character img.transparent {
+  opacity: 0;
 }
 
-.list-chat .public-chat .content-public-chat{
-    height: 80%;
-    height: 250px;
-    border: 1px solid red;
+/* .list-character .character .back-image {
+}
+
+.list-character .character .front-image {
+} */
+
+.list-character .character .name-user {
+  width: 100%;
+  height: 30px;
+  border: 1px solid palegreen;
+}
+
+.list-chat .private-chat {
+  border: 1px solid black;
+  height: 300px;
+}
+
+.list-chat .private-chat .content-private-chat {
+  height: 80%;
+  border: 1px solid red;
+  height: 250px;
+}
+
+.list-chat .public-chat {
+  border: 1px solid black;
+  height: 300px;
+}
+
+.list-chat .public-chat .content-public-chat {
+  height: 80%;
+  height: 250px;
+  border: 1px solid red;
 }

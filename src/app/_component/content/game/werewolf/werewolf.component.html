@@ -1,8 +1,12 @@
-<div class="container">
+<!-- <div class="container-fluid "> -->
+<div class="container-fluid">
     <div class="row content-game">
         <div class="col-sm-2 list-gamer-timer">
             <div class="timer">
-
+                <h3 style="float: left; margin-left : 30px">
+                    <b>Round 1</b>
+                </h3>
+                <h3 class="text-center">{{minutesOfRound}} : {{secondOfRound}}</h3>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading" style="text-align: center">
@@ -10,59 +14,29 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">
-                        <li class="list-group-item">
+                        <li *ngFor="let gamer of arrGamer; let i = index" class="list-group-item">
                             Tran Duc Ninh
-                        </li>
-                        <li class="list-group-item">
-                            Tran Duc Ninh
+                            <i class="fa fa-gavel " style="float: right" (click)="vote(i)"></i>
                         </li>
                     </ul>
                 </div>
-                <div class="panel-footer">Total member: 10 member</div>
+                <div class="panel-footer">Total member: 1 member</div>
             </div>
         </div>
         <div class="col-sm-10">
             <div class="row">
                 <div class="col-sm-12 list-character">
-                    <div style="margin-left: 10px">
+                    <div *ngFor="let gamer of arrGamer; let i = index" style="margin-left: 10px">
                         <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
+                            <div class="character-image" (click)="viewCharacter(i)">
+                                <img *ngIf="gamer.is_view" class="front-image" src="../../../../assets/img-werewolf/character/card-cupid.png" />
+                                <img class="back-image" [ngClass]="{transparent : gamer.is_view}" src="../../../../assets/img-werewolf/character/card-back.png"
+                                />
+                            </div>
+                            <div class="text-center name-user">
+                                <p>{{gamer.fullname? gamer.fullname : noname}}</p>
+                            </div>
                         </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-                        <div class="character">
-                            <img src="../../../../assets/wolf.jpeg">
-                        </div>
-
                     </div>
 
                 </div>
@@ -110,3 +84,4 @@
     </div>
 
 </div>
+<!-- </div> -->

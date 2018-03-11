@@ -65,4 +65,27 @@ export class Constants {
   public static PAGE_NUM_DEFAULT = 0;
 
   public static PAGE_SIZE_DEFAULT = 10;
+
+  // game
+  public static TIME_TO_LIE_OF_ROUND = 10; // secound
+
+  // socket
+  public static URL_CONNECT_SOCKET_SERVER = "http://localhost:8000";
+
+  public static SERVER_PUBLIC_MESSAGE = "server-public-msg";
+
+  public static SERVER_PRIVATE_MESSAGE = "server-private-msg";
+
+  public static SERVER_SYSTEM_PUBLIC_MESSAGE = "server-system-msg";
+
+  public static CLIENT_PUBLIC_MESSAGE = "client-public-msg";
+
+  public static CLIENT_PRIVATE_MESSAGE = "client-private-msg";
+
+  public static CLIENT_INFORMATION = "client-information";
+
+  public static CLIENT_CREATE_ROOM = "client-create-room";
+
+  public static CLIENT_JOIN_ROOM = "client-join-room";
+
 }
