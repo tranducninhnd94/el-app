@@ -1,66 +1,76 @@
 import { GamerResponse, GamerRequest } from "./gamer.model";
 import { MsgStatus } from "./enum.model";
 
-export class PublicMsgResponse {
+export class PublicMsg {
+  sender: GamerResponse;
 
-    sender: GamerResponse;
+  content: any;
 
-    content: any;
-
-    create_at: Date
+  create_at: Date;
 }
 
-export class PrivateMsgResponse {
-    arrReceive: Array<GamerResponse>;
+export class PrivateMsg {
+  arrReceive: Array<GamerResponse>;
 
-    content: any;
+  content: any;
 
-    sender: GamerResponse;
+  sender: GamerResponse;
 
-    create_at: Date
+  create_at: Date;
 }
 
 export class SystemPublicMsgResponse {
-    content: any;
+  content: any;
 
-    create_at: Date
+  create_at: Date;
 }
 
-export class PublicMsgRequest {
+export class SystemResponse<T> {
+  result: number;
 
-    sender: GamerResponse;
+  message: string;
 
-    content: any;
+  value: T;
 
-    create_at: Date
-}
-
-export class PrivateMsgRequest {
-    arrReceive: Array<GamerResponse>;
-
-    content: any;
-
-    sender: GamerResponse;
-
-    create_at: Date
+  create_at: Date;
 }
 
 export class GamerInfo {
-    gamer: GamerRequest
-}
+  _id: string;
 
-export class NewRoom {
-    owner: GamerRequest;
+  socket_id: string;
 
-    room: Room
+  email: string;
+
+  fullname: string;
+
+  avatar_url: string;
+
+  is_owner: boolean;
+
+  game: string;
+
+  name_room: string;
+
+  is_die: boolean;
+
+  is_view: boolean;
+
+  character: string;
+
+  constructor() {}
 }
 
 export class Room {
+  owner: GamerRequest;
 
-    name_room: string;
+  name_room: string;
 
-    password: string;
+  password: string;
 
-    create_at: Date
+  create_at: Date;
 
+  is_started: boolean;
+
+  arrGamer: Array<GamerInfo>;
 }

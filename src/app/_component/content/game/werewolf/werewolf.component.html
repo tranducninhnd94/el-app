@@ -15,12 +15,15 @@
                 <div class="panel-body">
                     <ul class="list-group">
                         <li *ngFor="let gamer of arrGamer; let i = index" class="list-group-item">
-                            Tran Duc Ninh
+                            {{gamer.fullname}}
+                            <i *ngIf="gamer.is_owner" class="fa fa-star" style="color:violet" tooltip="Owner" placement="right"></i>
                             <i class="fa fa-gavel " style="float: right" (click)="vote(i)"></i>
                         </li>
                     </ul>
                 </div>
-                <div class="panel-footer">Total member: 1 member</div>
+                <div class="panel-footer">Total: {{(arrGamer && arrGamer.length) ? arrGamer.length : 0}} member
+                    <button class="btn btn-success" style="float: right; padding: 0" (click)="openModal()">Start game</button>
+                </div>
             </div>
         </div>
         <div class="col-sm-10">
@@ -50,14 +53,20 @@
                                 <b>public chat</b>
                             </div>
                             <div class="row">
-                                <div class="row content-public-chat">
-
+                                <div #divPublicMsg class="content-public-chat" style="overflow-y: auto;">
+                                    <div *ngIf="arrPublicMsg">
+                                        <div *ngFor= "let publicMsg of arrPublicMsg; let i = index">
+                                            <ul>
+                                                <li>{{publicMsg.sender.fullname}} : {{publicMsg.content}}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <form style="width: 100%; float:left">
-                                    <textarea #textareaMsg name="msg" ngModel id="btn-input" class="form-control input-sm" placeholder="Type your message here..."></textarea>
+                                <form #formPublicMsg="ngForm" style="width: 100%; float:left">
+                                    <textarea (keyup)="onKey($event)" #publicMsg name="content" ngModel class="form-control input-sm" placeholder="Type your message here..."></textarea>
                                 </form>
                             </div>
                         </div>
@@ -66,13 +75,13 @@
                                 <b>Private chat</b>
                             </div>
                             <div class="row">
-                                <div class="row content-private-chat">
+                                <div class="content-private-chat">
 
                                 </div>
                             </div>
                             <div class="row">
-                                <form style="width: 100%; float:left">
-                                    <textarea #textareaMsg name="msg" ngModel id="btn-input" class="form-control input-sm" placeholder="Type your message here..."></textarea>
+                                <form #formPrivateMsg="ngForm" style="width: 100%; float:left">
+                                    <textarea #privateMsg name="content" ngModel class="form-control input-sm" placeholder="Type your message here..."></textarea>
                                 </form>
                             </div>
                         </div>

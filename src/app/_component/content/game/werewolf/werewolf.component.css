@@ -89,3 +89,8 @@
   height: 250px;
   border: 1px solid red;
 }
+
+/* chat panel */
+ul {
+  list-style-type: none;
+}

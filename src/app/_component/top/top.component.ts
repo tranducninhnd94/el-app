@@ -51,7 +51,7 @@ export class TopComponent implements OnInit, OnDestroy {
         if (response.result == Constants.RESULT_SUCCESS) {
           this.totalPostUnread = response.value;
         }
-        console.log(response);
+        // console.log(response);
       },
       error => {
         console.log(error);

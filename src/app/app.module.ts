@@ -43,9 +43,12 @@ import { UnreadComponent } from "./_component/content/unread/unread.component";
 // deploy
 import { LocationStrategy, HashLocationStrategy } from "@angular/common";
 import { WerewolfComponent } from "./_component/content/game/werewolf/Werewolf.component";
-import { SocketService } from "./_service/socket.service";
+// import { SocketService } from "./_service/socket.service";
 import { LobbyComponent } from "./_component/content/game/lobby/lobby.component";
 import { ModalRoom } from "./_component/modal/modal-room/modal-room.component";
+import { ModalCharacter } from "./_component/modal/modal-character/modal-character.component";
+import { NspLobbyService } from "./_service/socket.nsp.lobby.service";
+import { NspRoomService } from "./_service/socket.nsp.room.service";
 
 @NgModule({
   declarations: [
@@ -65,7 +68,8 @@ import { ModalRoom } from "./_component/modal/modal-room/modal-room.component";
     ModalRegister,
     ModalLogin,
     ModalPosts,
-    ModalRoom
+    ModalRoom,
+    ModalCharacter
   ],
   imports: [
     BrowserModule,
@@ -81,7 +85,7 @@ import { ModalRoom } from "./_component/modal/modal-room/modal-room.component";
     TooltipModule.forRoot(),
     Angular2FontawesomeModule
   ],
-  entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts, ModalRoom],
+  entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts, ModalRoom, ModalCharacter],
   providers: [
     TopicService,
     WordService,
@@ -92,7 +96,9 @@ import { ModalRoom } from "./_component/modal/modal-room/modal-room.component";
     FileService,
     PostService,
     CommentService,
-    SocketService
+    // SocketService,
+    NspLobbyService,
+    NspRoomService
     // { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]

@@ -7,25 +7,19 @@ export class GamerResponse {
 
   avatar_url: string;
 
-  character: string;
+  socket_id: string;
+ 
 
-  is_die: boolean;
-
-  is_view: boolean;
-
-  constructor(_id, is_view) {
-    this._id = _id;
-    this.is_view = is_view;
+  constructor() {
   }
 }
 
-export class GamerRequest{
+export class GamerRequest {
   _id: string;
 
   email: string;
 
   fullname: string;
-
 
   avatar_url: string;
 }

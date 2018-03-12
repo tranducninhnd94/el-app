@@ -2,4 +2,17 @@
     <div class="row">
         <button class="btn btn-primary" id="btn_create_room" (click)="showModalRoom()">Create Room</button>
     </div>
+
+    <div class="row">
+        <div *ngFor="let room of arrRoom; let i = index" class="col-sm-3 room">
+            <div class="content-room">
+                {{room.name_room}}
+            </div>
+            <div>
+                <a [routerLink]="['/game/werewolf']" [queryParams]="{name_room : room.name_room}">Join</a>
+                <!-- <button class="btn btn-success" (click)>Join</button> -->
+            </div>
+        </div>
+    </div>
+
 </div>

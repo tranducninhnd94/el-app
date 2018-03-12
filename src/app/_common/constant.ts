@@ -72,11 +72,21 @@ export class Constants {
   // socket
   public static URL_CONNECT_SOCKET_SERVER = "http://localhost:8000";
 
+  public static URL_NAMESPACE_LOBBY = "http://localhost:8000/game/lobby";
+
+  public static URL_NAMESPACE_ROOM = "http://localhost:8000/game/room";
+
   public static SERVER_PUBLIC_MESSAGE = "server-public-msg";
 
   public static SERVER_PRIVATE_MESSAGE = "server-private-msg";
 
   public static SERVER_SYSTEM_PUBLIC_MESSAGE = "server-system-msg";
+
+  public static SERVER_NOTIEC_CREATE_ROOM = "server-msg-create-room";
+
+  public static SERVER_GET_ALL_ROOM = "server-get-all-room";
+
+  public static SERVER_SEND_DETAIL_ROOM = "server-send-detail-room";
 
   public static CLIENT_PUBLIC_MESSAGE = "client-public-msg";
 
@@ -88,4 +98,5 @@ export class Constants {
 
   public static CLIENT_JOIN_ROOM = "client-join-room";
 
+  public static CLIENT_SEND_NAME_ROOM = "client-send-name-room";
 }
