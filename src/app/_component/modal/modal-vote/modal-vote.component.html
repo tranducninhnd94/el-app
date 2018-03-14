@@ -1,0 +1,34 @@
+<div class="modal-header">
+    <h4 class="modal-title pull-left">{{title}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div *ngIf="meInfo">
+        <p class="text-left">
+            <i>Do you want to kill someone today ?</i>
+        </p>
+
+        <div class="row">
+            <form #formVote="ngForm">
+                <div class="row">
+                    <div class="radio col-sm-11 col-sm-offset-1">
+                        <label>
+                            <input type="radio" name="vote1" value="yes" checked (change)="onSelectionChange('yes')">Yes</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="radio col-sm-11 col-sm-offset-1">
+                        <label>
+                            <input type="radio" name="vote1" value="no" (change)="onSelectionChange('no')">No</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="confirmVote()">{{confirmBtnName}}</button>
+    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>

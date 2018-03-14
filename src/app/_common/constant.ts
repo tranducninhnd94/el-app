@@ -69,6 +69,8 @@ export class Constants {
   // game
   public static TIME_TO_LIE_OF_ROUND = 10; // secound
 
+  public static TIME_TO_LIE_OF_FIRST_VOTE = 10; // secound
+
   // socket
   public static URL_CONNECT_SOCKET_SERVER = "http://localhost:8000";
 
@@ -88,6 +90,14 @@ export class Constants {
 
   public static SERVER_SEND_DETAIL_ROOM = "server-send-detail-room";
 
+  public static SERVER_START_GAME = "server-start-game-werewolf";
+
+  public static SERVER_SEND_INFO_FIRST_VOTE_BY_ROUNF = "server-send-info-fist-vote-by-round";
+
+  public static SERVER_SEND_COUND_DOWN = "server-send-cound-down";
+
+  public static SERVER_SEND_ACTION = "server-send-action";
+
   public static CLIENT_PUBLIC_MESSAGE = "client-public-msg";
 
   public static CLIENT_PRIVATE_MESSAGE = "client-private-msg";
@@ -99,4 +109,12 @@ export class Constants {
   public static CLIENT_JOIN_ROOM = "client-join-room";
 
   public static CLIENT_SEND_NAME_ROOM = "client-send-name-room";
+
+  public static CLIENT_START_GAME = "client-start-game-werewolf";
+
+  public static CLIENT_FIRST_VOTE = "client-first-vote";
+
+  public static CLIENT_GET_INFO_FIRST_VOTE_BY_ROUND = "client-get-info-fist-vote-by-round";
+
+  public static CLIENT_SEND_ACTION = "client-send-action";
 }

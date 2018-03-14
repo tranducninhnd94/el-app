@@ -10,7 +10,9 @@ import {
   Room,
   SystemResponse,
   PublicMsg,
-  PrivateMsg
+  PrivateMsg,
+  CoundDown,
+  GamerAction
 } from "../_model/socket.model";
 
 @Injectable()
@@ -18,7 +20,7 @@ export class NspRoomService {
   private socket = io(Constants.URL_NAMESPACE_ROOM);
   private Observer: Observable<any>;
 
-  constructor() {}
+  constructor() { }
 
   getPublicMessage(): Observable<SystemResponse<Array<PublicMsg>>> {
     let observable = new Observable<SystemResponse<Array<PublicMsg>>>(observer => {
@@ -56,8 +58,44 @@ export class NspRoomService {
     return observable;
   }
 
-  sendPublicMessage(publicMsg: PublicMsg): void {
-    this.socket.emit(Constants.CLIENT_PUBLIC_MESSAGE, publicMsg);
+  sk_getStartGame(): Observable<SystemResponse<Room>> {
+    let observable = new Observable<SystemResponse<Room>>(observer => {
+      this.socket.on(Constants.SERVER_START_GAME, res => {
+        observer.next(res);
+      });
+    });
+    return observable;
+  }
+
+  sk_getInfoFirstVoteByRound(): Observable<SystemResponse<any>> {
+    let observable = new Observable<SystemResponse<any>>(observer => {
+      this.socket.on(Constants.SERVER_SEND_INFO_FIRST_VOTE_BY_ROUNF, res => {
+        observer.next(res);
+      });
+    });
+    return observable;
+  }
+
+  sk_getCountDown(): Observable<CoundDown> {
+    let observable = new Observable<CoundDown>(observer => {
+      this.socket.on(Constants.SERVER_SEND_COUND_DOWN, res => {
+        observer.next(res);
+      });
+    });
+    return observable;
+  }
+
+  sk_getActionOfGamer(): Observable<GamerAction> {
+    let observable = new Observable<GamerAction>(observer => {
+      this.socket.on(Constants.SERVER_SEND_ACTION, res => {
+        observer.next(res);
+      });
+    });
+    return observable;
+  }
+
+  sendPublicMessage(obj: any): void {
+    this.socket.emit(Constants.CLIENT_PUBLIC_MESSAGE, obj);
   }
 
   sendPrivateMessage(privateMsg: PrivateMsg): void {
@@ -77,4 +115,19 @@ export class NspRoomService {
     this.socket.emit(Constants.CLIENT_JOIN_ROOM, obj);
   }
 
+  sk_startGame(obj: any) {
+    this.socket.emit(Constants.CLIENT_START_GAME, obj);
+  }
+
+  sk_sendFirstVote(obj: any) {
+    this.socket.emit(Constants.CLIENT_FIRST_VOTE, obj);
+  }
+
+  sk_getInfoFirstVote(obj: any) {
+    this.socket.emit(Constants.CLIENT_GET_INFO_FIRST_VOTE_BY_ROUND, obj);
+  }
+
+  sk_sendAction(obj: any) {
+    this.socket.emit(Constants.CLIENT_SEND_ACTION, obj);
+  }
 }

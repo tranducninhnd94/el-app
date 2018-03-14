@@ -21,6 +21,8 @@ export class ModalSelect implements OnInit {
 
   arrTopics: any;
 
+  nameRoom: string;
+
   constructor(public bsModalRef: BsModalRef, private modalService: ModalService) {}
 
   ngOnInit() {}

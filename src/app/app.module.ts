@@ -49,6 +49,7 @@ import { ModalRoom } from "./_component/modal/modal-room/modal-room.component";
 import { ModalCharacter } from "./_component/modal/modal-character/modal-character.component";
 import { NspLobbyService } from "./_service/socket.nsp.lobby.service";
 import { NspRoomService } from "./_service/socket.nsp.room.service";
+import { ModalVote } from "./_component/modal/modal-vote/modal-vote.component";
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { NspRoomService } from "./_service/socket.nsp.room.service";
     ModalLogin,
     ModalPosts,
     ModalRoom,
-    ModalCharacter
+    ModalCharacter,
+    ModalVote
   ],
   imports: [
     BrowserModule,
@@ -85,7 +87,7 @@ import { NspRoomService } from "./_service/socket.nsp.room.service";
     TooltipModule.forRoot(),
     Angular2FontawesomeModule
   ],
-  entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts, ModalRoom, ModalCharacter],
+  entryComponents: [ModalSelect, ModalRegister, ModalLogin, ModalPosts, ModalRoom, ModalCharacter, ModalVote],
   providers: [
     TopicService,
     WordService,

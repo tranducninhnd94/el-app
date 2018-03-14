@@ -6,29 +6,45 @@
 </div>
 <div class="modal-body">
     <div *ngIf="arrCharacters">
-        <p>
+        <p class="text-center">
             <i>Choose Characters</i>
+        </p>
+        <p *ngIf="!formIsvalid" class="text-center">
+            <span class="text-danger text-center">Quantity of character must be equals total gamer</span>
         </p>
         <div class="row">
             <form #formChacracter="ngForm">
                 <div *ngFor="let character of arrCharacters; let i = index" class="row" style="margin-top:10px">
-                    <div class="col-sm-1 col-sm-offset-1 text-right">
-                        <input #inputSelect type="checkbox" name="topic" value="{{character}}" (change)="updateCheckedOptions(i,
+                    <div>
+                        <div *ngIf="character.name != 'witch' &&  character.checked && character.quantity < 0" class="col-sm-11 col-sm-offset-1">
+                            <div class="text-center">
+                                <span class="text-danger text-center">Quantity of {{character.name}} must be at least 0</span>
+                            </div>
+                        </div>
+
+                        <div *ngIf="(character.name == 'witch' &&  character.checked  && character.quantity > 1) || (character.name == 'witch' &&  character.checked  && character.quantity <= 0)"
+                            class="col-sm-11 col-sm-offset-1">
+                            <div class="text-center">
+                                <span class="text-danger">Quantity of {{character.name}} must be 1</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 col-sm-offset-1 text-right">
+                            <input #inputSelect type="checkbox" name="character" value="{{character.name}}" [checked]="character.checked" (change)="updateCheckedOptions(i,
                             $event)">
-                    </div>
-                    <div class="col-sm-2">
-                        {{character}}
-                    </div>
+                        </div>
+                        <div class="col-sm-2">
+                            {{character.name}}
+                        </div>
 
-                    <div class="col-sm-2">
-                        <img [src]="prefixSrc + character + sufixSrc" style="max-width: 50px">
+                        <div class="col-sm-2">
+                            <img [src]="prefixSrc + character.name + sufixSrc" style="max-width: 50px">
+                        </div>
+
+                        <div class="col-sm-2">
+                            <input type="number" value="{{character.quantity}}" [(ngModel)]="character.quantity" name="{{character.name}}" (change)="updateQuantity(i)"
+                                placeholder="number of character">
+                        </div>
                     </div>
-
-                    <div class="col-sm-2">
-                        <input type="number" placeholder="number of character">
-                    </div>
-
-
                     <!-- <input #inputSelect type="checkbox" name="topic" value="{{character}}" (change)="updateCheckedOptions(i,
                             $event)">{{character}} -->
                 </div>
@@ -37,6 +53,6 @@
     </div>
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-default">{{confirmBtnName}}</button>
+    <button type="button" class="btn btn-default" (click)="confirmCustomize()">{{confirmBtnName}}</button>
     <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
 </div>

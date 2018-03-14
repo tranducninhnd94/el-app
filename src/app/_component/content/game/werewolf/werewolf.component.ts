@@ -8,8 +8,10 @@ import { ISubscription } from "rxjs/Subscription";
 import { ToastService } from "../../../../_service/toast.service";
 import { BsModalRef, BsModalService } from "ngx-bootstrap/modal";
 import { ModalCharacter } from "../../../modal/modal-character/modal-character.component";
+import { ModalVote } from "../../../modal/modal-vote/modal-vote.component";
 import { NspRoomService } from "../../../../_service/socket.nsp.room.service";
 import { NgForm } from "@angular/forms";
+import { Action } from "../../../../_model/enum.model";
 
 @Component({
   selector: "game-werewolf",
@@ -17,14 +19,15 @@ import { NgForm } from "@angular/forms";
   styleUrls: ["./werewolf.component.css"]
 })
 export class WerewolfComponent implements OnInit {
-
   @ViewChild("formPublicMsg") formPublicMsg: NgForm;
   @ViewChild("formPrivateMsg") formPrivateMsg: NgForm;
 
-  @ViewChild('publicMsg') publicMsg: ElementRef;
-  @ViewChild('privateMsg') privateMsg: ElementRef;
+  @ViewChild("publicMsg") publicMsg: ElementRef;
+  @ViewChild("privateMsg") privateMsg: ElementRef;
 
-  @ViewChild('divPublicMsg') divPublicMsg: ElementRef;
+  @ViewChild("divPublicMsg") divPublicMsg: ElementRef;
+
+  private gameStarted: boolean = false;
 
   private isActive = true;
 
@@ -58,7 +61,55 @@ export class WerewolfComponent implements OnInit {
 
   private observerGetPublicMsg: ISubscription;
 
+  private observerStartGame: ISubscription;
+
+  private observerGetFirstVote: ISubscription;
+
+  private observerGetCountDown: ISubscription;
+
+  private observerGetAction : ISubscription;
+
   private arrPublicMsg: Array<PublicMsg>;
+
+  private nameOfRoom: string;
+
+  private prefixSrc = "../../../../assets/img-werewolf/character/card-";
+
+  private sufixSrc = ".png";
+
+  private defaultSrc = "../../../../assets/img-werewolf/character/stardust.png";
+
+  private meInfo: GamerInfo;
+
+  private numViewCharacter = 1; // fortuneteller
+
+  private numPin = 1; // hunter
+
+  private numbite = 1; // wolf
+
+  private numSave = 1;
+
+  private numEliminate = 1;
+
+  private firstVoteNumYes = 0;
+
+  private firstVoteNumNo = 0;
+
+  private titleCountdown = "In Round";
+
+  private ttl = 0;
+
+  private isInRound: boolean = false;
+
+  private isInFirstVote: boolean = false;
+
+  private isInSecondVote: boolean = false;
+
+  private actionGamer : Action;
+
+  private victim : GamerInfo;
+
+  private valueDefault = "undefined";
 
   constructor(
     private cookieService: CookieService,
@@ -70,22 +121,49 @@ export class WerewolfComponent implements OnInit {
   ) { }
   viewCharacter(i) {
     console.log("view character. : ", i);
-    this.isActive = !this.isActive;
-    this.arrGamer[i].is_view = !this.arrGamer[i].is_view;
-
-    this.timeViewCharacter = setTimeout(() => {
-      if (this.arrGamer[i].is_view) {
+    console.log("game started . : ", this.gameStarted);
+    if (this.gameStarted) {
+      let character = this.meInfo.character;
+      if (character != "fortuneteller") {
+        this.toastService.showError("You aren't  fortuneteller");
+      } else if (this.numViewCharacter == 1) {
+        this.isActive = !this.isActive;
         this.arrGamer[i].is_view = !this.arrGamer[i].is_view;
+        this.numViewCharacter = 0;
+        this.timeViewCharacter = setTimeout(() => {
+          if (this.arrGamer[i].is_view) {
+            this.arrGamer[i].is_view = !this.arrGamer[i].is_view;
+          }
+        }, 3000);
+      } else {
+        this.toastService.showError("Out of view");
       }
-    }, 3000);
+    } else {
+      this.isActive = !this.isActive;
+      this.arrGamer[i].is_view = !this.arrGamer[i].is_view;
+
+      this.timeViewCharacter = setTimeout(() => {
+        if (this.arrGamer[i].is_view) {
+          this.arrGamer[i].is_view = !this.arrGamer[i].is_view;
+        }
+      }, 3000);
+    }
   }
 
   ngOnInit(): void {
     // this.init();
 
+    this.listenerGetAction();
+
+    this.listenerGetFirstVote();
+
     this.listenerDetailRoom();
 
     this.listenerPublicMsg();
+
+    this.listenerStartGame();
+
+    this.listenerGetCountDown();
 
     let token = this.cookieService.getValue(Constants.COOKIE_TOKEN_NAME);
     if (token) {
@@ -97,16 +175,88 @@ export class WerewolfComponent implements OnInit {
     }
   }
 
+  getInfoMe(): void {
+    let _id = this.cookieService.getValue(Constants.COOKIE_ID);
+    this.meInfo = this.arrGamer.find(gamer => {
+      return gamer._id == _id;
+    });
+  }
+
   setInfoGamerResponse(): void {
     this.gamerResponse = new GamerResponse();
     this.gamerResponse._id = this.cookieService.getValue(Constants.COOKIE_ID);
     this.gamerResponse.email = this.cookieService.getValue(Constants.COOKIE_EMAIL);
     this.gamerResponse.fullname = this.cookieService.getValue(Constants.COOKIE_FULLNAME);
     this.gamerResponse.avatar_url = this.cookieService.getValue(Constants.COOKIE_AVATAR_URL);
-
   }
 
   // litener
+
+  listenerGetAction(): void{
+    this.observerGetAction = this.nspRoomService.sk_getActionOfGamer().subscribe(
+      res=>{
+        this.actionGamer = res.action;
+        this.victim = res.victim;
+      },
+      error=>{
+        console.log(error);
+      }
+    )
+  }
+  
+
+  listenerGetCountDown(): void {
+    this.observerGetCountDown = this.nspRoomService.sk_getCountDown().subscribe(
+      res => {
+        console.log(res);
+        this.titleCountdown = res.name;
+        this.ttlOfRound = res.ttl;
+        this.isInRound = res.isInRound;
+        this.isInFirstVote = res.isInFirstVote;
+        this.isInSecondVote = res.isInSecondVote;
+
+        let minute = Math.floor(this.ttlOfRound / 60);
+        let second = this.ttlOfRound % 60;
+
+        this.minutesOfRound = minute >= 10 ? minute + "" : "0" + minute;
+        this.secondOfRound = second >= 10 ? second + "" : "0" + second;
+
+        // end of phase
+        if (this.ttlOfRound == 0){
+
+        }
+
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
+  listenerGetFirstVote(): void {
+    this.observerGetFirstVote = this.nspRoomService.sk_getInfoFirstVoteByRound().subscribe(
+      res => {
+        // format: {roomName, arrVote : [{gamer, answer}]}
+        console.log(res);
+        if (res.result == Constants.RESULT_SUCCESS) {
+          this.firstVoteNumYes = 0;
+          this.firstVoteNumNo = 0;
+          let arrVote = res.value.arrVote;
+          arrVote.forEach(tmp => {
+            if (tmp.answer == 1) {
+              this.firstVoteNumYes += 1;
+            } else {
+              this.firstVoteNumNo += 1;
+            }
+          });
+        }
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
   listenerPublicMsg(): void {
     this.observerGetPublicMsg = this.nspRoomService.getPublicMessage().subscribe(
       res => {
@@ -116,7 +266,8 @@ export class WerewolfComponent implements OnInit {
       },
       error => {
         console.log(error);
-      })
+      }
+    );
   }
 
   listenerDetailRoom(): void {
@@ -124,6 +275,7 @@ export class WerewolfComponent implements OnInit {
       res => {
         if (res.result == Constants.RESULT_SUCCESS) {
           this.arrGamer = res.value.arrGamer;
+          this.getInfoMe();
         } else {
           this.toastService.showError(res.message);
           this.router.navigate(["/game/lobby"]);
@@ -136,8 +288,29 @@ export class WerewolfComponent implements OnInit {
     );
   }
 
+  listenerStartGame(): void {
+    this.observerStartGame = this.nspRoomService.sk_getStartGame().subscribe(
+      res => {
+        if (res.result == Constants.RESULT_SUCCESS) {
+          this.gameStarted = res.value.is_started;
+          this.arrGamer = res.value.arrGamer;
+          this.round = res.value.round;
+          this.getInfoMe();
+        } else {
+          this.toastService.showError(res.message);
+          this.router.navigate(["/game/lobby"]);
+        }
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
 
   nextRound(): void {
+    // return numViewCharacter
+    this.numViewCharacter = 1;
+
     this.ttlOfRound = Constants.TIME_TO_LIE_OF_ROUND;
     this.timeRound = setInterval(() => {
       let minute = Math.floor(this.ttlOfRound / 60);
@@ -172,6 +345,8 @@ export class WerewolfComponent implements OnInit {
 
     let nameRoom = this.activateRouter.snapshot.queryParamMap.get("name_room");
 
+    this.nameOfRoom = nameRoom;
+
     let obj = { nameRoom, gamerInfo };
 
     console.log("obj Join : ", obj);
@@ -187,10 +362,17 @@ export class WerewolfComponent implements OnInit {
 
   // open modal select character
   openModalCharacter(): void {
-    const initialState = {
-      arrCharacters: this.arrCharacters,
+    let arr = [];
+    this.arrCharacters.forEach(character => {
+      let tmp = { name: character, quantity: 0, checked: false };
+      arr.push(tmp);
+    });
 
-      title: "Customize Game"
+    const initialState = {
+      arrCharacters: arr,
+      totalGamer: this.arrGamer.length,
+      title: "Customize Game",
+      nameRoom: this.nameOfRoom
     };
     this.modalRef = this.modalService.show(ModalCharacter, { initialState, backdrop: "static" });
     this.modalRef.content.closeBtnName = "Close";
@@ -200,6 +382,10 @@ export class WerewolfComponent implements OnInit {
   ngOnDestroy(): void {
     this.observerGetDetailRoom.unsubscribe();
     this.observerGetPublicMsg.unsubscribe();
+    this.observerStartGame.unsubscribe();
+    this.observerGetFirstVote.unsubscribe();
+    this.observerGetCountDown.unsubscribe();
+    this.observerGetAction.unsubscribe();
   }
 
   // handle chat
@@ -211,9 +397,8 @@ export class WerewolfComponent implements OnInit {
       console.log("aaaaaaaaaaaaaaaaaaaaaaa");
       window.setTimeout(() => {
         this.setScoll();
-      }, 10)
+      }, 10);
     } else if (event.keyCode == 13 && event.shiftKey == true) {
-
     }
   }
 
@@ -228,13 +413,9 @@ export class WerewolfComponent implements OnInit {
       objPublicMsg.create_at = new Date();
 
       console.log("publicmsg : ", objPublicMsg);
-      this.nspRoomService.sendPublicMessage(objPublicMsg);
-
-      
-
+      this.nspRoomService.sendPublicMessage({ objPublicMsg, nameRoom: this.nameOfRoom });
     }
   }
-
 
   sendPrivateMsg(): void {
     console.log("form private : ", this.formPrivateMsg.value);
@@ -244,7 +425,109 @@ export class WerewolfComponent implements OnInit {
     this.divPublicMsg.nativeElement.scrollTop = this.divPublicMsg.nativeElement.scrollHeight;
   }
 
+  // leave
+
+  leaveRoom() { }
+
+  // modal vote
+
+  showModalVote() {
+    const initialState = {
+      title: "Vote Dialog",
+      nameRoom: this.nameOfRoom,
+      meInfo: this.meInfo
+    };
+    this.modalRef = this.modalService.show(ModalVote, { initialState, backdrop: "static" });
+    this.modalRef.content.closeBtnName = "Close";
+    this.modalRef.content.confirmBtnName = "Confirm";
+  }
+
+  // confirm vote
+  private answerFirstVote = 1;
+  private styleVote1 = {};
+  private round: number = 1;
+  private countdownFirstVote = Constants.TIME_TO_LIE_OF_FIRST_VOTE;
+
+  onSelectionChange(value) {
+    console.log("change..", value);
+    if (value == "yes") this.answerFirstVote = 1;
+    else this.answerFirstVote = 0;
+
+    let objVote = {
+      // round: this.round,
+      infoVote: { gamer: this.meInfo, answer: this.answerFirstVote },
+      roomName: this.nameOfRoom
+    };
+    // this.styleVote1 = { "pointer-events": "none", opacity: "0.4" };
+    this.nspRoomService.sk_sendFirstVote(objVote);
+    console.log("objVote : ", objVote);
+  }
 
 
+  // action of gamer 
+  doPinAction(index){
+
+    console.log("pin action : ")
+    let action = "PIN";
+    let character = this.meInfo;
+    let victim = this.arrGamer[index];
+
+    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+
+    this.nspRoomService.sk_sendAction(obj);
+
+  }
+
+  doProtectAction(index){
+    let action = "PROTECT";
+    let character = this.meInfo;
+    let victim = this.arrGamer[index];
+
+    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    console.log("action", obj);
+    this.nspRoomService.sk_sendAction(obj);
+  }
+
+  doEnvenomAction(index){
+    let action = "ENVENOM";
+    let character = this.meInfo;
+    let victim = this.arrGamer[index];
+
+    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    console.log("action", obj);
+    this.nspRoomService.sk_sendAction(obj);
+  }
+
+  doSaveAction(index){
+    let action = "SAVE";
+    let character = this.meInfo;
+    let victim = this.arrGamer[index];
+
+    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    console.log("action", obj);
+    this.nspRoomService.sk_sendAction(obj);
+  }
+
+
+  doBiteAction(index){
+    let action = "BITE";
+    let character = this.meInfo;
+    let victim = this.arrGamer[index];
+
+    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    console.log("action", obj);
+    this.nspRoomService.sk_sendAction(obj);
+  }
+
+  doKillAction(index){
+    let action = "PIN";
+    let character = this.meInfo;
+    let victim = this.arrGamer[index];
+
+    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    console.log("action", obj);
+    this.nspRoomService.sk_sendAction(obj);
+  }
 
 }
+// [{nameRoom : ? , info : {round : round: ?,  arrVote : {gamer: ?, answer}}}]

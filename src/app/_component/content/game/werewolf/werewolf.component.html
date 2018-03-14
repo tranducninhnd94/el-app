@@ -1,12 +1,13 @@
 <!-- <div class="container-fluid "> -->
+<button (click)="showModalVote()">Show modal vote</button> {{isInSecondVote}}
 <div class="container-fluid">
     <div class="row content-game">
         <div class="col-sm-2 list-gamer-timer">
             <div class="timer">
-                <h3 style="float: left; margin-left : 30px">
-                    <b>Round 1</b>
-                </h3>
-                <h3 class="text-center">{{minutesOfRound}} : {{secondOfRound}}</h3>
+                <h4 class="text-center" style="margin-top: 0">
+                    <b>{{titleCountdown }} {{round && isInRound ? round : 1}}</b>
+                </h4>
+                <h4 style="margin-top: 0" class="text-center" class="text-center">{{minutesOfRound}} : {{secondOfRound}}</h4>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading" style="text-align: center">
@@ -17,13 +18,86 @@
                         <li *ngFor="let gamer of arrGamer; let i = index" class="list-group-item">
                             {{gamer.fullname}}
                             <i *ngIf="gamer.is_owner" class="fa fa-star" style="color:violet" tooltip="Owner" placement="right"></i>
-                            <i class="fa fa-gavel " style="float: right" (click)="vote(i)"></i>
+
+                            <!-- for hunter -->
+                            <button *ngIf="isInRound &&meInfo && meInfo.character && meInfo._id && meInfo.character == 'huntsman' && meInfo._id != gamer._id"
+                                style="max-width: 30px; max-height: 24px; float: right" tooltip="Ghim player" placement="left"
+                                (click)="doPinAction(i)">
+                                <img src="../../../../../assets/img-werewolf/skill/pin-icon.png">
+                            </button>
+                            <!-- security -->
+                            <button *ngIf="isInRound &&meInfo && meInfo.character && meInfo.character == 'security' " style="max-width: 30px; max-height: 24px; float: right"
+                                tooltip="protect player" placement="left" (click)="doProtectAction(i)">
+                                <img src="../../../../../assets/img-werewolf/skill/protect.png">
+                            </button>
+                            <!-- witch -->
+                            <button *ngIf="isInRound &&meInfo && meInfo.character && meInfo.character == 'witch'" style="max-width: 30px; max-height: 24px; float: right"
+                                tooltip=" eliminate a player" placement="left" (click)="doEnvenomAction(i)">
+                                <img src="../../../../../assets/img-werewolf/skill/toxic-icon.png">
+                            </button>
+
+                            <button *ngIf="isInRound && meInfo && meInfo.character && meInfo.character == 'witch'" style="max-width: 30px; max-height: 24px; float: right"
+                                tooltip="save the werewolves's victim" placement="left" (click)="doSaveAction(i)">
+                                <img src="../../../../../assets/img-werewolf/skill/Help-icon.png">
+                            </button>
+                            <!-- werewolf -->
+                            <button *ngIf="isInRound && meInfo._id != gamer._id && meInfo && meInfo.character && meInfo.character == 'werewolf' " style="max-width: 30px; max-height: 24px; float: right"
+                                tooltip="bite it" placement="left" (click)="doBiteAction(i)">
+                                <img src="../../../../../assets/img-werewolf/skill/Wolf-Boss-icon.png">
+                            </button>
+                            <!-- Kill -->
+                            <button *ngIf="isInSecondVote && meInfo && meInfo.character  && meInfo._id && meInfo._id != gamer._id" style="max-width: 30px; max-height: 24px; float: right"
+                                tooltip="kill it" placement="left" (click)="doKillAction(i)">
+                                <img src="../../../../../assets/img-werewolf/skill/sword.png">
+                            </button>
+                            <!-- All -->
+
                         </li>
                     </ul>
                 </div>
                 <div class="panel-footer">Total: {{(arrGamer && arrGamer.length) ? arrGamer.length : 0}} member
-                    <button class="btn btn-success" style="float: right; padding: 0" (click)="openModal()">Start game</button>
+                    <button *ngIf="meInfo && meInfo.is_owner &&  !gameStarted" class="btn btn-success" style="float: right; padding: 0" (click)="openModal()">Start game</button>
+                    <button *ngIf="gameStarted" class="btn btn-danger" style="float: right; padding: 0" (click)="leaveRoom()">Leave room</button>
+                    <button *ngIf="ttlOfRound == 0 && isInSecondVote" class="btn btn-danger" style="float: right; padding: 0" (click)="nextRound()">next</button>
                 </div>
+            </div>
+            <div *ngIf="isInFirstVote" class="vote" [ngStyle]="styleVote1">
+                <p class="text-left">
+                    <i>Do you want to kill someone today ?</i>
+                </p>
+                <form #formVote="ngForm">
+                    <div class="row">
+                        <div class="radio col-sm-2 col-sm-offset-1" style="margin-top:0">
+                            <label>
+                                <input type="radio" name="vote1" value="yes" (change)="onSelectionChange('yes')">Yes</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <progressbar style="margin-bottom: 0" [max]=" (arrGamer && arrGamer.length) ? arrGamer.length : 0" [value]="firstVoteNumYes">
+                                <span class="text-nowrap">{{firstVoteNumYes}} / {{(arrGamer && arrGamer.length) ? arrGamer.length : 0}}</span>
+                            </progressbar>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="radio col-sm-2 col-sm-offset-1" style="margin-top:0">
+                            <label>
+                                <input type="radio" name="vote1" value="no" (change)="onSelectionChange('no')">No</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <progressbar style="margin-bottom: 0" [max]=" (arrGamer && arrGamer.length) ? arrGamer.length : 0" [value]="firstVoteNumNo">
+                                <span class="text-nowrap">{{firstVoteNumNo}} / {{(arrGamer && arrGamer.length) ? arrGamer.length : 0}}</span>
+                            </progressbar>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="action">
+                <div class="row">
+                    <div class="radio col-sm-10 col-sm-offset-1" style="margin-top:0">
+                        {{actionGamer ? actionGamer : valueDefault }} - {{(victim && victim.fullname) ? victim.fullname : valueDefault }}
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="col-sm-10">
@@ -32,7 +106,8 @@
                     <div *ngFor="let gamer of arrGamer; let i = index" style="margin-left: 10px">
                         <div class="character">
                             <div class="character-image" (click)="viewCharacter(i)">
-                                <img *ngIf="gamer.is_view" class="front-image" src="../../../../assets/img-werewolf/character/card-cupid.png" />
+                                <img *ngIf="gamer.is_view" class="front-image" [src]="gamer.character && gameStarted ? (prefixSrc + gamer.character + sufixSrc) : defaultSrc"
+                                />
                                 <img class="back-image" [ngClass]="{transparent : gamer.is_view}" src="../../../../assets/img-werewolf/character/card-back.png"
                                 />
                             </div>
@@ -55,7 +130,7 @@
                             <div class="row">
                                 <div #divPublicMsg class="content-public-chat" style="overflow-y: auto;">
                                     <div *ngIf="arrPublicMsg">
-                                        <div *ngFor= "let publicMsg of arrPublicMsg; let i = index">
+                                        <div *ngFor="let publicMsg of arrPublicMsg; let i = index">
                                             <ul>
                                                 <li>{{publicMsg.sender.fullname}} : {{publicMsg.content}}</li>
                                             </ul>
