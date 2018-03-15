@@ -94,6 +94,15 @@ export class NspRoomService {
     return observable;
   }
 
+  sk_getInfoAfterNightForServer(): Observable<Room> {
+    let observable = new Observable<Room>(observer => {
+      this.socket.on(Constants.SERVER_SEND_INFO_AFTER_NIGHT, res => {
+        observer.next(res);
+      });
+    });
+    return observable;
+  }
+
   sendPublicMessage(obj: any): void {
     this.socket.emit(Constants.CLIENT_PUBLIC_MESSAGE, obj);
   }
@@ -130,4 +139,21 @@ export class NspRoomService {
   sk_sendAction(obj: any) {
     this.socket.emit(Constants.CLIENT_SEND_ACTION, obj);
   }
+
+  sk_getInfoAfterNight(obj: any) {
+    this.socket.emit(Constants.CLIENT_GET_INFO_AFTER_NIGHT, obj);
+  }
+
+  sk_getClientGetDetailRoom(obj: any) {
+    this.socket.emit(Constants.CLIENT_GET_DETAIL_ROOM, obj);
+  }
+
+  sk_openFirstVote(obj: any) {
+    this.socket.emit(Constants.CLIENT_OPEN_FIRST_VOTE, obj);
+  }
+
+  sk_openSecondVote(obj: any) {
+    this.socket.emit(Constants.CLIENT_OPEN_SECOND_VOTE, obj);
+  }
+
 }

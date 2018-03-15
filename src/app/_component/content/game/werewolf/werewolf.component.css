@@ -107,3 +107,8 @@
 ul {
   list-style-type: none;
 }
+
+.die {
+  pointer-events: "none";
+  opacity: "0.4";
+}

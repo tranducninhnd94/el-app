@@ -19,7 +19,11 @@ export class ToastService {
         this.toastr.warning(message);
     }
 
-    showInfo(message) {
-        this.toastr.info(message);
+    showInfo(message, options) {
+        this.toastr.info(message, null, options);
+    }
+
+    showCustom() {
+        this.toastr.custom('<div class="alert alert-primary" role="alert">This is a primary alert—check it out!</div>', null, { enableHTML: true, toastLife: 1000 });
     }
 }

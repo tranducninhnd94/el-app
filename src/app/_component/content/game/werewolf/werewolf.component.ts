@@ -67,7 +67,9 @@ export class WerewolfComponent implements OnInit {
 
   private observerGetCountDown: ISubscription;
 
-  private observerGetAction : ISubscription;
+  private observerGetAction: ISubscription;
+
+  private observerGetInfoAfterNight: ISubscription;
 
   private arrPublicMsg: Array<PublicMsg>;
 
@@ -105,9 +107,9 @@ export class WerewolfComponent implements OnInit {
 
   private isInSecondVote: boolean = false;
 
-  private actionGamer : Action;
+  private actionGamer: Action;
 
-  private victim : GamerInfo;
+  private victim: GamerInfo;
 
   private valueDefault = "undefined";
 
@@ -165,6 +167,8 @@ export class WerewolfComponent implements OnInit {
 
     this.listenerGetCountDown();
 
+    this.listenerGetInFoAfterNight();
+
     let token = this.cookieService.getValue(Constants.COOKIE_TOKEN_NAME);
     if (token) {
       this.setInfoGamerResponse();
@@ -192,18 +196,35 @@ export class WerewolfComponent implements OnInit {
 
   // litener
 
-  listenerGetAction(): void{
+  listenerGetInFoAfterNight(): void {
+    this.observerGetInfoAfterNight = this.nspRoomService.sk_getInfoAfterNightForServer().subscribe(
+      res => {
+        console.log("after night : ", res);
+        this.arrGamer = res.arrGamer;
+
+        this.toastService.showInfo("The vote will come to 3 second !", { toastLife: 3000 })
+        let timeOut = setTimeout(() => {
+          this.nspRoomService.sk_openFirstVote({nameRoom: this.nameOfRoom});
+        }, 4000)
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
+  listenerGetAction(): void {
     this.observerGetAction = this.nspRoomService.sk_getActionOfGamer().subscribe(
-      res=>{
+      res => {
+        console.log("action response: ", res);
         this.actionGamer = res.action;
         this.victim = res.victim;
       },
-      error=>{
+      error => {
         console.log(error);
       }
-    )
+    );
   }
-  
 
   listenerGetCountDown(): void {
     this.observerGetCountDown = this.nspRoomService.sk_getCountDown().subscribe(
@@ -222,10 +243,19 @@ export class WerewolfComponent implements OnInit {
         this.secondOfRound = second >= 10 ? second + "" : "0" + second;
 
         // end of phase
-        if (this.ttlOfRound == 0){
+        if (this.ttlOfRound == 0 && this.isInRound) {
+          this.nspRoomService.sk_getInfoAfterNight({ nameRoom: this.nameOfRoom });
+        }else if (this.ttlOfRound == 0 &&  this.isInFirstVote){
+          if (this.firstVoteNumYes > this.firstVoteNumNo) {
+            // co giet // call second vote
+            this.toastService.showInfo("Let kill someone after 3 second ! !", { toastLife: 3000 })
+            let timeOut = setTimeout(() => {
+              this.nspRoomService.sk_openSecondVote({nameRoom: this.nameOfRoom});
+            }, 4000)
+          }else{
 
+          }
         }
-
       },
       error => {
         console.log(error);
@@ -274,8 +304,10 @@ export class WerewolfComponent implements OnInit {
     this.observerGetDetailRoom = this.nspRoomService.getDetailRoom().subscribe(
       res => {
         if (res.result == Constants.RESULT_SUCCESS) {
-          this.arrGamer = res.value.arrGamer;
-          this.getInfoMe();
+          if (res.value) {
+            this.arrGamer = res.value.arrGamer;
+            this.getInfoMe();
+          }
         } else {
           this.toastService.showError(res.message);
           this.router.navigate(["/game/lobby"]);
@@ -386,6 +418,7 @@ export class WerewolfComponent implements OnInit {
     this.observerGetFirstVote.unsubscribe();
     this.observerGetCountDown.unsubscribe();
     this.observerGetAction.unsubscribe();
+    this.observerGetInfoAfterNight.unsubscribe();
   }
 
   // handle chat
@@ -444,7 +477,10 @@ export class WerewolfComponent implements OnInit {
 
   // confirm vote
   private answerFirstVote = 1;
-  private styleVote1 = {};
+  // private styleVote1 = { "pointer-events": "none", opacity: "0.4" };
+
+  private styleGamerDie = { "pointer-events": "none", opacity: "0.4", color: "red" };
+
   private round: number = 1;
   private countdownFirstVote = Constants.TIME_TO_LIE_OF_FIRST_VOTE;
 
@@ -463,70 +499,71 @@ export class WerewolfComponent implements OnInit {
     console.log("objVote : ", objVote);
   }
 
-
-  // action of gamer 
-  doPinAction(index){
-
-    console.log("pin action : ")
+  // action of gamer
+  doPinAction(index) {
+    console.log("pin action : ");
     let action = "PIN";
     let character = this.meInfo;
     let victim = this.arrGamer[index];
 
-    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    let obj = { nameRoom: this.nameOfRoom, character, action, victim };
 
     this.nspRoomService.sk_sendAction(obj);
-
   }
 
-  doProtectAction(index){
+  doProtectAction(index) {
     let action = "PROTECT";
     let character = this.meInfo;
     let victim = this.arrGamer[index];
 
-    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    let obj = { nameRoom: this.nameOfRoom, character, action, victim };
     console.log("action", obj);
     this.nspRoomService.sk_sendAction(obj);
   }
 
-  doEnvenomAction(index){
+  doEnvenomAction(index) {
     let action = "ENVENOM";
     let character = this.meInfo;
     let victim = this.arrGamer[index];
 
-    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    let obj = { nameRoom: this.nameOfRoom, character, action, victim };
     console.log("action", obj);
     this.nspRoomService.sk_sendAction(obj);
   }
 
-  doSaveAction(index){
+  doSaveAction(index) {
     let action = "SAVE";
     let character = this.meInfo;
     let victim = this.arrGamer[index];
 
-    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    let obj = { nameRoom: this.nameOfRoom, character, action, victim };
     console.log("action", obj);
     this.nspRoomService.sk_sendAction(obj);
   }
 
-
-  doBiteAction(index){
+  doBiteAction(index) {
     let action = "BITE";
     let character = this.meInfo;
     let victim = this.arrGamer[index];
 
-    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    let obj = { nameRoom: this.nameOfRoom, character, action, victim };
     console.log("action", obj);
     this.nspRoomService.sk_sendAction(obj);
   }
 
-  doKillAction(index){
+  doKillAction(index) {
     let action = "PIN";
     let character = this.meInfo;
     let victim = this.arrGamer[index];
 
-    let obj = {nameRoom : this.nameOfRoom, character, action, victim};
+    let obj = { nameRoom: this.nameOfRoom, character, action, victim };
     console.log("action", obj);
     this.nspRoomService.sk_sendAction(obj);
+  }
+
+  testToast() {
+    this.toastService.showInfo("message", { toastLife: 1000 });
+    // this.toastService.showCustom();
   }
 
 }

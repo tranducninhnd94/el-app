@@ -1,5 +1,5 @@
 <!-- <div class="container-fluid "> -->
-<button (click)="showModalVote()">Show modal vote</button> {{isInSecondVote}}
+<button (click)="showModalVote()">Show modal vote</button> <button (click)="testToast()">test</button>
 <div class="container-fluid">
     <div class="row content-game">
         <div class="col-sm-2 list-gamer-timer">
@@ -15,40 +15,43 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">
-                        <li *ngFor="let gamer of arrGamer; let i = index" class="list-group-item">
+                        <li *ngFor="let gamer of arrGamer; let i = index" class="list-group-item" [ngStyle]="gamer.is_die ? styleGamerDie : ''">
                             {{gamer.fullname}}
                             <i *ngIf="gamer.is_owner" class="fa fa-star" style="color:violet" tooltip="Owner" placement="right"></i>
-
                             <!-- for hunter -->
-                            <button *ngIf="isInRound &&meInfo && meInfo.character && meInfo._id && meInfo.character == 'huntsman' && meInfo._id != gamer._id"
+                            <button *ngIf="isInRound &&meInfo && !meInfo.is_die && meInfo.character && meInfo._id && meInfo.character == 'huntsman' && meInfo._id != gamer._id"
                                 style="max-width: 30px; max-height: 24px; float: right" tooltip="Ghim player" placement="left"
                                 (click)="doPinAction(i)">
                                 <img src="../../../../../assets/img-werewolf/skill/pin-icon.png">
                             </button>
                             <!-- security -->
-                            <button *ngIf="isInRound &&meInfo && meInfo.character && meInfo.character == 'security' " style="max-width: 30px; max-height: 24px; float: right"
+                            <button *ngIf="isInRound &&meInfo && !meInfo.is_die && meInfo.character && meInfo.character == 'security' " style="max-width: 30px; max-height: 24px; float: right"
                                 tooltip="protect player" placement="left" (click)="doProtectAction(i)">
                                 <img src="../../../../../assets/img-werewolf/skill/protect.png">
                             </button>
                             <!-- witch -->
-                            <button *ngIf="isInRound &&meInfo && meInfo.character && meInfo.character == 'witch'" style="max-width: 30px; max-height: 24px; float: right"
+                            <button *ngIf="isInRound &&meInfo && !meInfo.is_die && meInfo.character && meInfo.character == 'witch'" style="max-width: 30px; max-height: 24px; float: right"
                                 tooltip=" eliminate a player" placement="left" (click)="doEnvenomAction(i)">
                                 <img src="../../../../../assets/img-werewolf/skill/toxic-icon.png">
                             </button>
 
-                            <button *ngIf="isInRound && meInfo && meInfo.character && meInfo.character == 'witch'" style="max-width: 30px; max-height: 24px; float: right"
+                            <button *ngIf="isInRound && meInfo && !meInfo.is_die && meInfo.character && meInfo.character == 'witch'" style="max-width: 30px; max-height: 24px; float: right"
                                 tooltip="save the werewolves's victim" placement="left" (click)="doSaveAction(i)">
                                 <img src="../../../../../assets/img-werewolf/skill/Help-icon.png">
                             </button>
                             <!-- werewolf -->
-                            <button *ngIf="isInRound && meInfo._id != gamer._id && meInfo && meInfo.character && meInfo.character == 'werewolf' " style="max-width: 30px; max-height: 24px; float: right"
-                                tooltip="bite it" placement="left" (click)="doBiteAction(i)">
+                            <button *ngIf="isInRound && meInfo._id != gamer._id && meInfo && !meInfo.is_die && meInfo.character && meInfo.character == 'werewolf' "
+                                style="max-width: 30px; max-height: 24px; float: right" tooltip="bite it" placement="left" (click)="doBiteAction(i)">
                                 <img src="../../../../../assets/img-werewolf/skill/Wolf-Boss-icon.png">
                             </button>
                             <!-- Kill -->
-                            <button *ngIf="isInSecondVote && meInfo && meInfo.character  && meInfo._id && meInfo._id != gamer._id" style="max-width: 30px; max-height: 24px; float: right"
-                                tooltip="kill it" placement="left" (click)="doKillAction(i)">
+                            <button *ngIf="isInSecondVote && meInfo && !meInfo.is_die && meInfo.character  && meInfo._id && meInfo._id != gamer._id"
+                                style="max-width: 30px; max-height: 24px; float: right" tooltip="kill it" placement="left" (click)="doKillAction(i)">
                                 <img src="../../../../../assets/img-werewolf/skill/sword.png">
+                            </button>
+
+                            <button *ngIf=" gamer.is_die" style="max-width: 32px; max-height: 32px; float: right" tooltip="Ngu vl" placement="left">
+                                <img src="../../../../../assets/img-werewolf/skill/death-icon.png">
                             </button>
                             <!-- All -->
 

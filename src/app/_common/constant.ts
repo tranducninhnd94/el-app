@@ -98,6 +98,8 @@ export class Constants {
 
   public static SERVER_SEND_ACTION = "server-send-action";
 
+  public static SERVER_SEND_INFO_AFTER_NIGHT = "server-send-info-after-night";
+
   public static CLIENT_PUBLIC_MESSAGE = "client-public-msg";
 
   public static CLIENT_PRIVATE_MESSAGE = "client-private-msg";
@@ -117,4 +119,12 @@ export class Constants {
   public static CLIENT_GET_INFO_FIRST_VOTE_BY_ROUND = "client-get-info-fist-vote-by-round";
 
   public static CLIENT_SEND_ACTION = "client-send-action";
+
+  public static CLIENT_GET_INFO_AFTER_NIGHT = "client-get-info-after-noght";
+
+  public static CLIENT_GET_DETAIL_ROOM = "client-get-info-after-noght";
+
+  public static CLIENT_OPEN_FIRST_VOTE = "client-open-first-vote";
+
+  public static CLIENT_OPEN_SECOND_VOTE = "client-open-second-vote";
 }

@@ -58,6 +58,16 @@ export class GamerInfo {
 
   character: string;
 
+  is_witch: boolean;
+
+  num_envenom: number;
+
+  num_save: number;
+
+  num_view: number;
+
+  is_fortuneteller: boolean;
+
   constructor() {}
 }
 
@@ -89,11 +99,10 @@ export class CoundDown {
   isInSecondVote: boolean;
 }
 
+export class GamerAction {
+  character: GamerInfo;
 
-export class GamerAction{
-  character : GamerInfo;
+  action: Action;
 
-  action : Action;
-
-  victim : GamerInfo
+  victim: GamerInfo;
 }
