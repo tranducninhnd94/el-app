@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from "@angular/co
 import { GamerResponse, VoteInfo } from "../../../../_model/gamer.model";
 import { Constants } from "../../../../_common/constant";
 import { CookieService } from "../../../../_service/cookie.service";
-import { GamerInfo, PublicMsg } from "../../../../_model/socket.model";
+import { GamerInfo, PublicMsg, PrivateMsg } from "../../../../_model/socket.model";
 import { Router, ActivatedRoute } from "@angular/router";
 import { ISubscription } from "rxjs/Subscription";
 import { ToastService } from "../../../../_service/toast.service";
@@ -26,6 +26,7 @@ export class WerewolfComponent implements OnInit {
   @ViewChild("privateMsg") privateMsg: ElementRef;
 
   @ViewChild("divPublicMsg") divPublicMsg: ElementRef;
+  @ViewChild("divPrivateMsg") divPrivateMsg: ElementRef;
 
   private gameStarted: boolean = false;
 
@@ -71,6 +72,8 @@ export class WerewolfComponent implements OnInit {
 
   private observerGetInfoAfterNight: ISubscription;
 
+  private observerGetPrivareMsg: ISubscription;
+
   private arrPublicMsg: Array<PublicMsg>;
 
   private nameOfRoom: string;
@@ -113,6 +116,9 @@ export class WerewolfComponent implements OnInit {
 
   private valueDefault = "undefined";
 
+  private arrPrivateMsg : Array<PrivateMsg>;
+
+
   constructor(
     private cookieService: CookieService,
     private toastService: ToastService,
@@ -120,7 +126,7 @@ export class WerewolfComponent implements OnInit {
     private activateRouter: ActivatedRoute,
     private modalService: BsModalService,
     private nspRoomService: NspRoomService
-  ) { }
+  ) {}
   viewCharacter(i) {
     console.log("view character. : ", i);
     console.log("game started . : ", this.gameStarted);
@@ -154,6 +160,8 @@ export class WerewolfComponent implements OnInit {
 
   ngOnInit(): void {
     // this.init();
+
+    this.listenerGetPrivateMsg();
 
     this.listenerGetAction();
 
@@ -196,16 +204,39 @@ export class WerewolfComponent implements OnInit {
 
   // litener
 
+  listenerGetPrivateMsg(): void {
+    this.observerGetPrivareMsg = this.nspRoomService.getPrivateMessage().subscribe(
+      res => {
+        console.log("private arr : ", res);
+        if (res.result == Constants.RESULT_SUCCESS){
+          let value = res.value;
+
+          let character= value.character;
+          let arrPrivateMsg = value.arrPrivateMsg;
+
+          if (character == this.meInfo.character){
+            this.arrPrivateMsg = arrPrivateMsg;
+            console.log("arr : ", this.arrPrivateMsg);
+          }
+
+        }
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
   listenerGetInFoAfterNight(): void {
     this.observerGetInfoAfterNight = this.nspRoomService.sk_getInfoAfterNightForServer().subscribe(
       res => {
         console.log("after night : ", res);
         this.arrGamer = res.arrGamer;
 
-        this.toastService.showInfo("The vote will come to 3 second !", { toastLife: 3000 })
+        this.toastService.showInfo("The vote will come to 3 second !", { toastLife: 3000 });
         let timeOut = setTimeout(() => {
-          this.nspRoomService.sk_openFirstVote({nameRoom: this.nameOfRoom});
-        }, 4000)
+          this.nspRoomService.sk_openFirstVote({ nameRoom: this.nameOfRoom });
+        }, 4000);
       },
       error => {
         console.log(error);
@@ -226,6 +257,7 @@ export class WerewolfComponent implements OnInit {
     );
   }
 
+  private isNextRound = false;
   listenerGetCountDown(): void {
     this.observerGetCountDown = this.nspRoomService.sk_getCountDown().subscribe(
       res => {
@@ -245,15 +277,15 @@ export class WerewolfComponent implements OnInit {
         // end of phase
         if (this.ttlOfRound == 0 && this.isInRound) {
           this.nspRoomService.sk_getInfoAfterNight({ nameRoom: this.nameOfRoom });
-        }else if (this.ttlOfRound == 0 &&  this.isInFirstVote){
+        } else if (this.ttlOfRound == 0 && this.isInFirstVote) {
           if (this.firstVoteNumYes > this.firstVoteNumNo) {
             // co giet // call second vote
-            this.toastService.showInfo("Let kill someone after 3 second ! !", { toastLife: 3000 })
+            this.toastService.showInfo("Let kill someone after 3 second ! !", { toastLife: 3000 });
             let timeOut = setTimeout(() => {
-              this.nspRoomService.sk_openSecondVote({nameRoom: this.nameOfRoom});
-            }, 4000)
-          }else{
-
+              this.nspRoomService.sk_openSecondVote({ nameRoom: this.nameOfRoom });
+            }, 4000);
+          } else {
+            this.isNextRound = true;
           }
         }
       },
@@ -290,6 +322,7 @@ export class WerewolfComponent implements OnInit {
   listenerPublicMsg(): void {
     this.observerGetPublicMsg = this.nspRoomService.getPublicMessage().subscribe(
       res => {
+        console.log("recieve : ", res);
         if (res.result == Constants.RESULT_SUCCESS) {
           this.arrPublicMsg = res.value;
         }
@@ -341,22 +374,9 @@ export class WerewolfComponent implements OnInit {
 
   nextRound(): void {
     // return numViewCharacter
-    this.numViewCharacter = 1;
-
-    this.ttlOfRound = Constants.TIME_TO_LIE_OF_ROUND;
-    this.timeRound = setInterval(() => {
-      let minute = Math.floor(this.ttlOfRound / 60);
-      let second = this.ttlOfRound % 60;
-
-      this.minutesOfRound = minute >= 10 ? minute + "" : "0" + minute;
-      this.secondOfRound = second >= 10 ? second + "" : "0" + second;
-
-      if (this.ttlOfRound == 0) {
-        clearInterval(this.timeRound);
-      }
-
-      --this.ttlOfRound;
-    }, 1000);
+    this.firstVoteNumNo = 0;
+    this.firstVoteNumYes = 0;
+    this.nspRoomService.sk_clientNextRound({ nameRoom: this.nameOfRoom });
   }
 
   vote(index) {
@@ -419,6 +439,7 @@ export class WerewolfComponent implements OnInit {
     this.observerGetCountDown.unsubscribe();
     this.observerGetAction.unsubscribe();
     this.observerGetInfoAfterNight.unsubscribe();
+    this.observerGetPrivareMsg.unsubscribe();
   }
 
   // handle chat
@@ -450,17 +471,52 @@ export class WerewolfComponent implements OnInit {
     }
   }
 
+  onKeyPrivate(event: KeyboardEvent) {
+    if (event.keyCode == 13 && event.shiftKey == false) {
+      if (this.meInfo.character) {
+        this.privateMsg.nativeElement.focus();
+        this.sendPrivateMsg();
+        this.formPrivateMsg.reset();
+        window.setTimeout(() => {
+          this.setScollPrivateDiv();
+        }, 10);
+      } else {
+        this.formPrivateMsg.reset();
+        this.toastService.showError("Using when game started!");
+      }
+    } else if (event.keyCode == 13 && event.shiftKey == true) {
+    }
+  }
+
   sendPrivateMsg(): void {
     console.log("form private : ", this.formPrivateMsg.value);
+    let content = this.formPrivateMsg.value.content;
+    if (content) {
+      let objPrivateMsg = new PublicMsg();
+      objPrivateMsg.content = content;
+      objPrivateMsg.sender = this.gamerResponse;
+      objPrivateMsg.create_at = new Date();
+
+      console.log("objPrivateMsg : ", objPrivateMsg);
+      this.nspRoomService.sendPrivateMessage({
+        objPrivateMsg,
+        nameRoom: this.nameOfRoom,
+        character: this.meInfo.character
+      });
+    }
   }
 
   setScoll(): void {
     this.divPublicMsg.nativeElement.scrollTop = this.divPublicMsg.nativeElement.scrollHeight;
   }
 
+  setScollPrivateDiv(): void {
+    this.divPrivateMsg.nativeElement.scrollTop = this.divPrivateMsg.nativeElement.scrollHeight;
+  }
+
   // leave
 
-  leaveRoom() { }
+  leaveRoom() {}
 
   // modal vote
 
@@ -565,6 +621,5 @@ export class WerewolfComponent implements OnInit {
     this.toastService.showInfo("message", { toastLife: 1000 });
     // this.toastService.showCustom();
   }
-
 }
 // [{nameRoom : ? , info : {round : round: ?,  arrVote : {gamer: ?, answer}}}]

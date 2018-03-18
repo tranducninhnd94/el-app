@@ -10,11 +10,13 @@ export class PublicMsg {
 }
 
 export class PrivateMsg {
-  arrReceive: Array<GamerResponse>;
+  // arrReceive: Array<GamerResponse>;
 
   content: any;
 
   sender: GamerResponse;
+
+  group: string;
 
   create_at: Date;
 }

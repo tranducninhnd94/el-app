@@ -20,7 +20,7 @@ export class NspRoomService {
   private socket = io(Constants.URL_NAMESPACE_ROOM);
   private Observer: Observable<any>;
 
-  constructor() { }
+  constructor() {}
 
   getPublicMessage(): Observable<SystemResponse<Array<PublicMsg>>> {
     let observable = new Observable<SystemResponse<Array<PublicMsg>>>(observer => {
@@ -31,8 +31,8 @@ export class NspRoomService {
     return observable;
   }
 
-  getPrivateMessage(): Observable<SystemResponse<Array<PrivateMsg>>> {
-    let observable = new Observable<SystemResponse<Array<PrivateMsg>>>(observer => {
+  getPrivateMessage(): Observable<SystemResponse<any>> {
+    let observable = new Observable<SystemResponse<any>>(observer => {
       this.socket.on(Constants.SERVER_PRIVATE_MESSAGE, res => {
         observer.next(res);
       });
@@ -107,8 +107,9 @@ export class NspRoomService {
     this.socket.emit(Constants.CLIENT_PUBLIC_MESSAGE, obj);
   }
 
-  sendPrivateMessage(privateMsg: PrivateMsg): void {
-    this.socket.emit(Constants.CLIENT_PRIVATE_MESSAGE, privateMsg);
+  // { objPrivateMsg, nameRoom: this.nameOfRoom }
+  sendPrivateMessage(obj: any): void {
+    this.socket.emit(Constants.CLIENT_PRIVATE_MESSAGE, obj);
   }
 
   sendInformation(gamerInfo: GamerInfo): void {
@@ -156,4 +157,7 @@ export class NspRoomService {
     this.socket.emit(Constants.CLIENT_OPEN_SECOND_VOTE, obj);
   }
 
+  sk_clientNextRound(obj: any) {
+    this.socket.emit(Constants.CLIENT_NEXT_ROUND, obj);
+  }
 }

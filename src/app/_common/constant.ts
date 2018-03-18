@@ -127,4 +127,8 @@ export class Constants {
   public static CLIENT_OPEN_FIRST_VOTE = "client-open-first-vote";
 
   public static CLIENT_OPEN_SECOND_VOTE = "client-open-second-vote";
+
+  public static CLIENT_NEXT_ROUND = "client-next-round";
+
+  public static CLIENT_GET_ALL_ROOM = "client-get-all-room";
 }

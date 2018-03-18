@@ -24,12 +24,12 @@ export class LobbyComponent implements OnInit, OnDestroy, AfterViewInit {
     private bsModalService: BsModalService,
     // private socketService: SocketService,
     private cookieService: CookieService,
-
     private nspLobbyService: NspLobbyService
-
   ) {}
 
   ngOnInit(): void {
+    this.nspLobbyService.sk_clientGetAllRoom({});
+
     this.observerGetAllRoom = this.nspLobbyService.getAllRoom().subscribe(
       res => {
         if (res.result == Constants.RESULT_SUCCESS) {
